@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "structure.schema.json",
+  "title": "structure",
+  "description": "3D structure of a molecule",
+  "type": "object",
+  "properties": {
+    "is_optimized": {
+      "description": "whether the 3D geometry is optimized with DFT",
+      "type": "boolean"
+    },
+
+    "charge": {
+      "description": "electronic charge on the molecule",
+      "type": "integer"
+    },
+    "spin_multiplicity": {
+      "description": "spin multiplicity of the molecule",
+      "type": "integer"
+    },
+    "sites": {
+      "description": "3D coordinates information of atoms in the a molecule",
+      "type": "array",
+      "items": {
+        "$ref": "structure.sites.schema.json"
+      }
+    },
+    "electronic_descriptors": {
+      "description": "electronic descriptors for the geometry",
+      "$ref": "structure.electronic_descriptors.schema.json"
+    },
+    "geometry_descriptors": {
+      "description": "geometric descriptors for the geometry",
+      "$ref": "structure.geometric_descriptors.schema.json"
+    },
+
+    "chemical_descriptors": {
+      "description": "chemical descriptors for the geometry",
+      "$ref": "#structure.chemical_descriptors.schema.json"
+    }
+
+  },
+  "additionalProperties": "False"
+}

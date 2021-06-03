@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "ml.schema.json",
+  "title": "ml",
+  "description": "Machine learning on redox active molecules",
+  "type": "object",
+
+  "properties": {
+
+  },
+  "additionalProperties": "False"
+}

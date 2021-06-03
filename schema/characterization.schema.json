@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "characterization.schema.json",
+  "title": "characterization",
+  "description": "characterization of organic materials",
+  "type": "object",
+
+  "properties": {
+
+  },
+  "additionalProperties": "False"
+}

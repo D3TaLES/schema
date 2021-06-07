@@ -43,5 +43,5 @@
       "$ref": "structure.chemical_descriptors.schema.json"
     }
   },
-  "additionalProperties": "False"
+  "additionalProperties": false
 }

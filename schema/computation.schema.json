@@ -3,7 +3,7 @@
   "$id": "computation.schema.json",
   "title": "computation",
   "description": "The structure information for a molecule entry in database",
-  "type": "object",
+
 
   "definitions": {
     "data": {
@@ -45,7 +45,7 @@
       }
     }
   },
-
+  "type": "object",
   "properties": {
     "_id": {
       "description": "A unique identifier for the molecule",
@@ -107,7 +107,7 @@
       "type": "object",
       "properties": {
         "data": {
-          "type": "arraay",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/data"
           }
@@ -177,6 +177,6 @@
       }
     }
   },
-  "additionalProperties": "False"
+  "additionalProperties": false
 
 }

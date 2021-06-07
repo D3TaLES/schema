@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "nlp.schema.json",
+  "title": "nlp",
+  "description": "NLP schema for raw corpus storage",
+  "definitions": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "num_pages": {
+          "type": "number"
+        },
+        "figures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "oneOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "image": {
+                "type": "string",
+                "contentEncoding": "base64",
+                "contentMediaType": "image/png"
+              },
+              "caption": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "tables": {
+          "type": "object",
+          "properties": {
+            "header": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+                "values": {
+                  "type": "array",
+                  "items": {
+                    "oneOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                }
+              }
+            }
+          }
+        },
+        "text": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+
+  "type": "object",
+  "properties": {
+    "doi": {
+      "type": "string"
+    },
+    "date_accessed": {
+      "type": "string"
+    },
+    "abstract": {
+      "type": "string"
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "year": {"type":"string"},
+    "publisher":  {"type":"string"},
+    "downloaded_ip":  {"type":"string"},
+    "last_updated":  {"type":"string"},
+    "journal":  {"type":"string"},
+    "main_text": {
+      "$ref": "#definitions/data"
+    },
+    "SI": {
+      "$ref": "#definitions/data"
+    }
+  },
+  "additionalProperties": false
+
+
+}

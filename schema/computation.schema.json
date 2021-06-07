@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft-7/schema#",
+  "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "computation.schema.json",
   "title": "computation",
   "description": "The structure information for a molecule entry in database",

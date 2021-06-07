@@ -15,7 +15,16 @@
         },
         "value": {
           "description": "The value of the descriptor",
-          "type": "number"
+          "oneOf": [
+            {"type": "number"},
+            {"type": "array",
+            "items": {
+              "type": "number"
+            }},
+            {
+              "type": "string"
+            }
+          ]
         },
         "unit": {
           "description": "The units for the value",
@@ -23,7 +32,15 @@
         },
         "order": {
           "description": "Additional field for sorting data",
-          "type": "string"
+          "oneOf": [
+            {"type": "number"},
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            }
+            ]
         }
       }
     }
@@ -58,7 +75,7 @@
     "geometry": {
       "description": "description of a molecule geometry",
       "type": "array",
-      "items": {"$ref": "geometry.schema.json"}
+      "items": {"$ref": "structure.schema.json"}
     },
 
     "iupac_name": {
@@ -103,7 +120,7 @@
       "type": "object",
       "properties": {
         "data": {
-          "type": "arraay",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/data"
           }
@@ -115,7 +132,7 @@
       "type": "object",
       "properties": {
         "data": {
-          "type": "arraay",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/data"
           }
@@ -128,7 +145,7 @@
       "type": "object",
       "properties": {
         "data": {
-          "type": "arraay",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/data"
           }
@@ -140,14 +157,25 @@
       "type": "object",
       "properties": {
         "data": {
-          "type": "arraay",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/data"
+          }
+        }
+      }
+    },
+    "redox_potential": {
+      "description": "Reduction potential of the molecule.",
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
           "items": {
             "$ref": "#/definitions/data"
           }
         }
       }
     }
-
   },
   "additionalProperties": "False"
 

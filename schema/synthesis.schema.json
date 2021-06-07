@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema",
+  "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "synthesis.schema.json",
   "title": "synthesis",
   "description": "Synthesis of organic materials",

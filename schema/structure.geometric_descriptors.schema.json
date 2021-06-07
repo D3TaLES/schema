@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema",
+  "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "structure.electronic_descriptors.schema.json",
   "title": "electronic_descriptors",
   "description": "Electronic descriptors for the optimized molecular geometry",

@@ -33,7 +33,8 @@
               "caption": {
                 "type": "string"
               }
-            }
+            },
+            "additionalProperties": false
           }
         },
         "tables": {
@@ -66,7 +67,8 @@
             "type": "string"
           }
         }
-      }
+      },
+      "additionalProperties": false
     }
   },
 

@@ -4,7 +4,6 @@
   "title": "computation",
   "description": "The structure information for a molecule entry in database",
 
-
   "definitions": {
     "data": {
       "type": "object",

@@ -3,10 +3,17 @@
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/structure.electronic_descriptors.schema.json",
   "title": "electronic_descriptors",
   "description": "Electronic descriptors for the optimized molecular geometry",
-
-  "type": "object",
-
-    "definitions": {
+  "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
     "data": {
       "type": "object",
       "properties": {
@@ -16,17 +23,15 @@
         },
         "value": {
           "description": "The value of the descriptor",
-          "oneOf": [
-            {"type": "number"},
-            {"type": "array",
-            "items": {
-              "type": "number"
-            }},
-            {
-              "type": "string"
+            "oneOf":[{
+              "$ref": "#/definitions/scalar"
+            },
+              {
+              "$ref": "#/definitions/vector"
             }
-          ]
-        },
+            ]
+          },
+
         "unit": {
           "description": "The units for the value",
           "type": "string"
@@ -46,8 +51,9 @@
       },
       "additionalProperties": false
     }
-  },
+},
 
+  "type": "object",
   "properties": {
     "scf_dipole_moment": {
       "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "structure.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/structure.schema.json",
   "title": "structure",
   "description": "3D structure of a molecule",
   "type": "object",
@@ -20,27 +20,27 @@
     },
     "dft_parameters": {
           "description": "Parameters used for DFT calculations",
-          "$ref": "dft.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/dft.schema.json"
     },
     "sites": {
       "description": "3D coordinates information of atoms in the a molecule",
       "type": "array",
       "items": {
-        "$ref": "structure.sites.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/structure.sites.schema.json"
       }
     },
     "electronic_descriptors": {
       "description": "electronic descriptors for the geometry",
-      "$ref": "structure.electronic_descriptors.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/structure.electronic_descriptors.schema.json"
     },
     "geometry_descriptors": {
       "description": "geometric descriptors for the geometry",
-      "$ref": "structure.geometric_descriptors.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/structure.geometric_descriptors.schema.json"
     },
 
     "chemical_descriptors": {
       "description": "chemical descriptors for the geometry",
-      "$ref": "structure.chemical_descriptors.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/structure.chemical_descriptors.schema.json"
     }
   },
   "additionalProperties": false

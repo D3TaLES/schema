@@ -3,7 +3,6 @@
   "$id": "https://example.com/product.schema.json",
   "title": "root",
   "description": "A molecule entry in database",
-  "type": "object",
 
   "definitions": {
     "doi": {
@@ -13,6 +12,7 @@
     }
   },
 
+  "type": "object",
   "properties": {
     "_id": {
       "description": "A unique identifier for the molecule",
@@ -42,7 +42,7 @@
     "related_literature": {
       "description": "Collection of DOIs from NLP",
       "type": "array",
-      "item": {
+      "items": {
         "$ref": "#/definitions/doi"
       }
     }

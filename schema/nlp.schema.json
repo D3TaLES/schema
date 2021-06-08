@@ -95,10 +95,10 @@
     "last_updated":  {"type":"string"},
     "journal":  {"type":"string"},
     "main_text": {
-      "$ref": "#definitions/data"
+      "$ref": "#/definitions/data"
     },
     "SI": {
-      "$ref": "#definitions/data"
+      "$ref": "#/definitions/data"
     }
   },
   "additionalProperties": false

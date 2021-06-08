@@ -21,22 +21,22 @@
 
     "computational_data": {
       "description": "Details of quantum chemical calculations on the molecule including charge species",
-      "$ref": "schema/computation.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.schema.json"
     },
 
     "synthesis_data": {
       "description": "Details of 3D geometry of the molecule including charge species",
-      "$ref": "schema/synthesis.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/synthesis.schema.json"
     },
 
     "characterization_data": {
       "description": "Details of 3D geometry of the molecule including charge species",
-      "$ref": "schema/characterization.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/characterization.schema.json"
     },
 
     "machine_learning_data": {
       "description": "Details of 3D geometry of the molecule including charge species",
-      "$ref": "schema/ml.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/ml.schema.json"
     },
 
     "related_literature": {

@@ -8,5 +8,5 @@
   "properties": {
 
   },
-  "additionalProperties": "False"
+  "additionalProperties": false
 }

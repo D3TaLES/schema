@@ -10,7 +10,7 @@
       "properties": {
         "dft_parameters": {
           "description": "Parameters used for DFT calculations",
-          "$ref": "dft.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/dft.schema.json"
         },
         "value": {
           "description": "The value of the descriptor",

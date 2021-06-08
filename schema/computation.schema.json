@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "computation.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.schema.json",
   "title": "computation",
   "description": "The structure information for a molecule entry in database",
 
@@ -10,7 +10,7 @@
       "properties": {
         "dft_parameters": {
           "description": "Parameters used for DFT calculations",
-          "$ref": "dft.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/dft.schema.json"
         },
         "value": {
           "description": "The value of the descriptor",

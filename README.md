@@ -1,3 +1,3 @@
-# database
+# schema
 
-A repo for constructing the database for the porject. MongoDB database is used with jsonschema.
+Uses [jsonschema](https://json-schema.org/) Draft-7.

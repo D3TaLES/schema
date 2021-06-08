@@ -4,68 +4,27 @@
   "title": "electronic_descriptors",
   "description": "Electronic descriptors for the optimized molecular geometry",
 
-  "definitions": {
-    "data": {
-      "type": "object",
-      "properties": {
-        "dft_parameters": {
-          "description": "Parameters used for DFT calculations",
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/dft.schema.json"
-        },
-        "value": {
-          "description": "The value of the descriptor",
-          "oneOf": [
-            {"type": "number"},
-            {"type": "array",
-            "items": {
-              "type": "number"
-            }},
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "unit": {
-          "description": "The units for the value",
-          "type": "string"
-        },
-        "order": {
-          "description": "Additional field for sorting data",
-          "oneOf": [
-            {"type": "number"},
-            {
-              "type": "string"
-            },
-            {
-              "type": "boolean"
-            }
-            ]
-        }
-      }
-    }
-  },
-
   "type": "object",
 
   "properties": {
     "scf_dipole_moment": {
       "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
-      "$ref": "#/definitions/data"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.schema.json/definitions/data"
     },
     "scf_total_energy": {
-      "$ref": "#/definitions/data",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.schema.json/definitions/data",
       "description": "Highest occupied molecular orbital. Units: eV"
     },
     "homo": {
-      "$ref": "#/definitions/data",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.schema.json/definitions/data",
       "description": "Highest occupied molecular orbital. Units: eV"
     },
     "lumo": {
-      "$ref": "#/definitions/data",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.schema.json/definitions/data",
       "description": "Lowest unoccupied molecular orbital. Units: eV"
     },
     "s0_s1": {
-      "$ref": "#/definitions/data",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.schema.json/definitions/data",
       "description": "First singlet excitation. Units: eV"
     }
 

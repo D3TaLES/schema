@@ -74,7 +74,7 @@
     "geometry": {
       "description": "description of a molecule geometry",
       "type": "array",
-      "items": {"$ref": "structure.schema.json"}
+      "items": {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/structure.schema.json"}
     },
 
     "iupac_name": {

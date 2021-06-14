@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "nlp.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/nlp.schema.json",
   "title": "nlp",
   "description": "NLP schema for raw corpus storage",
   "definitions": {

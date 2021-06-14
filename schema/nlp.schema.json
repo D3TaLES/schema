@@ -89,7 +89,7 @@
         "type": "string"
       }
     },
-    "publish_data": {"type":"string"},
+    "publish_date": {"type":"string"},
     "publisher":  {"type":"string"},
     "downloaded_ip":  {"type":"string"},
     "last_updated":  {"type":"string"},

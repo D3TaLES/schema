@@ -69,6 +69,29 @@
         }
       },
       "additionalProperties": false
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "auid": {
+          "type": "string"
+        },
+        "indexed_name": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        },
+        "given_name": {
+          "type": "string"
+        },
+        "affiliation": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
     }
   },
 
@@ -86,7 +109,7 @@
     "authors": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "#/definitions/author"
       }
     },
     "publish_date": {"type":"string"},

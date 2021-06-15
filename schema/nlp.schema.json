@@ -117,6 +117,7 @@
     "downloaded_ip":  {"type":"string"},
     "last_updated":  {"type":"string"},
     "journal":  {"type":"string"},
+    "title": {"type":"string"},
     "main_text": {
       "$ref": "#/definitions/data"
     },

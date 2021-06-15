@@ -126,6 +126,7 @@
     }
 
   },
-  "additionalProperties": false,
-  "required": ["doi"]
+  "required": ["doi"],
+  "additionalProperties": false
+
 }

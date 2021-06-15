@@ -123,9 +123,9 @@
     },
     "SI": {
       "$ref": "#/definitions/data"
-    }
+    },
+
   },
-  "additionalProperties": false
-
-
+  "additionalProperties": false,
+  "required": ["doi"]
 }

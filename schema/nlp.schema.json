@@ -97,6 +97,9 @@
 
   "type": "object",
   "properties": {
+    "_id": {
+      "type": "string"
+    },
     "doi": {
       "type": "string"
     },
@@ -129,7 +132,7 @@
     }
 
   },
-  "required": ["doi"],
+  "required": ["_id"],
   "additionalProperties": false
 
 }

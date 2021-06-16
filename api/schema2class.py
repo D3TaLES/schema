@@ -5,13 +5,34 @@ import json, time
 import jsonschema
 
 class Schema2Class():
-    def __init__(self,schema_name=None):
+    def __init__(self,schema_name=None, named_only=False):
 
-        schema_url = "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/{}.schema.json".format(schema_name)
+        # fetch schema
+        self.schema_name = schema_name
+        schema_url = "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/{}.schema.json".format(self.schema_name)
         response = request.urlopen(schema_url)
-        schema = json.loads(response.read().decode())
+        self.schema = json.loads(response.read().decode())
 
-        self.schema = schema
+        # generating classes
+        builder = pjs.ObjectBuilder(self.schema)
+        ns = builder.build_classes(named_only=named_only)
+
+        # get all name space
+        for name_space in dir(ns):
+            setattr(self,name_space,getattr(ns,name_space))
+
+        # highest-level name space for validation
+        self.high_level = getattr(ns,schema_name.title())
+
+        # required values
+        if self.schema.get("required",):
+            self.required = self.schema.get("required")
+        else:
+            self.required = None
+
+
+
+
 
 
 

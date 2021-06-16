@@ -132,7 +132,7 @@
     }
 
   },
-  "required": ["_id","last_updated"],
+  "required": ["_id"],
   "additionalProperties": false
 
 }

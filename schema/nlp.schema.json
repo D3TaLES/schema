@@ -118,7 +118,10 @@
     "publish_date": {"type":"string"},
     "publisher":  {"type":"string"},
     "downloaded_ip":  {"type":"string"},
-    "last_updated":  {"type":"string"},
+    "last_updated":  {
+      "type":"string",
+      "format": "date-time"
+    },
     "journal":  {"type":"string"},
     "title": {"type":"string"},
     "main_text": {

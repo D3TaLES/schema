@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "structure.chemical_descriptors.schema.json",
+  "$id": "computation.structure.chemical_descriptors.schema.json",
   "title": "chemical_descriptors",
   "description": "chemical descriptors for the optimized molecular geometry",
   "type": "object"

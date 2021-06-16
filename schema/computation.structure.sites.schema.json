@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "structure.sites.schema.json",
+  "$id": "computation.structure.sites.schema.json",
   "title": "sites",
   "description": "Atom information of a molecule based on pymatgen.core.Molecule",
   "type": "object",

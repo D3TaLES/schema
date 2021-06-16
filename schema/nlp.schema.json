@@ -123,6 +123,9 @@
     },
     "SI": {
       "$ref": "#/definitions/data"
+    },
+    "relevant": {
+      "type": "boolean"
     }
 
   },

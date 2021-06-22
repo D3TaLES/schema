@@ -5,7 +5,7 @@
   "description": "Machine learning on redox active molecules",
   "type": "object",
 
-  "properties": {
+  "calculations": {
 
   },
   "additionalProperties": false

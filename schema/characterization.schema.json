@@ -5,7 +5,7 @@
   "description": "characterization of organic materials",
   "type": "object",
 
-  "properties": {
+  "calculations": {
 
   },
   "additionalProperties": false

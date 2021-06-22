@@ -17,7 +17,7 @@
     },
     "data": {
       "type": "object",
-      "properties": {
+      "calculations": {
         "dft_parameters": {
           "description": "Parameters used for DFT calculations",
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/dft.schema.json"
@@ -54,7 +54,7 @@
     }
   },
   "type": "object",
-  "properties": {
+  "calculations": {
     "_id": {
       "description": "A unique identifier for the molecule",
       "type": "string"
@@ -113,7 +113,7 @@
     "reorganization_energy": {
       "description": "Reorganization energy of the molecule.",
       "type": "object",
-      "properties": {
+      "calculations": {
         "data": {
           "type": "array",
           "items": {
@@ -126,7 +126,7 @@
     "vertical_ionization_energy": {
       "description": "Vertical ionization energy of the molecule.",
       "type": "object",
-      "properties": {
+      "calculations": {
         "data": {
           "type": "array",
           "items": {
@@ -138,7 +138,7 @@
     "vertical_electron_affinity": {
       "description": "Vertical electron affinity energy of the molecule.",
       "type": "object",
-      "properties": {
+      "calculations": {
         "data": {
           "type": "array",
           "items": {
@@ -151,7 +151,7 @@
     "adiabatic_ionization_energy": {
       "description": "Adiabatic ionization energy of the molecule.",
       "type": "object",
-      "properties": {
+      "calculations": {
         "data": {
           "type": "array",
           "items": {
@@ -163,7 +163,7 @@
     "adiabatic_electron_affinity": {
       "description": "Adiabatic electron affinity energy of the molecule.",
       "type": "object",
-      "properties": {
+      "calculations": {
         "data": {
           "type": "array",
           "items": {
@@ -175,7 +175,7 @@
     "redox_potential": {
       "description": "Reduction potential of the molecule.",
       "type": "object",
-      "properties": {
+      "calculations": {
         "data": {
           "type": "array",
           "items": {

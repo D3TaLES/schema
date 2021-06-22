@@ -6,7 +6,7 @@
   "definitions": {
     "data": {
       "type": "object",
-      "properties": {
+      "calculations": {
         "num_pages": {
           "type": "number"
         },
@@ -14,7 +14,7 @@
           "type": "array",
           "items": {
             "type": "object",
-            "properties": {
+            "calculations": {
               "label": {
                 "oneOf": [
                   {
@@ -39,7 +39,7 @@
         },
         "tables": {
           "type": "object",
-          "properties": {
+          "calculations": {
             "header": {
               "type": "array",
               "items": {
@@ -72,7 +72,7 @@
     },
     "author": {
       "type": "object",
-      "properties": {
+      "calculations": {
         "auid": {
           "type": "string"
         },
@@ -96,7 +96,7 @@
   },
 
   "type": "object",
-  "properties": {
+  "calculations": {
     "_id": {
       "type": "string"
     },

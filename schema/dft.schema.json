@@ -5,7 +5,7 @@
   "description": "Details on the computational techniques used to obtain the data",
   "type": "object",
 
-  "properties": {
+  "calculations": {
     "functional": {
       "description": "Functional used for the calculation",
       "type": "string"
@@ -21,7 +21,7 @@
     "solvent": {
       "description": "Solvent model used for the calculation",
       "type": "object",
-      "properties": {
+      "calculations": {
         "name": {
           "description": "Name of the solvent",
           "type": "string"

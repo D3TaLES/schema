@@ -16,7 +16,7 @@
     },
     "data": {
       "type": "object",
-      "properties": {
+      "calculations": {
         "dft_parameters": {
           "description": "Parameters used for DFT calculations",
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/dft.schema.json"
@@ -54,7 +54,7 @@
 },
 
   "type": "object",
-  "properties": {
+  "calculations": {
     "scf_dipole_moment": {
       "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
       "$ref": "#/definitions/data"

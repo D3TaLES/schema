@@ -4,14 +4,14 @@
   "title": "sites",
   "description": "Atom information of a molecule based on pymatgen.core.Molecule",
   "type": "object",
-  "properties": {
+  "calculations": {
     "sites": {
       "description": "electronic charge on the molecule",
       "type": "object",
       "items": [
         {
           "type": "object",
-          "properties": {
+          "calculations": {
             "name": {
               "type": "string"
             },
@@ -20,7 +20,7 @@
               "items": [
                 {
                   "type": "object",
-                  "properties": {
+                  "calculations": {
                     "element": {
                       "type": "string"
                     },
@@ -49,7 +49,7 @@
                 }
               ]
             },
-            "properties": {
+            "calculations": {
               "type": "object"
             }
           },

@@ -20,6 +20,7 @@
     "description": "whether this charge is the ground state charge",
     "type": "boolean"
   },
+
   "sites": {
     "description": "electronic charge on the molecule",
     "type": "object",

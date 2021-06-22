@@ -4,7 +4,7 @@
   "title": "structure",
   "description": "3D structure of a molecule",
   "type": "object",
-  "properties": {
+  "calculations": {
     "is_optimized": {
       "description": "whether the 3D geometry is optimized with DFT",
       "type": "boolean"

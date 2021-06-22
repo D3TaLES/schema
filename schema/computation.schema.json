@@ -4,74 +4,6 @@
   "title": "computation",
   "description": "The structure information derived from computation for a molecule entry in database",
 
-  "definitions": {
-    "vector": {
-      "type": "array",
-      "items": {"type": "number"},
-      "minItems": 3
-    },
-    "scalar": {"type": "number"},
-
-    "dft_data": {
-      "type": "object",
-      "calculations": {
-        "dft_parameters": {
-          "description": "Parameters used for DFT calculations",
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/dft.schema.json"
-        },
-        "value": {
-          "description": "The value of the descriptor",
-            "oneOf":[
-              {"$ref": "#/definitions/scalar"},
-              {"$ref": "#/definitions/vector"},
-              {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/structure_sites.schema.json"},
-              {}
-            ]
-          },
-        "unit": {
-          "description": "The units for the value",
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-
-    "charge_independent": {
-      "order": {
-        "description": "Additional field for sorting data such as IP order",
-        "oneOf": [
-          {"type": "number"},
-          {"type": "string"}
-        ]
-      },
-      "data": {
-        "type": "array",
-        "items": {"$ref": "#/definitions/dft_data"}
-      }
-    },
-
-    "charge_specific": {
-      "charge": {
-        "description": "Electronic charge on the molecule",
-        "oneOf": [
-          {"type": "number"}
-        ]
-      },
-      "spin_multiplicity": {
-        "description": "spin multiplicity of the molecule",
-        "type": "integer"
-      },
-      "is_groundState": {
-        "description": "whether this charge is the ground state charge",
-        "type": "boolean"
-      },
-      "data": {
-        "type": "array",
-        "items": {"$ref": "#/definitions/dft_data"}
-      }
-    }
-  },
-
   "type": "object",
   "calculations": {
     "_id": {
@@ -127,7 +59,7 @@
       "description": "description of a molecule geometry",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/structure_sites.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.geometry.schema.json"
       }
     },
 
@@ -135,7 +67,7 @@
       "description": "Reorganization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/charge_independent"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
       }
     },
 
@@ -143,14 +75,14 @@
       "description": "Vertical ionization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/charge_independent"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
       }
     },
     "vertical_electron_affinity": {
       "description": "Vertical electron affinity energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/charge_independent"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
       }
     },
 
@@ -158,42 +90,42 @@
       "description": "Adiabatic ionization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/charge_independent"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
       }
     },
     "adiabatic_electron_affinity": {
       "description": "Adiabatic electron affinity energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/charge_independent"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
       }
     },
     "redox_potential": {
       "description": "Reduction potential of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/charge_independent"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
       }
     },
     "homo_lumo_gap": {
       "description": "Difference between HOMO and LUMO.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/charge_independent"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
       }
     },
     "solubility": {
       "description": "Difference between HOMO and LUMO.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/charge_specific"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
       }
     },
     "excited_states": {
       "description": "Molecular excited states such as single, triplet, adiabatic, etc.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/charge_independent"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
       }
     },
     "spectra": {

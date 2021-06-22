@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.schema.json",
+  "title": "computation",
+  "description": "Descriptors derived from computation for a molecule entry in database",
+  "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    }
+  },
+  "type": "object",
+  "dft_parameters": {
+    "description": "Parameters used for DFT calculations",
+    "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/dft.schema.json"
+  },
+  "order": {
+    "description": "Electronic charge on the molecule",
+    "oneOf": [
+      {"type": "number"},
+      {"type": "string"}
+    ]
+  },
+  "spin_multiplicity": {
+    "description": "spin multiplicity of the molecule",
+    "type": "integer"
+  },
+  "is_groundState": {
+    "description": "whether this charge is the ground state charge",
+    "type": "boolean"
+  },
+  "value": {
+    "description": "The value of the descriptor",
+    "oneOf": [
+      {
+        "$ref": "#/definitions/scalar"
+      },
+      {
+        "$ref": "#/definitions/vector"
+      }
+    ]
+  },
+  "unit": {
+    "description": "The units for the value",
+    "type": "string"
+  },
+  "additionalProperties": false
+}

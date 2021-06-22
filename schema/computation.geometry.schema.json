@@ -4,25 +4,29 @@
   "title": "sites",
   "description": "Atom information of a molecule based on pymatgen.core.Molecule",
   "type": "object",
+
+  "dft_parameters": {
+    "description": "Parameters used for DFT calculations",
+    "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/dft.schema.json"
+  },
   "charge": {
     "description": "Electronic charge on the molecule",
     "oneOf": [
-      {
-        "type": "number"
-      }
+      {"type": "number"},
+      {"type": "string"}
     ]
   },
   "spin_multiplicity": {
-    "description": "spin multiplicity of the molecule",
+    "description": "Spin multiplicity of the molecule",
     "type": "integer"
   },
   "is_groundState": {
-    "description": "whether this charge is the ground state charge",
+    "description": "Whether this charge is the ground state charge",
     "type": "boolean"
   },
 
   "sites": {
-    "description": "electronic charge on the molecule",
+    "description": "Pymatgen geometry xyz sites",
     "type": "object",
     "items": [
       {

@@ -5,125 +5,123 @@
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
   "properties": {
-    "calculations": {
-      "_id": {
-        "description": "A unique identifier for the molecule",
-        "type": "string"
-      },
-      "smiles": {
-        "description": "SMILES representation of a molecule",
-        "type": "string"
-      },
-      "selfies": {
-        "description": "SELFIES representation of a molecule",
-        "type": "string"
-      },
-      "inchi": {
+    "_id": {
+      "description": "A unique identifier for the molecule",
+      "type": "string"
+    },
+    "smiles": {
+      "description": "SMILES representation of a molecule",
+      "type": "string"
+    },
+    "selfies": {
+      "description": "SELFIES representation of a molecule",
+      "type": "string"
+    },
+    "inchi": {
+      "type": "string",
+      "description": "InChi string representation of the molecule"
+    },
+    "inchi_key": {
+      "type": "string",
+      "description": "Hashed InChi string of the molecule"
+    },
+    "iupac_name": {
+      "type": "string",
+      "description": "IUPAC name of the molecule"
+    },
+    "synonyms": {
+      "type": "array",
+      "description": "Synonymous names of the molecule",
+      "items": {
         "type": "string",
-        "description": "InChi string representation of the molecule"
-      },
-      "inchi_key": {
-        "type": "string",
-        "description": "Hashed InChi string of the molecule"
-      },
-      "iupac_name": {
-        "type": "string",
-        "description": "IUPAC name of the molecule"
-      },
-      "synonyms": {
-        "type": "array",
-        "description": "Synonymous names of the molecule",
-        "items": {
-          "type": "string",
-          "description": "One synonym for the molecule."
-        }
-      },
-      "number_of_atoms": {
-        "type": "integer",
-        "description": "Number of atoms in the molecule."
-      },
-      "molecular_weight": {
-        "type": "number",
-        "description": "Molecular weight of the molecule in g/mol."
-      },
-      "geometry": {
-        "description": "description of a molecule geometry",
-        "type": "array",
-        "items": {
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.schema.json"
-        }
-      },
-      "reorganization_energy": {
-        "description": "Reorganization energy of the molecule.",
-        "type": "array",
-        "items": {
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-        }
-      },
-      "vertical_ionization_energy": {
-        "description": "Vertical ionization energy of the molecule.",
-        "type": "array",
-        "items": {
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-        }
-      },
-      "vertical_electron_affinity": {
-        "description": "Vertical electron affinity energy of the molecule.",
-        "type": "array",
-        "items": {
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-        }
-      },
-      "adiabatic_ionization_energy": {
-        "description": "Adiabatic ionization energy of the molecule.",
-        "type": "array",
-        "items": {
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-        }
-      },
-      "adiabatic_electron_affinity": {
-        "description": "Adiabatic electron affinity energy of the molecule.",
-        "type": "array",
-        "items": {
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-        }
-      },
-      "redox_potential": {
-        "description": "Reduction potential of the molecule.",
-        "type": "array",
-        "items": {
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-        }
-      },
-      "homo_lumo_gap": {
-        "description": "Difference between HOMO and LUMO.",
-        "type": "array",
-        "items": {
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-        }
-      },
-      "solubility": {
-        "description": "Difference between HOMO and LUMO.",
-        "type": "array",
-        "items": {
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-        }
-      },
-      "excited_states": {
-        "description": "Molecular excited states such as single, triplet, adiabatic, etc.",
-        "type": "array",
-        "items": {
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-        }
-      },
-      "spectra": {
-        "description": "Two lists for each freq calculation. The first with the frequency cm-1, the second with IR intensity.",
-        "type": "array",
-        "items": {
-          "$ref": ""
-        }
+        "description": "One synonym for the molecule."
       }
     },
-    "additionalProperties": false
-  }
+    "number_of_atoms": {
+      "type": "integer",
+      "description": "Number of atoms in the molecule."
+    },
+    "molecular_weight": {
+      "type": "number",
+      "description": "Molecular weight of the molecule in g/mol."
+    },
+    "geometry": {
+      "description": "description of a molecule geometry",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.schema.json"
+      }
+    },
+    "reorganization_energy": {
+      "description": "Reorganization energy of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+      }
+    },
+    "vertical_ionization_energy": {
+      "description": "Vertical ionization energy of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+      }
+    },
+    "vertical_electron_affinity": {
+      "description": "Vertical electron affinity energy of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+      }
+    },
+    "adiabatic_ionization_energy": {
+      "description": "Adiabatic ionization energy of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+      }
+    },
+    "adiabatic_electron_affinity": {
+      "description": "Adiabatic electron affinity energy of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+      }
+    },
+    "redox_potential": {
+      "description": "Reduction potential of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+      }
+    },
+    "homo_lumo_gap": {
+      "description": "Difference between HOMO and LUMO.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+      }
+    },
+    "solubility": {
+      "description": "Difference between HOMO and LUMO.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+      }
+    },
+    "excited_states": {
+      "description": "Molecular excited states such as single, triplet, adiabatic, etc.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+      }
+    },
+    "spectra": {
+      "description": "Two lists for each freq calculation. The first with the frequency cm-1, the second with IR intensity.",
+      "type": "array",
+      "items": {
+        "$ref": ""
+      }
+    }
+  },
+  "additionalProperties": false
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.schema.json",
-  "title": "sites",
+  "title": "geometry",
   "description": "Atom information of a molecule based on pymatgen.core.Molecule",
   "type": "object",
   "properties": {
@@ -84,9 +84,9 @@
           ]
         }
       ]
-    },
-    "additionalProperties": false
-  }
+    }
+  },
+  "additionalProperties": false
 }
 
 

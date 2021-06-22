@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.schema.json",
-  "title": "computation",
+  "title": "plotting_data",
   "description": "Descriptors derived from computation for a molecule entry in database",
   "type": "object",
   "properties": {
@@ -33,7 +33,9 @@
       "type": "array",
       "items": {
         "type": "array",
-        "items": "number"
+        "items": {
+          "type": "number"
+        }
       },
       "minItems": 2,
       "maxItems": 2
@@ -48,7 +50,7 @@
           }
         }
       ]
-    },
-    "additionalProperties": false
-  }
+    }
+  },
+  "additionalProperties": false
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.schema.json",
   "title": "computation",
   "description": "The structure information derived from computation for a molecule entry in database",
 
@@ -59,7 +59,7 @@
       "description": "description of a molecule geometry",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.geometry.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.schema.json"
       }
     },
 
@@ -67,7 +67,7 @@
       "description": "Reorganization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
       }
     },
 
@@ -75,14 +75,14 @@
       "description": "Vertical ionization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
       }
     },
     "vertical_electron_affinity": {
       "description": "Vertical electron affinity energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
       }
     },
 
@@ -90,47 +90,50 @@
       "description": "Adiabatic ionization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
       }
     },
     "adiabatic_electron_affinity": {
       "description": "Adiabatic electron affinity energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
       }
     },
     "redox_potential": {
       "description": "Reduction potential of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
       }
     },
     "homo_lumo_gap": {
       "description": "Difference between HOMO and LUMO.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
       }
     },
     "solubility": {
       "description": "Difference between HOMO and LUMO.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
       }
     },
     "excited_states": {
       "description": "Molecular excited states such as single, triplet, adiabatic, etc.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
       }
     },
     "spectra": {
-      "description": "A list for each freq calculation and for each mode of a dict with {“frequency”: freq in cm-1, “symmetry”: symmetry tag “r_mass”: Reduce mass, “f_constant”: force constant, “IR_intensity”: IR Intensity, “mode”: normal mode}  The normal mode is a 1D vector of dx, dy dz of each atom.",
-      "type": ""
+      "description": "Two lists for each freq calculation. The first with the frequency cm-1, the second with IR intensity.",
+      "type": "array",
+      "items": {
+        "$ref": ""
+      }
     }
   },
   "additionalProperties": false

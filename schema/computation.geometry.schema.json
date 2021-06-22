@@ -1,13 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "computation.structure.sites.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.schema.json",
   "title": "sites",
   "description": "Atom information of a molecule based on pymatgen.core.Molecule",
   "type": "object",
 
   "dft_parameters": {
     "description": "Parameters used for DFT calculations",
-    "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/dft.schema.json"
+    "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/dft.schema.json"
   },
   "charge": {
     "description": "Electronic charge on the molecule",

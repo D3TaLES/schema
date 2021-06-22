@@ -4,64 +4,78 @@
   "title": "sites",
   "description": "Atom information of a molecule based on pymatgen.core.Molecule",
   "type": "object",
-  "properties": {
-    "sites": {
-      "description": "electronic charge on the molecule",
-      "type": "object",
-      "items": [
-        {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "species": {
-              "type": "array",
-              "items": [
-                {
-                  "type": "object",
-                  "properties": {
-                    "element": {
-                      "type": "string"
-                    },
-                    "occu": {
-                      "type": "integer"
-                    }
-                  },
-                  "required": [
-                    "element",
-                    "occu"
-                  ]
-                }
-              ]
-            },
-            "xyz": {
-              "type": "array",
-              "items": [
-                {
-                  "type": "number"
-                },
-                {
-                  "type": "number"
-                },
-                {
-                  "type": "number"
-                }
-              ]
-            },
-            "properties": {
-              "type": "object"
-            }
+  "charge": {
+    "description": "Electronic charge on the molecule",
+    "oneOf": [
+      {
+        "type": "number"
+      }
+    ]
+  },
+  "spin_multiplicity": {
+    "description": "spin multiplicity of the molecule",
+    "type": "integer"
+  },
+  "is_groundState": {
+    "description": "whether this charge is the ground state charge",
+    "type": "boolean"
+  },
+  "sites": {
+    "description": "electronic charge on the molecule",
+    "type": "object",
+    "items": [
+      {
+        "type": "object",
+        "calculations": {
+          "name": {
+            "type": "string"
           },
-          "required": [
-            "name",
-            "species",
-            "xyz",
-            "properties"
-          ]
-        }
-      ]
-    }
+          "species": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "calculations": {
+                  "element": {
+                    "type": "string"
+                  },
+                  "occu": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "element",
+                  "occu"
+                ]
+              }
+            ]
+          },
+          "xyz": {
+            "type": "array",
+            "items": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          },
+          "calculations": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "species",
+          "xyz",
+          "properties"
+        ]
+      }
+    ]
   },
   "additionalProperties": false
 }

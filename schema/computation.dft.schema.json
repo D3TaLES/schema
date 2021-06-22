@@ -4,38 +4,39 @@
   "title": "dft",
   "description": "Details on the computational techniques used to obtain the data",
   "type": "object",
-
-  "calculations": {
-    "functional": {
-      "description": "Functional used for the calculation",
-      "type": "string"
-    },
-    "basis_set": {
-      "description": "Basis-set used for the calculation",
-      "type": "string"
-    },
-    "tuning_parameter": {
-      "description": "The value of the range correction parameter",
-      "type": "number"
-    },
-    "solvent": {
-      "description": "Solvent model used for the calculation",
-      "type": "object",
-      "calculations": {
-        "name": {
-          "description": "Name of the solvent",
-          "type": "string"
-        },
-        "model": {
-          "description": "The solvation model used",
-          "type": "string"
-        },
-        "dielectric_constant":{
-          "description": "The dielectric constant for the solvent",
-          "type": "number"
+  "properties": {
+    "calculations": {
+      "functional": {
+        "description": "Functional used for the calculation",
+        "type": "string"
+      },
+      "basis_set": {
+        "description": "Basis-set used for the calculation",
+        "type": "string"
+      },
+      "tuning_parameter": {
+        "description": "The value of the range correction parameter",
+        "type": "number"
+      },
+      "solvent": {
+        "description": "Solvent model used for the calculation",
+        "type": "object",
+        "calculations": {
+          "name": {
+            "description": "Name of the solvent",
+            "type": "string"
+          },
+          "model": {
+            "description": "The solvation model used",
+            "type": "string"
+          },
+          "dielectric_constant": {
+            "description": "The dielectric constant for the solvent",
+            "type": "number"
+          }
         }
       }
-    }
-  },
-  "additionalProperties": false
+    },
+    "additionalProperties": false
+  }
 }

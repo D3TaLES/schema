@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft-7/schema#",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/schema.json",
+  "title": "root",
+  "description": "A molecule entry in database",
+
+  "definitions": {
+    "doi": {
+      "description": "Digital object identifier.",
+      "type": "string",
+      "pattern": "10\\..+/.+"
+    }
+  },
+
+  "type": "object",
+  "calculations": {
+    "_id": {
+      "description": "A unique identifier for the molecule",
+      "type": "string"
+    },
+
+    "computational_data": {
+      "description": "Details of quantum chemical calculations on the molecule including charge species",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/computation.schema.json"
+    },
+
+    "synthesis_data": {
+      "description": "Details of 3D geometry of the molecule including charge species",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/synthesis.schema.json"
+    },
+
+    "characterization_data": {
+      "description": "Details of 3D geometry of the molecule including charge species",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/characterization.schema.json"
+    },
+
+    "machine_learning_data": {
+      "description": "Details of 3D geometry of the molecule including charge species",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/ml.schema.json"
+    },
+
+    "related_literature": {
+      "description": "Collection of DOIs from NLP",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/doi"
+      }
+    }
+  },
+  "additionalProperties": false
+}

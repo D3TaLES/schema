@@ -4,35 +4,51 @@
   "title": "computation",
   "description": "Descriptors derived from computation for a molecule entry in database",
   "type": "object",
-
-  "dft_parameters": {
-    "description": "Parameters used for DFT calculations",
-    "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.dft.schema.json"
-  },
-  "order": {
-    "description": "Electronic charge on the molecule",
-    "oneOf": [
-      {"type": "number"},
-      {"type": "string"}
-    ]
-  },
-  "spin_multiplicity": {
-    "description": "spin multiplicity of the molecule",
-    "type": "integer"
-  },
-  "is_groundState": {
-    "description": "whether this charge is the ground state charge",
-    "type": "boolean"
-  },
-  "plotting_data": {
-    "description": "An array where the first item is an array of x values and the ",
-    "type": "array",
-    "items": {
-      "type": "array",
-      "items": "number"
+  "properties": {
+    "dft_parameters": {
+      "description": "Parameters used for DFT calculations",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.dft.schema.json"
     },
-    "minItems": 2,
-    "maxItems": 2
-  },
-  "additionalProperties": false
+    "order": {
+      "description": "Electronic charge on the molecule",
+      "oneOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "spin_multiplicity": {
+      "description": "spin multiplicity of the molecule",
+      "type": "integer"
+    },
+    "is_groundState": {
+      "description": "whether this charge is the ground state charge",
+      "type": "boolean"
+    },
+    "plotting_data": {
+      "description": "An array where the first item is an array of x values and the ",
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": "number"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "plotting_parameters": {
+      "description": "Parameter needed for plotting",
+      "type": "array",
+      "items": [
+        {
+          "lambda": {
+            "type": "number"
+          }
+        }
+      ]
+    },
+    "additionalProperties": false
+  }
 }

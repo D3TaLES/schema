@@ -101,6 +101,10 @@
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
       }
     },
+    "scf_dipole_moment": {
+      "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+    },
     "solubility": {
       "description": "Difference between HOMO and LUMO.",
       "type": "array",
@@ -119,7 +123,7 @@
       "description": "Two lists for each freq calculation. The first with the frequency cm-1, the second with IR intensity.",
       "type": "array",
       "items": {
-        "$ref": ""
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.plotting_data.schema.json"
       }
     }
   },

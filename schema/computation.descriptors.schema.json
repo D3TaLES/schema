@@ -32,18 +32,16 @@
       "description": "The value of the descriptor",
       "oneOf": [
         {
-          "vector": {
-            "type": "array",
-            "items": {
-              "type": "number"
-            },
-            "minItems": 3
-          },
-          "scalar": {
+          "type": "array",
+          "items": {
             "type": "number"
-          }
+          },
+          "minItems": 3
+        },
+        {
+          "type": "number"
         }
-      ]
+    ]
     },
     "unit": {
       "description": "The units for the value",

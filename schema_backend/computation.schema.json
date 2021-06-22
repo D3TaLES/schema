@@ -4,8 +4,47 @@
   "title": "computation",
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
-
+  "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/scalar"
+            },
+            {
+              "$ref": "#/definitions/vector"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+      },
+      "additionalProperties": false
+    }
+  },
   "properties": {
+    "_id": {
+      "description": "A unique identifier for the molecule",
+      "type": "string"
+    },
+    "hash_id": {
+      "description": "A unique identifier for the molecule hashed from identifying properties",
+      "type": "string"
+    },
     "dft_parameters": {
       "description": "Parameters used for DFT calculations",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.dft.schema.json"
@@ -28,10 +67,6 @@
     "is_groundState": {
       "description": "Whether this charge is the ground state charge",
       "type": "boolean"
-    },
-    "_id": {
-      "description": "A unique identifier for the molecule",
-      "type": "string"
     },
     "smiles": {
       "description": "SMILES representation of a molecule",
@@ -65,86 +100,76 @@
       "type": "integer",
       "description": "Number of atoms in the molecule."
     },
+    "number_of_electrons": {
+      "type": "integer",
+      "description": "number of electrons in the molecule"
+    },
     "molecular_weight": {
       "type": "number",
       "description": "Molecular weight of the molecule in g/mol."
     },
+    "calculation_type": {
+      "type": "string",
+      "description": "Type of calculation file (opt-freq, energy, or tddft)."
+    },
     "geometry": {
       "description": "description of a molecule geometry",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.schema.json"
+    },
+    "scf_dipole_moment": {
+      "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
+      "$ref": "#/definitions/data"
+    },
+    "scf_total_energy": {
+      "$ref": "#/definitions/data",
+      "description": "Highest occupied molecular orbital. Units: eV"
+    },
+    "homo": {
+      "$ref": "#/definitions/data",
+      "description": "Highest occupied molecular orbital. Units: eV"
+    },
+    "lumo": {
+      "$ref": "#/definitions/data",
+      "description": "Lowest unoccupied molecular orbital. Units: eV"
+    },
+    "s0_s1": {
+      "$ref": "#/definitions/data",
+      "description": "First singlet excitation. Units: eV"
+    },
+    "frequency_dict": {
+      "description": "A list for each freq calculation and for each mode of a dict with {“frequency”: freq in cm-1, “symmetry”: symmetry tag “r_mass”: Reduce mass, “f_constant”: force constant, “IR_intensity”: IR Intensity, “mode”: normal mode}. The normal mode is a 1D vector of dx, dy dz of each atom.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.schema.json"
+        "type": "object",
+        "properties": {
+          "frequency": {
+            "type": "number"
+          },
+          "symmetry": {
+            "type": "string"
+          },
+          "r_mass": {
+            "type": "number"
+          },
+          "f_constant": {
+            "type": "number"
+          },
+          "IR_intensity": {
+            "type": "number"
+          },
+          "mode": {
+            "$ref": "#/definitions/vector"
+          }
+        }
       }
     },
-    "reorganization_energy": {
-      "description": "Reorganization energy of the molecule.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-      }
+    "ir_intensities": {
+      "description": "",
+      "$ref": ""
     },
-    "vertical_ionization_energy": {
-      "description": "Vertical ionization energy of the molecule.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-      }
-    },
-    "vertical_electron_affinity": {
-      "description": "Vertical electron affinity energy of the molecule.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-      }
-    },
-    "adiabatic_ionization_energy": {
-      "description": "Adiabatic ionization energy of the molecule.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-      }
-    },
-    "adiabatic_electron_affinity": {
-      "description": "Adiabatic electron affinity energy of the molecule.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-      }
-    },
-    "redox_potential": {
-      "description": "Reduction potential of the molecule.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-      }
-    },
-    "homo_lumo_gap": {
-      "description": "Difference between HOMO and LUMO.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-      }
-    },
-    "solubility": {
-      "description": "Difference between HOMO and LUMO.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-      }
-    },
-    "excited_states": {
-      "description": "Molecular excited states such as single, triplet, adiabatic, etc.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
-      }
-    },
-    "spectra": {
-      "description": "Two lists for each freq calculation. The first with the frequency cm-1, the second with IR intensity.",
-      "type": "array",
-      "items": {
-        "$ref": ""
-      }
+    "excitation_energies": {
+      "description": "TD-DFT excited states such as single, triplet, adiabatic, etc. Returns a list of tuple for each transition such as [(energy (eV), lambda (nm), oscillatory strength), … ]",
+      "type": "array"
     }
   },
   "additionalProperties": false

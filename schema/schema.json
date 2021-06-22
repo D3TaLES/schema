@@ -13,7 +13,7 @@
   },
 
   "type": "object",
-  "calculations": {
+  "properties": {
     "_id": {
       "description": "A unique identifier for the molecule",
       "type": "string"

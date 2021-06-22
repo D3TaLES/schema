@@ -34,7 +34,7 @@
       "items": [
         {
           "type": "object",
-          "calculations": {
+          "properties": {
             "name": {
               "type": "string"
             },
@@ -43,7 +43,7 @@
               "items": [
                 {
                   "type": "object",
-                  "calculations": {
+                  "properties": {
                     "element": {
                       "type": "string"
                     },
@@ -72,7 +72,7 @@
                 }
               ]
             },
-            "calculations": {
+            "properties": {
               "type": "object"
             }
           },

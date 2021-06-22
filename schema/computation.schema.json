@@ -67,7 +67,7 @@
       "description": "Reorganization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
       }
     },
 
@@ -75,14 +75,14 @@
       "description": "Vertical ionization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
       }
     },
     "vertical_electron_affinity": {
       "description": "Vertical electron affinity energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
       }
     },
 
@@ -90,42 +90,42 @@
       "description": "Adiabatic ionization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
       }
     },
     "adiabatic_electron_affinity": {
       "description": "Adiabatic electron affinity energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
       }
     },
     "redox_potential": {
       "description": "Reduction potential of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
       }
     },
     "homo_lumo_gap": {
       "description": "Difference between HOMO and LUMO.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
       }
     },
     "solubility": {
       "description": "Difference between HOMO and LUMO.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
       }
     },
     "excited_states": {
       "description": "Molecular excited states such as single, triplet, adiabatic, etc.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
       }
     },
     "spectra": {

@@ -7,7 +7,7 @@
 
   "dft_parameters": {
     "description": "Parameters used for DFT calculations",
-    "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/dft.schema.json"
+    "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.dft.schema.json"
   },
   "order": {
     "description": "Electronic charge on the molecule",

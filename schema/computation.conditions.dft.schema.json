@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.calc_info.schema.json",
-  "title": "calc_info",
-  "description": "Details on the computation used to obtain the data",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.conditions.dft.schema.json",
+  "title": "dft",
+  "description": "Details on the DFT computation used to obtain the data",
   "type": "object",
   "properties": {
     "electronic_structure_method": {

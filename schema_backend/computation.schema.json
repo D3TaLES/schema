@@ -50,6 +50,10 @@
       "description": "",
       "type": "string"
     },
+    "authro": {
+      "description": "",
+      "type": "string"
+    },
     "upload_time": {
       "description": "time and date the data was received",
       "type": "string",
@@ -125,7 +129,7 @@
     },
     "geometry": {
       "description": "description of a molecule geometry",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.sites.schema.json"
     },
     "scf_dipole_moment": {
       "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",

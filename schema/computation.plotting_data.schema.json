@@ -5,9 +5,9 @@
   "description": "Descriptors derived from computation for a molecule entry in database",
   "type": "object",
   "properties": {
-    "dft_parameters": {
-      "description": "Parameters used for DFT calculations",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.dft.schema.json"
+    "calc_parameters": {
+      "description": "Parameters used for calculations",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.calc_info.schema.json"
     },
     "order": {
       "description": "Electronic charge on the molecule",

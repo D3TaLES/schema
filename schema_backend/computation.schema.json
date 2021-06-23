@@ -32,8 +32,9 @@
         "unit": {
           "description": "The units for the value",
           "type": "string"
-      },
-      "additionalProperties": false
+        },
+        "additionalProperties": false
+      }
     }
   },
   "properties": {
@@ -45,9 +46,19 @@
       "description": "A unique identifier for the molecule hashed from identifying properties",
       "type": "string"
     },
-    "dft_parameters": {
-      "description": "Parameters used for DFT calculations",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.dft.schema.json"
+    "source": {
+      "description": "",
+      "type": "string"
+    },
+    "upload_time": {
+      "description": "time and date the data was received",
+      "type": "string",
+      "format": "date-time"
+    },
+
+    "calc_parameters": {
+      "description": "Parameters used for calculations",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.calc_info.schema.json"
     },
     "charge": {
       "description": "Electronic charge on the molecule",

@@ -103,7 +103,10 @@
     },
     "scf_dipole_moment": {
       "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.descriptors.schema.json"
+      }
     },
     "solubility": {
       "description": "Difference between HOMO and LUMO.",

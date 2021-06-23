@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/computation.calc_info.schema.json",
+  "title": "calc_info",
+  "description": "Details on the computation used to obtain the data",
+  "type": "object",
+  "properties": {
+    "electronic_structure_method": {
+      "description": "",
+      "type": "string"
+    },
+    "code_name": {
+      "description": "",
+      "type": "string"
+    },
+    "code_version": {
+      "description": "",
+      "type": "string"
+    },
+    "functional": {
+      "description": "Functional used for the calculation",
+      "type": "string"
+    },
+     "xc_functional_family": {
+      "description": "",
+      "type": "string"
+    },
+    "basis_set": {
+      "description": "Basis-set used for the calculation",
+      "type": "string"
+    },
+    "basis_set_type":{
+      "description": "",
+      "type": "string"
+    },
+    "num_basis_func":{
+      "description": "number of basis functions",
+      "type": "integer"
+    },
+    "tuning_parameter": {
+      "description": "The value of the range correction parameter",
+      "type": "number"
+    },
+    "solvent": {
+      "description": "Solvent model used for the calculation",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Name of the solvent",
+          "type": "string"
+        },
+        "model": {
+          "description": "The solvation model used",
+          "type": "string"
+        },
+        "dielectric_constant": {
+          "description": "The dielectric constant for the solvent",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

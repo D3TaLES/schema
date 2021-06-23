@@ -62,7 +62,7 @@
 
     "calc_parameters": {
       "description": "Parameters used for calculations",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.calc_info.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.conditions.schema.json"
     },
     "charge": {
       "description": "Electronic charge on the molecule",

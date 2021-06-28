@@ -1,13 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.schema.json",
-  "title": "plotting_data",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/computation.descriptors.schema.json",
+  "title": "descriptors",
   "description": "Descriptors derived from computation for a molecule entry in database",
   "type": "object",
   "properties": {
     "conditions": {
       "description": "Parameters used for calculations",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.conditions.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/computation.conditions.schema.json"
     },
     "order": {
       "description": "Electronic charge on the molecule",
@@ -28,28 +28,24 @@
       "description": "whether this charge is the ground state charge",
       "type": "boolean"
     },
-    "plotting_data": {
-      "description": "An array where the first item is an array of x values and the ",
-      "type": "array",
-      "items": {
-        "type": "array",
-        "items": {
+    "value": {
+      "description": "The value of the descriptor",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3
+        },
+        {
           "type": "number"
         }
-      },
-      "minItems": 2,
-      "maxItems": 2
+    ]
     },
-    "plotting_parameters": {
-      "description": "Parameter needed for plotting",
-      "type": "array",
-      "items": [
-        {
-          "lambda": {
-            "type": "number"
-          }
-        }
-      ]
+    "unit": {
+      "description": "The units for the value",
+      "type": "string"
     }
   },
   "additionalProperties": false

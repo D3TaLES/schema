@@ -1,18 +1,41 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/dft.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/computation.conditions.dft.schema.json",
   "title": "dft",
-  "description": "Details on the computational techniques used to obtain the data",
+  "description": "Details on the DFT computation used to obtain the data",
   "type": "object",
-
-  "calculations": {
+  "properties": {
+    "electronic_structure_method": {
+      "description": "",
+      "type": "string"
+    },
+    "code_name": {
+      "description": "",
+      "type": "string"
+    },
+    "code_version": {
+      "description": "",
+      "type": "string"
+    },
     "functional": {
       "description": "Functional used for the calculation",
+      "type": "string"
+    },
+     "xc_functional_family": {
+      "description": "",
       "type": "string"
     },
     "basis_set": {
       "description": "Basis-set used for the calculation",
       "type": "string"
+    },
+    "basis_set_type":{
+      "description": "",
+      "type": "string"
+    },
+    "num_basis_func":{
+      "description": "number of basis functions",
+      "type": "integer"
     },
     "tuning_parameter": {
       "description": "The value of the range correction parameter",
@@ -21,7 +44,7 @@
     "solvent": {
       "description": "Solvent model used for the calculation",
       "type": "object",
-      "calculations": {
+      "properties": {
         "name": {
           "description": "Name of the solvent",
           "type": "string"
@@ -30,7 +53,7 @@
           "description": "The solvation model used",
           "type": "string"
         },
-        "dielectric_constant":{
+        "dielectric_constant": {
           "description": "The dielectric constant for the solvent",
           "type": "number"
         }

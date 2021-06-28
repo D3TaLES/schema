@@ -1,13 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/computation.geometry.schema.json",
   "title": "geometry",
   "description": "Atom information of a molecule based on pymatgen.core.Molecule",
   "type": "object",
   "properties": {
     "conditions": {
       "description": "Parameters used for calculations",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.conditions.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/computation.conditions.schema.json"
     },
     "order": {
       "description": "Electronic charge on the molecule",
@@ -29,7 +29,7 @@
       "type": "boolean"
     },
     "sites": {
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.sites.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/computation.geometry.sites.schema.json"
     }
   },
   "additionalProperties": false

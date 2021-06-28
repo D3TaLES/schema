@@ -7,9 +7,9 @@ import jsonschema
 class Schema2Class():
     def __init__(self,schema_name=None, named_only=False):
 
-        # fetch schema
+        # fetch schema_frontend
         self.schema_name = schema_name
-        schema_url = "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/{}.schema.json".format(self.schema_name)
+        schema_url = "https://raw.githubusercontent.com/D3TaLES/schema/main/schema/{}.schema_frontend.json".format(self.schema_name)
         response = request.urlopen(schema_url)
         self.schema = json.loads(response.read().decode())
 

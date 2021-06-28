@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-7/schema#",
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/schema.json",
   "title": "root",
   "description": "A molecule entry in database",
 
@@ -21,22 +21,22 @@
 
     "computational_data": {
       "description": "Details of quantum chemical calculations on the molecule including charge species",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/computation.schema.json"
     },
 
     "synthesis_data": {
       "description": "Details of 3D geometry of the molecule including charge species",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/synthesis.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/synthesis.schema.json"
     },
 
     "characterization_data": {
       "description": "Details of 3D geometry of the molecule including charge species",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/characterization.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.schema.json"
     },
 
     "machine_learning_data": {
       "description": "Details of 3D geometry of the molecule including charge species",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/ml.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/ml.schema.json"
     },
 
     "related_literature": {

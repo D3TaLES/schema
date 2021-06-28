@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.conditions.experiment.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/computation.conditions.experiment.schema.json",
   "title": "experiment",
   "description": "Details on the DFT computation used to obtain the data",
   "type": "object",

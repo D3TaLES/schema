@@ -66,14 +66,7 @@
     },
     "charge": {
       "description": "Electronic charge on the molecule",
-      "oneOf": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "string"
-        }
-      ]
+      "type": "number"
     },
     "spin_multiplicity": {
       "description": "Spin multiplicity of the molecule",

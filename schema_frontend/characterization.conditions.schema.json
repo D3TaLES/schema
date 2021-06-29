@@ -6,6 +6,6 @@
   "oneOf": [
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.dft.schema.json"},
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.vasp.schema.json"},
-    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.experiment.schema.json"}
+    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.cv.schema.json"}
     ]
 }

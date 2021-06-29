@@ -6,7 +6,7 @@
   "type": "array",
   "items": {
     "oneOf": [
-    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/characterization.cv.schema.json"}
+    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.cv.schema.json"}
     ]
   },
   "additionalProperties": false

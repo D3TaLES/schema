@@ -25,7 +25,7 @@
 
     "basic_information": {
       "description": "The basic structural information derivable from the molecule's SMILES structure",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/basic_info.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/basic_info.schema.json"
     },
 
     "computational_data": {

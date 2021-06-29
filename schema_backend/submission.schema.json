@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json",
+  "title": "computation",
+  "description": "The structure information derived from computation for a molecule entry in database",
+  "type": "object",
+  "properties": {
+    "source": {
+      "description": "Source of the data",
+      "type": "string"
+    },
+    "author": {
+      "description": "Individual who submits the data",
+      "type": "string"
+    },
+    "author_email": {
+      "description": "Email of the individual submitting the data",
+      "type": "string",
+      "format": "email"
+    },
+    "upload_time": {
+      "description": "time and date the data was received",
+      "type": "string",
+      "format": "date-time"
+    },
+    "file_type": {
+      "description": "Type of file data collected from",
+      "type": "string"
+    },
+    "data_type": {
+      "description": "Whether the data relates to computation, synthesis, characterization, ML, NLP, etc.",
+      "type": "string"
+    }
+
+  },
+  "additionalProperties": false
+}

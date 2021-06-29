@@ -3,10 +3,11 @@
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/characterization.schema.json",
   "title": "characterization",
   "description": "characterization of organic materials",
-  "type": "object",
-
-  "calculations": {
-
+  "type": "array",
+  "items": {
+    "oneOf": [
+    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/characterization.cv.schema.json"}
+    ]
   },
   "additionalProperties": false
 }

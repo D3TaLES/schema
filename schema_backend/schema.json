@@ -13,10 +13,19 @@
   },
 
   "type": "object",
-  "calculations": {
+  "properties": {
     "_id": {
       "description": "A unique identifier for the molecule",
       "type": "string"
+    },
+    "hash_id": {
+      "description": "A unique identifier for the molecule hashed from identifying properties",
+      "type": "string"
+    },
+
+    "basic_information": {
+      "description": "The basic structural information derivable from the molecule's SMILES structure",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/basic_info.schema.json"
     },
 
     "computational_data": {

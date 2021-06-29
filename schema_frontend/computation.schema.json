@@ -9,42 +9,7 @@
       "description": "A unique identifier for the molecule",
       "type": "string"
     },
-    "smiles": {
-      "description": "SMILES representation of a molecule",
-      "type": "string"
-    },
-    "selfies": {
-      "description": "SELFIES representation of a molecule",
-      "type": "string"
-    },
-    "inchi": {
-      "type": "string",
-      "description": "InChi string representation of the molecule"
-    },
-    "inchi_key": {
-      "type": "string",
-      "description": "Hashed InChi string of the molecule"
-    },
-    "iupac_name": {
-      "type": "string",
-      "description": "IUPAC name of the molecule"
-    },
-    "synonyms": {
-      "type": "array",
-      "description": "Synonymous names of the molecule",
-      "items": {
-        "type": "string",
-        "description": "One synonym for the molecule."
-      }
-    },
-    "number_of_atoms": {
-      "type": "integer",
-      "description": "Number of atoms in the molecule."
-    },
-    "molecular_weight": {
-      "type": "number",
-      "description": "Molecular weight of the molecule in g/mol."
-    },
+
     "geometry": {
       "description": "description of a molecule geometry",
       "type": "array",

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/characterization.cv.schema.json",
+  "title": "computation",
+  "description": "The structure information derived from computation for a molecule entry in database",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "description": "A unique identifier for the molecule",
+      "type": "string"
+    },
+    "hash_id": {
+      "description": "A unique identifier for the molecule hashed from identifying properties",
+      "type": "string"
+    },
+    "submission_info": {
+      "description": "A unique identifier for the molecule",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
+    },
+    "data_source": {
+      "description": "Source of the data (experiment, ML, etc.)",
+      "type": "string"
+    },
+    "instrument_model": {
+      "description": "Instrument Model",
+      "type": "string"
+    },
+    "header": {
+      "description": "CV file header",
+      "type": "string"
+    },
+    "electrode": {
+      "description": "Electrode used",
+      "type": "string"
+    },
+    "note": {
+      "description": "CV file description",
+      "type": "string"
+    },
+    "initial_eng": {
+      "description": "Initial energy in volts",
+      "type": "number"
+    },
+    "high_eng": {
+      "description": "Highest energy in volts",
+      "type": "number"
+    },
+    "low_eng": {
+      "description": "Lowest energy in volts",
+      "type": "number"
+    },
+    "initial_p_n": {
+      "description": "?????",
+      "type": "string"
+    },
+    "scan_rate": {
+      "description": "Rate of change in potential (V) per second",
+      "type": "number"
+    },
+    "segment": {
+      "description": "????",
+      "type": "integer"
+    },
+    "sample_interval": {
+      "description": "Sample potential interval (V)",
+      "type": "number"
+    },
+    "quiet_time": {
+      "description": "Quiet time in seconds",
+      "type": "number"
+    },
+    "sensitivity": {
+      "description": "Sensitivity in A/V",
+      "type": "number"
+    },
+    "cv_data": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "potential": {
+            "type": "number"
+          },
+          "current": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+
+
+
+  }
+}

@@ -19,6 +19,11 @@
       "type": "string"
     },
 
+    "basic_information": {
+      "description": "The basic structural information derivable from the molecule's SMILES structure",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/basic_info.schema.json"
+    },
+
     "computational_data": {
       "description": "Details of quantum chemical calculations on the molecule including charge species",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/computation.schema.json"

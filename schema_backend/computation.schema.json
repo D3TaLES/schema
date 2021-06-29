@@ -46,20 +46,14 @@
       "description": "A unique identifier for the molecule hashed from identifying properties",
       "type": "string"
     },
-    "source": {
-      "description": "",
-      "type": "string"
+    "submission_info": {
+      "description": "A unique identifier for the molecule",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
     },
-    "authro": {
-      "description": "",
-      "type": "string"
-    },
-    "upload_time": {
-      "description": "time and date the data was received",
+    "calculation_type": {
       "type": "string",
-      "format": "date-time"
+      "description": "Type of calculation file (opt-freq, energy, or tddft)."
     },
-
     "calc_parameters": {
       "description": "Parameters used for calculations",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.conditions.schema.json"
@@ -76,50 +70,11 @@
       "description": "Whether this charge is the ground state charge",
       "type": "boolean"
     },
-    "smiles": {
-      "description": "SMILES representation of a molecule",
-      "type": "string"
-    },
-    "selfies": {
-      "description": "SELFIES representation of a molecule",
-      "type": "string"
-    },
-    "inchi": {
-      "type": "string",
-      "description": "InChi string representation of the molecule"
-    },
-    "inchi_key": {
-      "type": "string",
-      "description": "Hashed InChi string of the molecule"
-    },
-    "iupac_name": {
-      "type": "string",
-      "description": "IUPAC name of the molecule"
-    },
-    "synonyms": {
-      "type": "array",
-      "description": "Synonymous names of the molecule",
-      "items": {
-        "type": "string",
-        "description": "One synonym for the molecule."
-      }
-    },
-    "number_of_atoms": {
-      "type": "integer",
-      "description": "Number of atoms in the molecule."
-    },
     "number_of_electrons": {
       "type": "integer",
       "description": "number of electrons in the molecule"
     },
-    "molecular_weight": {
-      "type": "number",
-      "description": "Molecular weight of the molecule in g/mol."
-    },
-    "calculation_type": {
-      "type": "string",
-      "description": "Type of calculation file (opt-freq, energy, or tddft)."
-    },
+
     "geometry": {
       "description": "description of a molecule geometry",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema/computation.geometry.sites.schema.json"

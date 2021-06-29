@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.cv.schema.json",
-  "title": "computation",
+  "title": "cv",
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
   "properties": {

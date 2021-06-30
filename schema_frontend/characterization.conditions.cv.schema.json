@@ -4,6 +4,40 @@
   "title": "cv",
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
+  "definitions": {
+    "compound": {
+      "description": "Object containing compound name and concentration",
+      "type": "object",
+      "properties": {
+        "common_name": {
+          "type": "string"
+        },
+        "iupac_name": {
+          "type": "string",
+          "description": "IUPAC name of the molecule"
+        },
+        "concentration": {
+          "description": "Concentration in millimolar (mm)",
+          "type": "number"
+        }
+      }
+    },
+    "solvent": {
+      "description": "Solvent object containing solvent and all solvent additions",
+      "type": "object",
+      "properties": {
+        "solvent": {
+          "$ref": "#/definitions/compound"
+        },
+        "solvent_additions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/compound"
+          }
+        }
+      }
+    }
+  },
   "properties": {
     "_id": {
       "description": "A unique identifier for the molecule",
@@ -13,30 +47,61 @@
       "description": "A unique identifier for the molecule hashed from identifying properties",
       "type": "string"
     },
-    "submission_info": {
-      "description": "A unique identifier for the molecule",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
-    },
     "data_source": {
       "description": "Source of the data (experiment, ML, etc.)",
       "type": "string"
     },
 
-    "instrument_model": {
-      "description": "Instrument Model",
+    "file_name": {
+      "description": "Name of file uploaded",
       "type": "string"
     },
     "header": {
       "description": "CV file header",
       "type": "string"
     },
-    "electrode": {
-      "description": "Electrode used",
-      "type": "string"
-    },
     "note": {
       "description": "CV file description",
       "type": "string"
+    },
+    "data_recorded": {
+      "description": "Date and time CV data was collected",
+      "type": "string",
+      "format": "date-time"
+    },
+
+    "working_electrode": {
+      "description": "Working electrode used",
+      "type": "string"
+    },
+    "counter_electrode": {
+      "description": "Counter electrode used",
+      "type": "string"
+    },
+    "reference_electrode": {
+      "description": "Reference electrode used",
+      "type": "string"
+    },
+    "solvent": {
+      "description": "Solvent used in experiment",
+      "$ref": "#/definitions/solvent"
+    },
+
+    "instrument_model": {
+          "description": "Instrument Model",
+          "type": "string"
+        },
+    "scan_rate": {
+      "description": "Rate of change in potential (V) per second",
+      "type": "number"
+    },
+    "num_scans": {
+      "description": "Number of CV scans",
+      "type": "number"
+    },
+    "data_points_per_scan": {
+      "description": "Number of data points per scan",
+      "type": "number"
     },
     "initial_eng": {
       "description": "Initial energy in volts",
@@ -53,10 +118,6 @@
     "initial_p_n": {
       "description": "?????",
       "type": "string"
-    },
-    "scan_rate": {
-      "description": "Rate of change in potential (V) per second",
-      "type": "number"
     },
     "segment": {
       "description": "????",
@@ -87,6 +148,20 @@
             "type": "number"
           }
         }
+      }
+    },
+    "forward": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "reverse": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "number"
       }
     }
   }

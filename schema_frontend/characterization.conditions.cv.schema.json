@@ -39,19 +39,6 @@
     }
   },
   "properties": {
-    "_id": {
-      "description": "A unique identifier for the molecule",
-      "type": "string"
-    },
-    "hash_id": {
-      "description": "A unique identifier for the molecule hashed from identifying properties",
-      "type": "string"
-    },
-    "data_source": {
-      "description": "Source of the data (experiment, ML, etc.)",
-      "type": "string"
-    },
-
     "file_name": {
       "description": "Name of file uploaded",
       "type": "string"

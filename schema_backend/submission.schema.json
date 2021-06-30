@@ -30,6 +30,13 @@
     "data_type": {
       "description": "Whether the data relates to computation, synthesis, characterization, ML, NLP, etc.",
       "type": "string"
+    },
+    "all_files_in_zip": {
+      "description": "List of all files uploaded in this submission",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
 
   },

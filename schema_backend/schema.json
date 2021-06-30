@@ -3,6 +3,15 @@
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/schema.json",
   "title": "root",
   "description": "A molecule entry in database",
+
+  "definitions": {
+    "doi": {
+      "description": "Digital object identifier.",
+      "type": "string",
+      "pattern": "10\\..+/.+"
+    }
+  },
+
   "type": "object",
   "properties": {
     "_id": {

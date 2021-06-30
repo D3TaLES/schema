@@ -1,13 +1,37 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.schema.json",
-  "title": "experimentation",
+  "title": "backend_experimentation",
   "description": "characterization of organic materials",
-  "type": "array",
-  "items": {
-    "oneOf": [
-    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.cv.schema.json"}
-    ]
-  },
-  "additionalProperties": false
+  "type": "object",
+
+  "properties": {
+    "_id": {
+      "description": "A unique identifier for the molecule",
+      "type": "string"
+    },
+    "hash_id": {
+      "description": "A unique identifier for the molecule hashed from identifying properties",
+      "type": "string"
+    },
+    "mol_info": {
+      "description": "The basic structural information derivable from the molecule's SMILES structure",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_info.schema.json"
+    },
+    "submission_info": {
+      "description": "A unique identifier for the molecule",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.cv.schema.json"
+          }
+        ]
+      },
+      "additionalProperties": false
+    }
+  }
 }

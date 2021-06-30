@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-7/schema#",
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/schema.json",
-  "title": "schema_frontend",
+  "title": "frontend_schema",
   "description": "A molecule entry in database",
 
   "definitions": {
@@ -19,9 +19,9 @@
       "type": "string"
     },
 
-    "basic_information": {
+    "mol_info": {
       "description": "The basic structural information derivable from the molecule's SMILES structure",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/basic_info.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_info.schema.json"
     },
 
     "characterization_data": {

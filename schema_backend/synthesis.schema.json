@@ -1,11 +1,27 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/synthesis.schema.json",
-  "title": "synthesis",
+  "title": "backend_synthesis",
   "description": "Synthesis of organic materials",
   "type": "object",
 
-  "calculations": {
+  "properties": {
+    "_id": {
+      "description": "A unique identifier for the molecule",
+      "type": "string"
+    },
+    "hash_id": {
+      "description": "A unique identifier for the molecule hashed from identifying properties",
+      "type": "string"
+    },
+    "mol_info": {
+      "description": "The basic structural information derivable from the molecule's SMILES structure",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_info.schema.json"
+    },
+    "submission_info": {
+      "description": "A unique identifier for the molecule",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
+    }
 
   },
   "additionalProperties": false

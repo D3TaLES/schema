@@ -21,6 +21,7 @@
       "description": "Source of the data (experiment, ML, etc.)",
       "type": "string"
     },
+
     "instrument_model": {
       "description": "Instrument Model",
       "type": "string"

@@ -37,6 +37,11 @@
       "items": {
         "type": "string"
       }
+    },
+    "approved": {
+      "type": "boolean",
+      "description": "Whether the data has been approved by the submitter",
+      "default": false
     }
 
   },

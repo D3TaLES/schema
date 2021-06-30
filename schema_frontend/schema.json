@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-7/schema#",
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/schema.json",
-  "title": "root",
+  "title": "schema_frontend",
   "description": "A molecule entry in database",
 
   "definitions": {
@@ -32,11 +32,6 @@
     "synthesis_data": {
       "description": "Details of 3D geometry of the molecule including charge species",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/synthesis.schema.json"
-    },
-
-    "machine_learning_data": {
-      "description": "Details of 3D geometry of the molecule including charge species",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/ml.schema.json"
     },
 
     "related_literature": {

@@ -93,7 +93,11 @@
       "description": "Sensitivity in A/V",
       "type": "number"
     },
-    "cv_data": {
+    "comp_r": {
+      "description": "Comparative resistance (ohm)",
+      "type": "number"
+    },
+    "scan_data": {
       "description": "",
       "type": "array",
       "items": {

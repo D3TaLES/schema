@@ -90,16 +90,16 @@
       "description": "Number of data points per scan",
       "type": "number"
     },
-    "initial_eng": {
-      "description": "Initial energy in volts",
+    "initial_potential": {
+      "description": "Initial potential in volts",
       "type": "number"
     },
-    "high_eng": {
-      "description": "Highest energy in volts",
+    "high_e": {
+      "description": "Highest potential in volts",
       "type": "number"
     },
-    "low_eng": {
-      "description": "Lowest energy in volts",
+    "low_e": {
+      "description": "Lowest potential in volts",
       "type": "number"
     },
     "initial_p_n": {

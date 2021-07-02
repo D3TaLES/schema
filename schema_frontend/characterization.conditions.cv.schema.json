@@ -4,40 +4,7 @@
   "title": "cv",
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
-  "definitions": {
-    "compound": {
-      "description": "Object containing compound name and concentration",
-      "type": "object",
-      "properties": {
-        "common_name": {
-          "type": "string"
-        },
-        "iupac_name": {
-          "type": "string",
-          "description": "IUPAC name of the molecule"
-        },
-        "concentration": {
-          "description": "Concentration in millimolar (mm)",
-          "type": "number"
-        }
-      }
-    },
-    "solvent": {
-      "description": "Solvent object containing solvent and all solvent additions",
-      "type": "object",
-      "properties": {
-        "solvent": {
-          "$ref": "#/definitions/compound"
-        },
-        "solvent_additions": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/compound"
-          }
-        }
-      }
-    }
-  },
+
   "properties": {
     "file_name": {
       "description": "Name of file uploaded",

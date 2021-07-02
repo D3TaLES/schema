@@ -59,19 +59,23 @@
 
     "working_electrode": {
       "description": "Working electrode used",
-      "type": "string"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/electrode.schema.json"
     },
     "counter_electrode": {
       "description": "Counter electrode used",
-      "type": "string"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/electrode.schema.json"
     },
     "reference_electrode": {
       "description": "Reference electrode used",
-      "type": "string"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/electrode.schema.json"
     },
     "solvent": {
       "description": "Solvent used in experiment",
-      "$ref": "#/definitions/solvent"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/solvent.schema.json"
+    },
+    "solvent_additives": {
+      "description": "Compounds added to solvent used in experiment",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/solvent_additives.schema.json"
     },
 
     "instrument_model": {

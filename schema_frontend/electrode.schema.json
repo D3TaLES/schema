@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/electrode.schema.json",
+  "title": "electrode",
+  "description": "Information about an electrode",
+  "type": "object",
+  "properties": {
+    "smiles": {
+    "description": "SMILES representation of a molecule",
+    "type": "string"
+    },
+    "selfies": {
+      "description": "SELFIES representation of a molecule",
+      "type": "string"
+    },
+    "inchi": {
+      "type": "string",
+      "description": "InChi string representation of the molecule"
+    },
+    "inchi_key": {
+      "type": "string",
+      "description": "Hashed InChi string of the molecule"
+    },
+    "iupac_name": {
+      "type": "string",
+      "description": "IUPAC name of the molecule"
+    },
+    "synonyms": {
+      "type": "array",
+      "description": "Synonymous names of the molecule",
+      "items": {
+        "type": "string",
+        "description": "One synonym for the molecule."
+      }
+    },
+    "number_of_atoms": {
+      "type": "integer",
+      "description": "Number of atoms in the molecule."
+    },
+    "molecular_weight": {
+      "type": "number",
+      "description": "Molecular weight of the molecule in g/mol."
+    }
+  }
+}

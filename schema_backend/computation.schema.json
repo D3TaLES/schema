@@ -103,6 +103,10 @@
       "$ref": "#/definitions/data",
       "description": "First singlet excitation. Units: eV"
     },
+    "gibbs_corredtion": {
+      "$ref": "#/definitions/data",
+      "description": "Gibbs entropy correction. Units: eV"
+    },
     "frequency_dict": {
       "description": "A list for each freq calculation and for each mode of a dict with {“frequency”: freq in cm-1, “symmetry”: symmetry tag “r_mass”: Reduce mass, “f_constant”: force constant, “IR_intensity”: IR Intensity, “mode”: normal mode}. The normal mode is a 1D vector of dx, dy dz of each atom.",
       "type": "array",
@@ -130,13 +134,12 @@
         }
       }
     },
-    "ir_intensities": {
-      "description": "",
-      "$ref": ""
-    },
     "excitation_energies": {
       "description": "TD-DFT excited states such as single, triplet, adiabatic, etc. Returns a list of tuple for each transition such as [(energy (eV), lambda (nm), oscillatory strength), … ]",
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
     }
   },
   "additionalProperties": false

@@ -58,7 +58,7 @@
       "type": "string",
       "description": "Type of calculation file (opt-freq, energy, or tddft)."
     },
-    "calc_parameters": {
+    "conditions": {
       "description": "Parameters used for calculations",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.schema.json"
     },
@@ -99,10 +99,6 @@
       "$ref": "#/definitions/data",
       "description": "Lowest unoccupied molecular orbital. Units: eV"
     },
-    "s0_s1": {
-      "$ref": "#/definitions/data",
-      "description": "First singlet excitation. Units: eV"
-    },
     "gibbs_corredtion": {
       "$ref": "#/definitions/data",
       "description": "Gibbs entropy correction. Units: eV"
@@ -136,9 +132,26 @@
     },
     "excitation_energies": {
       "description": "TD-DFT excited states such as single, triplet, adiabatic, etc. Returns a list of tuple for each transition such as [(energy (eV), lambda (nm), oscillatory strength), … ]",
-      "type": "array",
-      "items": {
-        "type": "number"
+      "type": "object",
+      "properties": {
+        "Singlet": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "Triplet": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        }
       }
     }
   },

@@ -99,7 +99,7 @@
       "$ref": "#/definitions/data",
       "description": "Lowest unoccupied molecular orbital. Units: eV"
     },
-    "gibbs_corredtion": {
+    "gibbs_correction": {
       "$ref": "#/definitions/data",
       "description": "Gibbs entropy correction. Units: eV"
     },

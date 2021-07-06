@@ -22,7 +22,7 @@ class Schema2Class():
             setattr(self,name_space,getattr(ns,name_space))
 
         # highest-level name space for validation
-        self.high_level = getattr(ns,schema_name.title())
+        # self.high_level = getattr(ns,schema_name.title())
 
         # required values
         if self.schema.get("required",):

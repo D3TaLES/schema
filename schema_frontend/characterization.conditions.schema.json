@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.schema.json",
   "title": "conditions",
   "description": "Details on the computation used to obtain the data",

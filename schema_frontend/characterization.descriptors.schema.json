@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json",
   "title": "descriptors",
   "description": "Descriptors derived from computation for a molecule entry in database",

@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/solvent.schema.json",
   "title": "solvent",
   "description": "Information about a solvent",

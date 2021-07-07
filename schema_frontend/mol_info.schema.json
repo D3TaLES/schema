@@ -33,6 +33,10 @@
         "description": "One synonym for the molecule."
       }
     },
+    "mol_source": {
+      "description": "The source of the original molecular structure",
+      "type": "string"
+    },
     "number_of_atoms": {
       "type": "integer",
       "description": "Number of atoms in the molecule."

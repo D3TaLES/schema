@@ -31,7 +31,8 @@
           }
         ]
       },
-      "additionalProperties": false
+      "additionalProperties": false,
+      "required": ["_id", "hash_id"]
     }
   }
 }

@@ -3,8 +3,10 @@
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/solvent_additive.schema.json",
   "title": "solvent_additive",
   "description": "Information about a solvent additives",
-  "type": "array",
-  "items": {
-    "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/solvent.schema.json"
+  "type": "object",
+  "properties": {
+    "solvents": {
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/solvent.schema.json"
+    }
   }
 }

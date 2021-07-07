@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-7/schema#",
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/schema.json",
-  "title": "frontend_schema",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/base.schema.json",
+  "title": "base",
   "description": "A molecule entry in database",
 
   "definitions": {

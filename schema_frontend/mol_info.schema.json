@@ -36,6 +36,10 @@
       "description": "The source of the original molecular structure",
       "type": "string"
     },
+    "molecular_formula": {
+      "type": "string",
+      "description": "Molecular formula for molecule"
+    },
     "number_of_atoms": {
       "type": "integer",
       "description": "Number of atoms in the molecule."

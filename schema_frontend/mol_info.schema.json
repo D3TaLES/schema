@@ -49,10 +49,12 @@
       "description": "Molecular weight of the molecule in g/mol."
     },
     "d2_image": {
+      "description": "2 dimensional image of the molecule.",
       "type": "string",
-      "contentEncoding": "base64",
-      "contentMediaType": "image/png",
-      "description": "2 dimensional image of the molecule."
+      "media": {
+        "binaryEncoding": "base64",
+        "type": "image/png"
+      }
     }
   }
 }

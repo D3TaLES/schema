@@ -48,7 +48,7 @@
       "type": "number",
       "description": "Molecular weight of the molecule in g/mol."
     },
-    "2d_image": {
+    "d2_image": {
       "type": "string",
       "contentEncoding": "base64",
       "contentMediaType": "image/png",

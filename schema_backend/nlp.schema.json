@@ -1,6 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/nlp.schema.json",
-  "title": "backend_nlp",
+  "title": "nlp",
   "description": "NLP schema for raw corpus storage",
   "definitions": {
     "data": {

@@ -1,6 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.schema.json",
-  "title": "backend_experimentation",
+  "title": "experimentation",
   "description": "characterization of organic materials",
   "type": "object",
 

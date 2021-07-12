@@ -31,8 +31,7 @@
         "unit": {
           "description": "The units for the value",
           "type": "string"
-        },
-        "additionalProperties": false
+        }
       }
     }
   },

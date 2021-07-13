@@ -7,12 +7,12 @@
 
   "properties": {
     "_id": {
-      "description": "A unique identifier for the molecule",
+      "description": "A unique identifier for the data hashed from identifying properties",
       "type": "string"
     },
-    "hash_id": {
-      "description": "A unique identifier for the molecule hashed from identifying properties",
-      "type": "string"
+    "mol_id": {
+        "description": "A unique identifier for the molecule",
+        "type": "string"
     },
     "mol_info": {
       "description": "The basic structural information derivable from the molecule's SMILES structure",
@@ -24,5 +24,6 @@
     }
 
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": ["_id", "mol_id"]
 }

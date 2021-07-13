@@ -24,5 +24,5 @@
 
   },
   "additionalProperties": false,
-  "required": ["_id", "hash_id"]
+  "required": ["_id", "mol_id"]
 }

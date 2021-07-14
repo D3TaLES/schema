@@ -33,7 +33,7 @@
       "type": "string"
     },
     "num_basis_func":{
-      "description": "number of basis functions",
+      "description": "Number of basis functions",
       "type": "integer"
     },
     "tuning_parameter": {

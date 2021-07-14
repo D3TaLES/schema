@@ -60,6 +60,11 @@
       "description": "Parameters used for calculations",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.schema.json"
     },
+    "runtime": {
+      "description": "The job runtime in core hours",
+      "type": "string",
+      "format": "date-time"
+    },
     "charge": {
       "description": "Electronic charge on the molecule",
       "type": "number"

@@ -40,11 +40,6 @@
       "description": "The value of the range correction parameter",
       "type": "number"
     },
-    "runtime": {
-      "description": "The job runtime in core hours",
-      "type": "string",
-      "format": "date-time"
-    },
     "solvent": {
       "description": "Solvent model used for the calculation",
       "type": "object",

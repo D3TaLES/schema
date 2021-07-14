@@ -62,8 +62,7 @@
     },
     "runtime": {
       "description": "The job runtime in core hours",
-      "type": "string",
-      "format": "date-time"
+      "type": "number"
     },
     "charge": {
       "description": "Electronic charge on the molecule",

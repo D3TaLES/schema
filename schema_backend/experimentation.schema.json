@@ -29,9 +29,9 @@
             "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.cv.schema.json"
           }
         ]
-      },
-      "additionalProperties": false,
-      "required": ["_id", "mol_id"]
+      }
     }
-  }
+  },
+  "required": ["_id", "mol_id"],
+  "additionalProperties": false
 }

@@ -125,5 +125,6 @@
         "type": "number"
       }
     }
-  }
+  },
+  "additionalProperties": false
 }

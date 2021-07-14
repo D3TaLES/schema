@@ -36,6 +36,10 @@
       "description": "The source of the original molecular structure",
       "type": "string"
     },
+    "init_structure": {
+      "type": "string",
+      "description": "Initial starting xyz structure for calculations"
+    },
     "molecular_formula": {
       "type": "string",
       "description": "Molecular formula for molecule."

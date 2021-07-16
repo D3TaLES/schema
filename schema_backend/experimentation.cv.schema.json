@@ -1,0 +1,99 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.cv.schema.json",
+  "title": "experimentation_cv",
+  "description": "characterization of organic materials",
+  "type": "object",
+
+  "properties": {
+    "file_name": {
+      "description": "Name of file uploaded",
+      "type": "string"
+    },
+    "header": {
+      "description": "CV file header",
+      "type": "string"
+    },
+    "note": {
+      "description": "CV file description",
+      "type": "string"
+    },
+    "data_recorded": {
+      "description": "Date and time CV data was collected",
+      "type": "string",
+      "format": "date-time"
+    },
+
+    "conditions": {
+      "description": "CV conditions",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.cv.schema.json"
+    },
+
+    "initial_potential": {
+      "description": "Initial potential in volts",
+      "type": "number"
+    },
+    "high_e": {
+      "description": "Highest potential in volts",
+      "type": "number"
+    },
+    "low_e": {
+      "description": "Lowest potential in volts",
+      "type": "number"
+    },
+    "initial_p_n": {
+      "description": "?????",
+      "type": "string"
+    },
+    "segment": {
+      "description": "????",
+      "type": "integer"
+    },
+    "sample_interval": {
+      "description": "Sample potential interval (V)",
+      "type": "number"
+    },
+    "quiet_time": {
+      "description": "Quiet time in seconds",
+      "type": "number"
+    },
+    "sensitivity": {
+      "description": "Sensitivity in A/V",
+      "type": "number"
+    },
+    "comp_r": {
+      "description": "Comparative resistance (ohm)",
+      "type": "number"
+    },
+    "scan_data": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "potential": {
+            "type": "number"
+          },
+          "current": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "forward": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "reverse": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    }
+  },
+  "required": ["_id", "mol_id"],
+  "additionalProperties": false
+}

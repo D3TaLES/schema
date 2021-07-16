@@ -5,24 +5,6 @@
   "type": "object",
 
   "properties": {
-    "file_name": {
-      "description": "Name of file uploaded",
-      "type": "string"
-    },
-    "header": {
-      "description": "CV file header",
-      "type": "string"
-    },
-    "note": {
-      "description": "CV file description",
-      "type": "string"
-    },
-    "data_recorded": {
-      "description": "Date and time CV data was collected",
-      "type": "string",
-      "format": "date-time"
-    },
-
     "working_electrode": {
       "description": "Working electrode used",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/electrode.schema.json"
@@ -59,71 +41,6 @@
     "data_points_per_scan": {
       "description": "Number of data points per scan",
       "type": "number"
-    },
-    "initial_potential": {
-      "description": "Initial potential in volts",
-      "type": "number"
-    },
-    "high_e": {
-      "description": "Highest potential in volts",
-      "type": "number"
-    },
-    "low_e": {
-      "description": "Lowest potential in volts",
-      "type": "number"
-    },
-    "initial_p_n": {
-      "description": "?????",
-      "type": "string"
-    },
-    "segment": {
-      "description": "????",
-      "type": "integer"
-    },
-    "sample_interval": {
-      "description": "Sample potential interval (V)",
-      "type": "number"
-    },
-    "quiet_time": {
-      "description": "Quiet time in seconds",
-      "type": "number"
-    },
-    "sensitivity": {
-      "description": "Sensitivity in A/V",
-      "type": "number"
-    },
-    "comp_r": {
-      "description": "Comparative resistance (ohm)",
-      "type": "number"
-    },
-    "scan_data": {
-      "description": "",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "potential": {
-            "type": "number"
-          },
-          "current": {
-            "type": "number"
-          }
-        }
-      }
-    },
-    "forward": {
-      "description": "",
-      "type": "array",
-      "items": {
-        "type": "number"
-      }
-    },
-    "reverse": {
-      "description": "",
-      "type": "array",
-      "items": {
-        "type": "number"
-      }
     }
   },
   "additionalProperties": false

@@ -1,0 +1,138 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/computation.dft.schema.json",
+  "title": "computation_dft",
+  "description": "The structure information derived from computation for a molecule entry in database",
+  "type": "object",
+  "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/scalar"
+            },
+            {
+              "$ref": "#/definitions/vector"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "properties": {
+    "conditions": {
+      "description": "Parameters used for calculations",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.schema.json"
+    },
+    "charge": {
+      "description": "Electronic charge on the molecule",
+      "type": "number"
+    },
+    "spin_multiplicity": {
+      "description": "Spin multiplicity of the molecule",
+      "type": "integer"
+    },
+    "is_groundState": {
+      "description": "Whether this charge is the ground state charge",
+      "type": "boolean"
+    },
+    "number_of_electrons": {
+      "type": "integer",
+      "description": "number of electrons in the molecule"
+    },
+
+    "geometry": {
+      "description": "description of a molecule geometry",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.geometry.sites.schema.json"
+    },
+    "scf_dipole_moment": {
+      "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
+      "$ref": "#/definitions/data"
+    },
+    "scf_total_energy": {
+      "$ref": "#/definitions/data",
+      "description": "Highest occupied molecular orbital. Units: eV"
+    },
+    "homo": {
+      "$ref": "#/definitions/data",
+      "description": "Highest occupied molecular orbital. Units: eV"
+    },
+    "lumo": {
+      "$ref": "#/definitions/data",
+      "description": "Lowest unoccupied molecular orbital. Units: eV"
+    },
+    "gibbs_correction": {
+      "$ref": "#/definitions/data",
+      "description": "Gibbs entropy correction. Units: eV"
+    },
+    "frequency_dict": {
+      "description": "A list for each freq calculation and for each mode of a dict with {“frequency”: freq in cm-1, “symmetry”: symmetry tag “r_mass”: Reduce mass, “f_constant”: force constant, “IR_intensity”: IR Intensity, “mode”: normal mode}. The normal mode is a 1D vector of dx, dy dz of each atom.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "frequency": {
+            "type": "number"
+          },
+          "symmetry": {
+            "type": "string"
+          },
+          "r_mass": {
+            "type": "number"
+          },
+          "f_constant": {
+            "type": "number"
+          },
+          "IR_intensity": {
+            "type": "number"
+          },
+          "mode": {
+            "$ref": "#/definitions/vector"
+          }
+        }
+      }
+    },
+    "excitation_energies": {
+      "description": "TD-DFT excited states such as single, triplet, adiabatic, etc. Returns a list of tuple for each transition such as [(energy (eV), lambda (nm), oscillatory strength), … ]",
+      "type": "object",
+      "properties": {
+        "Singlet": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "Triplet": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": ["_id", "mol_id"]
+}

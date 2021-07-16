@@ -1,0 +1,16 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/dft.schema.json",
+  "title": "dft",
+  "description": "Details on the DFT computation used to obtain the data",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "description": "A unique identifier for the molecule",
+      "type": "string"
+    },
+    "log_path": {
+      "description": "Path to "
+    }
+  }
+  "additionalProperties": false
+}

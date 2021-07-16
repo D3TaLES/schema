@@ -22,14 +22,11 @@
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
     },
     "data": {
-      "type": "array",
-      "items": {
-        "oneOf": [
-          {
-            "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.cv.schema.json"
-          }
-        ]
-      }
+      "oneOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.cv.schema.json"
+        }
+      ]
     }
   },
   "required": ["_id", "mol_id"],

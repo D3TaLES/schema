@@ -30,7 +30,7 @@
     },
     "data": {
       "oneOf": [
-        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/computation.dft.schema.json"}
+        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/computation.dft.schema.json"},
         {"$ref":  ""}
       ]
     },

@@ -1,130 +1,28 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/cv.schema.json",
-  "title": "cv",
-  "description": "The structure information derived from computation for a molecule entry in database",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.schema.json",
+  "title": "experimentation",
+  "description": "characterization of organic materials",
   "type": "object",
 
   "properties": {
-    "file_name": {
-      "description": "Name of file uploaded",
+    "_id": {
+      "description": "A unique identifier for the data hashed from identifying properties",
       "type": "string"
     },
-    "header": {
-      "description": "CV file header",
-      "type": "string"
+    "mol_id": {
+        "description": "A unique identifier for the molecule",
+        "type": "string"
     },
-    "note": {
-      "description": "CV file description",
-      "type": "string"
+    "mol_info": {
+      "description": "The basic structural information derivable from the molecule's SMILES structure",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_info.schema.json"
     },
-    "data_recorded": {
-      "description": "Date and time CV data was collected",
-      "type": "string",
-      "format": "date-time"
+    "submission_info": {
+      "description": "A unique identifier for the molecule",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
     },
 
-    "working_electrode": {
-      "description": "Working electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/electrode.schema.json"
-    },
-    "counter_electrode": {
-      "description": "Counter electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/electrode.schema.json"
-    },
-    "reference_electrode": {
-      "description": "Reference electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/electrode.schema.json"
-    },
-    "solvent": {
-      "description": "Solvent used in experiment",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/solvent.schema.json"
-    },
-    "solvent_additive": {
-      "description": "Compounds added to solvent used in experiment",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/solvent_additive.schema.json"
-    },
-
-    "instrument_model": {
-          "description": "Instrument Model",
-          "type": "string"
-        },
-    "scan_rate": {
-      "description": "Rate of change in potential (V) per second",
-      "type": "number"
-    },
-    "num_scans": {
-      "description": "Number of CV scans",
-      "type": "number"
-    },
-    "data_points_per_scan": {
-      "description": "Number of data points per scan",
-      "type": "number"
-    },
-    "initial_potential": {
-      "description": "Initial potential in volts",
-      "type": "number"
-    },
-    "high_e": {
-      "description": "Highest potential in volts",
-      "type": "number"
-    },
-    "low_e": {
-      "description": "Lowest potential in volts",
-      "type": "number"
-    },
-    "initial_p_n": {
-      "description": "?????",
-      "type": "string"
-    },
-    "segment": {
-      "description": "????",
-      "type": "integer"
-    },
-    "sample_interval": {
-      "description": "Sample potential interval (V)",
-      "type": "number"
-    },
-    "quiet_time": {
-      "description": "Quiet time in seconds",
-      "type": "number"
-    },
-    "sensitivity": {
-      "description": "Sensitivity in A/V",
-      "type": "number"
-    },
-    "comp_r": {
-      "description": "Comparative resistance (ohm)",
-      "type": "number"
-    },
-    "scan_data": {
-      "description": "",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "potential": {
-            "type": "number"
-          },
-          "current": {
-            "type": "number"
-          }
-        }
-      }
-    },
-    "forward": {
-      "description": "",
-      "type": "array",
-      "items": {
-        "type": "number"
-      }
-    },
-    "reverse": {
-      "description": "",
-      "type": "array",
-      "items": {
-        "type": "number"
-      }
-    }
   },
+  "required": ["_id", "mol_id"],
   "additionalProperties": false
 }

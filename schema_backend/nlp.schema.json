@@ -32,8 +32,7 @@
               "caption": {
                 "type": "string"
               }
-            },
-            "additionalProperties": false
+            }
           }
         },
         "tables": {
@@ -141,5 +140,4 @@
   },
   "required": ["_id"],
   "additionalProperties": false
-
 }

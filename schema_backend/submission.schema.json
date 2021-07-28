@@ -4,6 +4,10 @@
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
   "properties": {
+    "processing_id": {
+      "description": "Fireworks ID for the file processing",
+      "type": "string"
+    },
     "source": {
       "description": "Source of the data",
       "type": "string"

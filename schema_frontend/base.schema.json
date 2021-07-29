@@ -23,12 +23,12 @@
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_info.schema.json"
     },
 
-    "characterization_data": {
+    "characterization": {
       "description": "Details of quantum chemical calculations on the molecule including charge species",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.schema.json"
     },
 
-    "synthesis_data": {
+    "synthesis": {
       "description": "Details of 3D geometry of the molecule including charge species",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/synthesis.schema.json"
     },

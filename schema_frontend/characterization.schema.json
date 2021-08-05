@@ -4,91 +4,55 @@
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
   "properties": {
-
-    "geometry": {
-      "description": "description of a molecule geometry",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.geometry.schema.json"
-      }
     },
     "reorganization_energy": {
       "description": "Reorganization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.mol_descriptor.schema.json"
       }
     },
     "vertical_ionization_energy": {
       "description": "Vertical ionization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.mol_descriptor.schema.json"
       }
     },
     "vertical_electron_affinity": {
       "description": "Vertical electron affinity energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.mol_descriptor.schema.json"
       }
     },
     "adiabatic_ionization_energy": {
       "description": "Adiabatic ionization energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.mol_descriptor.schema.json"
       }
     },
     "adiabatic_electron_affinity": {
       "description": "Adiabatic electron affinity energy of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.mol_descriptor.schema.json"
       }
     },
     "redox_potential": {
       "description": "Reduction potential of the molecule.",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.mol_descriptor.schema.json"
       }
     },
-    "homo_lumo_gap": {
-      "description": "Difference between HOMO and LUMO.",
+    "species": {
+      "description": "each species (of different charges) for the molecule",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.species.schema.json"
       }
     },
-    "scf_dipole_moment": {
-      "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json"
-      }
-    },
-    "solubility": {
-      "description": "Difference between HOMO and LUMO.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json"
-      }
-    },
-    "excited_states": {
-      "description": "Molecular excited states such as single, triplet, adiabatic, etc.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json"
-      }
-    },
-    "spectra": {
-      "description": "Two lists for each freq calculation. The first with the frequency cm-1, the second with IR intensity.",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.plotting_data.schema.json"
-      }
-    }
-  },
   "additionalProperties": false
 }

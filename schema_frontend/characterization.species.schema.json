@@ -1,0 +1,63 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.species.schema.json",
+  "title": "descriptors",
+  "description": "Descriptors derived for a molecule entry in database",
+  "type": "object",
+  "properties": {
+    "charge": {
+      "description": "Electronic charge on the molecule",
+      "type": "number"
+    },
+    "spin_multiplicity": {
+      "description": "spin multiplicity of the molecule",
+      "type": "integer"
+    },
+    "is_groundState": {
+      "description": "whether this charge is the ground state charge",
+      "type": "boolean"
+    },
+    "geometry": {
+      "description": "description of a molecule geometry",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.geometry.schema.json"
+      }
+    },
+    "homo_lumo_gap": {
+      "description": "Difference between HOMO and LUMO.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.species.descriptor.schema.json"
+      }
+    },
+    "scf_dipole_moment": {
+      "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.species.descriptor.schema.json"
+      }
+    },
+    "solubility": {
+      "description": "Difference between HOMO and LUMO.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.species.descriptor.schema.json"
+      }
+    },
+    "excited_states": {
+      "description": "Molecular excited states such as single, triplet, adiabatic, etc.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.species.descriptor.schema.json"
+      }
+    },
+    "spectra": {
+      "description": "Two lists for each freq calculation. The first with the frequency cm-1, the second with IR intensity.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.plotting_data.schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

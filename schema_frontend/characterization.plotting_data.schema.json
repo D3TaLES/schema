@@ -4,35 +4,13 @@
   "description": "Descriptors derived from computation for a molecule entry in database",
   "type": "object",
   "properties": {
-    "conditions": {
-      "source_hash_ids": {
+    "source_hash_ids": {
       "description": "The hash_id values for all data that was used to calculate this property",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "type": "string"
     },
+    "conditions": {
       "description": "Parameters used for calculations",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.schema.json"
-    },
-    "order": {
-      "description": "Electronic charge on the molecule",
-      "oneOf": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "string"
-        }
-      ]
-    },
-    "spin_multiplicity": {
-      "description": "spin multiplicity of the molecule",
-      "type": "integer"
-    },
-    "is_groundState": {
-      "description": "whether this charge is the ground state charge",
-      "type": "boolean"
     },
     "plotting_data": {
       "description": "An array where the first item is an array of x values and the ",

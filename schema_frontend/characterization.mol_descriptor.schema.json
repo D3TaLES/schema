@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.descriptors.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.mol_descriptor.schema.json",
   "title": "descriptors",
   "description": "Descriptors derived from computation for a molecule entry in database",
   "type": "object",
@@ -25,14 +25,6 @@
           "type": "string"
         }
       ]
-    },
-    "spin_multiplicity": {
-      "description": "spin multiplicity of the molecule",
-      "type": "integer"
-    },
-    "is_groundState": {
-      "description": "whether this charge is the ground state charge",
-      "type": "boolean"
     },
     "value": {
       "description": "The value of the descriptor",

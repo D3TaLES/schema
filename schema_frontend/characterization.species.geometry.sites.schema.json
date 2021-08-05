@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.geometry.sites.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.species.geometry.sites.schema.json",
   "title": "sites",
   "description": "Pymatgen geometry xyz sites",
   "type": "array",

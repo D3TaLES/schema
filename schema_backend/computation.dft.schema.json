@@ -59,7 +59,7 @@
 
     "geometry": {
       "description": "description of a molecule geometry",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.species.geometry.sites.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.geometry.sites.schema.json"
     },
     "scf_dipole_moment": {
       "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",

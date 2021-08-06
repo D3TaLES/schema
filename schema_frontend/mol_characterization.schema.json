@@ -1,0 +1,51 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.schema.json",
+  "title": "mol_characterization",
+  "description": "The structure information derived from computation for a molecule entry in database",
+  "type": "object",
+  "properties": {
+    "reorganization_energy": {
+      "description": "Reorganization energy of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "vertical_ionization_energy": {
+      "description": "Vertical ionization energy of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "vertical_electron_affinity": {
+      "description": "Vertical electron affinity energy of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "adiabatic_ionization_energy": {
+      "description": "Adiabatic ionization energy of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "adiabatic_electron_affinity": {
+      "description": "Adiabatic electron affinity energy of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "redox_potential": {
+      "description": "Reduction potential of the molecule.",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "additionalProperties": false
+  }
+}

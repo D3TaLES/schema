@@ -23,9 +23,14 @@
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_info.schema.json"
     },
 
-    "characterization": {
+    "mol_characterization": {
       "description": "Details of quantum chemical calculations on the molecule including charge species",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.schema.json"
+    },
+
+    "species_characterization": {
+      "description": "Details of quantum chemical calculations on the molecule including charge species",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.schema.json"
     },
 
     "synthesis": {

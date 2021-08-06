@@ -1,0 +1,29 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.schema.json",
+  "title": "descriptors",
+  "description": "Descriptors derived for a molecule entry in database",
+  "type": "object",
+  "properties": {
+    "neutral": {
+      "description": "Molecule species with the ground state charge",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.descriptor.schema.json"
+    },
+    "cation1": {
+      "description": "Molecule species with the ground state charge + 1",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.descriptor.schema.json"
+    },
+    "cation2": {
+      "description": "Molecule species with the ground state charge + 2",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.descriptor.schema.json"
+    },
+    "anion1": {
+      "description": "Molecule species with the ground state charge - 1",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.descriptor.schema.json"
+    },
+    "anion2": {
+      "description": "Molecule species with the ground state charge - 2",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.descriptor.schema.json"
+    }
+  },
+  "additionalProperties": false
+}

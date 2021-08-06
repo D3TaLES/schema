@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.mol_descriptor.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json",
   "title": "mol_descriptors",
   "description": "Descriptors derived from computation for a molecule entry in database",
   "type": "object",

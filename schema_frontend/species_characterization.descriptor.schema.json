@@ -58,7 +58,7 @@
       "description": "description of a molecule geometry",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/descriptor"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.geometry.sites.schema.json"
       }
     },
     "homo_lumo_gap": {

@@ -4,7 +4,6 @@
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
   "properties": {
-    },
     "reorganization_energy": {
       "description": "Reorganization energy of the molecule.",
       "type": "array",
@@ -54,5 +53,6 @@
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.species.schema.json"
       }
     },
-  "additionalProperties": false
+    "additionalProperties": false
+  }
 }

@@ -1,6 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.schema.json",
-  "title": "descriptors",
+  "title": "species_characterization",
   "description": "Descriptors derived for a molecule entry in database",
   "type": "object",
   "properties": {

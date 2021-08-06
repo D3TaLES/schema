@@ -4,7 +4,7 @@
   "description": "Descriptors derived for a molecule entry in database",
   "type": "object",
   "properties": {
-    "neutral": {
+    "groundState": {
       "description": "Molecule species with the ground state charge",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.descriptor.schema.json"
     },

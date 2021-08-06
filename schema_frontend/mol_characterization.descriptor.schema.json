@@ -7,9 +7,9 @@
     "source_hash_ids": {
       "description": "The hash_id values for all data that was used to calculate this property",
       "type": "array",
-      "items": {
-        "type": "string"
-      }
+        "items": {
+          "type": "string"
+        }
     },
     "conditions": {
       "description": "Parameters used for calculations",

@@ -2,7 +2,6 @@
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.descriptor.schema.json",
   "title": "species_characterization",
   "description": "Descriptors derived for a molecule entry in database",
-  "type": "object",
   "definitions": {
     "descriptor": {
       "source_hash_ids": {
@@ -37,6 +36,8 @@
       }
     }
   },
+
+  "type": "object",
   "properties": {
     "charge": {
       "description": "Electronic charge on the molecule",
@@ -61,7 +62,7 @@
       "description": "Difference between HOMO and LUMO.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/descriptor"
+        "$ref": "#/definitions/doi"
       }
     },
     "scf_dipole_moment": {

@@ -65,7 +65,7 @@
       "description": "Difference between HOMO and LUMO.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/doi"
+        "$ref": "#/definitions/descriptor"
       }
     },
     "scf_dipole_moment": {

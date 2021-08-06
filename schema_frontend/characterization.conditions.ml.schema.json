@@ -5,7 +5,11 @@
   "type": "object",
 
   "properties": {
-
+    "data_source": {
+      "description": "Type of source from which this data came",
+      "type": "string",
+      "default": "ml"
+    }
   },
   "additionalProperties": false
 }

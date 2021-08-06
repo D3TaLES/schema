@@ -1,9 +1,14 @@
 {
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.vasp.schema.json",
-  "title": "vasp",
+  "title": "vasp_dft",
   "description": "Details on the DFT computation used to obtain the data",
   "type": "object",
   "properties": {
+    "data_source": {
+      "description": "Type of source from which this data came",
+      "type": "string",
+      "default": "vasp_dft"
+    },
     "electronic_structure_method": {
       "description": "",
       "type": "string"

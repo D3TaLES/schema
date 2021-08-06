@@ -5,6 +5,11 @@
   "type": "object",
 
   "properties": {
+    "data_source": {
+      "description": "Type of source from which this data came",
+      "type": "string",
+      "default": "cv"
+    },
     "working_electrode": {
       "description": "Working electrode used",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/electrode.schema.json"

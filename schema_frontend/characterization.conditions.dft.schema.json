@@ -4,6 +4,11 @@
   "description": "Details on the DFT computation used to obtain the data",
   "type": "object",
   "properties": {
+    "data_source": {
+      "description": "Type of source from which this data came",
+      "type": "string",
+      "default": "dft"
+    },
     "electronic_structure_method": {
       "description": "",
       "type": "string"

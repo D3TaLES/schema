@@ -1,6 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.nlp.schema.json",
-  "title": "nlp",
+  "title": "nlp_conditions",
   "description": "Machine learning on redox active molecules",
   "type": "object",
 

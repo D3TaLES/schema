@@ -1,6 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.vasp.schema.json",
-  "title": "vasp_dft",
+  "title": "vasp_dft_conditions",
   "description": "Details on the DFT computation used to obtain the data",
   "type": "object",
   "properties": {

@@ -1,6 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.dft.schema.json",
-  "title": "dft",
+  "title": "dft_conditions",
   "description": "Details on the DFT computation used to obtain the data",
   "type": "object",
   "properties": {
@@ -8,10 +8,6 @@
       "description": "Type of source from which this data came",
       "type": "string",
       "default": "dft"
-    },
-    "electronic_structure_method": {
-      "description": "",
-      "type": "string"
     },
     "code_name": {
       "description": "",

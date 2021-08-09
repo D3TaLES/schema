@@ -30,8 +30,12 @@
       "description": "Type of file data collected from",
       "type": "string"
     },
-    "data_type": {
+    "data_category": {
       "description": "Whether the data relates to computation, synthesis, characterization, ML, NLP, etc.",
+      "type": "string"
+    },
+    "data_type": {
+      "description": "Which specific type of data within data type (i.e. DFT within Computation)",
       "type": "string"
     },
     "all_files_in_zip": {

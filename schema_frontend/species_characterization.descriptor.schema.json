@@ -52,7 +52,7 @@
           "description": "Parameters used for calculations",
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.schema.json"
         },
-        "excitation_list": {
+        "excitations": {
           "description": "The value of the descriptor",
           "type": "array",
           "items": {

@@ -109,22 +109,18 @@
         "$ref": "#/definitions/descriptor"
       }
     },
-    "excited_states": {
-      "description": "Molecular excited states such as single, triplet, etc.",
-      "type": "object",
-      "properties": {
-        "Singlet": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/descriptor_excitations"
-          }
-        },
-        "Triplet": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/descriptor_excitations"
-          }
-        }
+    "singlet_states": {
+      "description": "Molecular singlet excited states",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor_excitations"
+      }
+    },
+    "triplet_states": {
+      "description": "Molecular triplet excited states",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor_excitations"
       }
     },
     "spectra": {

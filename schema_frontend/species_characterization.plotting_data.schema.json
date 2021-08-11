@@ -17,24 +17,7 @@
     },
     "plotting_data": {
       "description": "An array where the first item is an array of x values and the ",
-      "type": "array",
-      "items": {
-        "type": "array",
-        "items": {
-          "type": "number"
-        }
-      },
-      "minItems": 2,
-      "maxItems": 2
-    },
-    "plotting_parameters": {
-      "description": "Parameter needed for plotting",
-      "type": "object",
-      "properties": {
-        "lambda": {
-          "type": "number"
-        }
-      }
+      "type": "object"
     }
   },
   "additionalProperties": false

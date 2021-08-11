@@ -1,0 +1,17 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/matadata/dft.schema.json",
+  "title": "dft_gaussian",
+  "description": "Metadata needed for dft file uploads",
+  "type": "object",
+  "properties": {
+    "mol_id": {
+      "description": "A unique identifier for the molecule",
+      "type": "string"
+    },
+    "calculation_type": {
+      "description": "calculation type for DFT calculation ",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -131,6 +131,10 @@
           }
         }
       }
+    },
+    "singlet_plotting": {
+      "description": "Dictionary for plotting singlet spectra",
+      "type": "object"
     }
   },
   "additionalProperties": false

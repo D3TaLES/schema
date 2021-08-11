@@ -108,7 +108,7 @@
         }
       }
     },
-    "excitation_energies": {
+    "excitations": {
       "description": "TD-DFT excited states such as single, triplet, adiabatic, etc. Returns a list of tuple for each transition such as [(energy (eV), lambda (nm), oscillatory strength), … ]",
       "type": "object",
       "properties": {

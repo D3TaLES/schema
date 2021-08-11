@@ -96,6 +96,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/descriptor"
+          }
         }
       }
     },

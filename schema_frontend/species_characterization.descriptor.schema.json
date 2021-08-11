@@ -83,10 +83,20 @@
       }
     },
     "excited_states": {
-      "description": "Molecular excited states such as single, triplet, adiabatic, etc.",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
+      "description": "Molecular excited states such as single, triplet, etc.",
+      "type": "object",
+      "properties": {
+        "Singlet": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/descriptor"
+          }
+        },
+        "Triplet": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/descriptor"
+        }
       }
     },
     "spectra": {

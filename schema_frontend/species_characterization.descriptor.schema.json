@@ -37,6 +37,33 @@
           "type": "string"
         }
       }
+    },
+    "descriptor_excitations": {
+      "type": "object",
+      "properties": {
+        "source_hash_ids": {
+          "description": "The hash_id values for all data that were used to calculate this property",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "conditions": {
+          "description": "Parameters used for calculations",
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.schema.json"
+        },
+        "excitation_list": {
+          "description": "The value of the descriptor",
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "minItems": 1
+        }
+      }
     }
   },
 
@@ -89,13 +116,13 @@
         "Singlet": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/descriptor"
+            "$ref": "#/definitions/descriptor_excitations"
           }
         },
         "Triplet": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/descriptor"
+            "$ref": "#/definitions/descriptor_excitations"
           }
         }
       }

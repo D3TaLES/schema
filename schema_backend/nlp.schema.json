@@ -99,10 +99,6 @@
       "description": "DOI",
       "type": "string"
     },
-    "submission_info": {
-      "description": "A unique identifier for the molecule",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
-    },
     "doi": {
       "type": "string"
     },

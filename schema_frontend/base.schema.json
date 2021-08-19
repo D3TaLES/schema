@@ -17,6 +17,10 @@
       "description": "A unique identifier for the molecule",
       "type": "string"
     },
+    "public": {
+      "description": "Boolean value. If true, molecule is public outside of D3TaLES. If false, it is not.",
+      "type": "boolean"
+    },
 
     "mol_info": {
       "description": "The basic structural information derivable from the molecule's SMILES structure",

@@ -45,6 +45,20 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json"
       }
+    },
+    "solubility": {
+      "description": "Measure of how soluble the molecule is in a given solvent",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "conductivity": {
+      "description": "Measure of the molecule's conductance relative to its concentration",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
     }
   },
   "additionalProperties": false

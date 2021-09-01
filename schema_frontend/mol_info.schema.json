@@ -63,6 +63,17 @@
         "binaryEncoding": "base64",
         "type": "image/png"
       }
+    },
+    "state_of_matter": {
+      "description": "Molecule's state of matter (solid, liquid, etc.) at room temperature",
+      "type": "string"
+    },
+    "intended_use": {
+      "description": "Classification of molecule as catholyte, anolyte, or bipolar",
+      "type": "string",
+      "enum": [
+        "catholyte", "anolyte", "bipolar"
+      ]
     }
   }
 }

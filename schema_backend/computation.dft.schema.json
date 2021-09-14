@@ -57,6 +57,10 @@
       "description": "number of electrons in the molecule"
     },
 
+    "omega": {
+      "description": "omega value derived from omega tuning process",
+      "type": "number"
+    },
     "geometry": {
       "description": "description of a molecule geometry",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.geometry.sites.schema.json"

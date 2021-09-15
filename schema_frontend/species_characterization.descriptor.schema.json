@@ -102,8 +102,15 @@
         "$ref": "#/definitions/descriptor"
       }
     },
+    "solvation_energy": {
+      "description": "Difference between gas phase energy and solvated energy",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
     "solubility": {
-      "description": "Difference between HOMO and LUMO.",
+      "description": "",
       "type": "array",
       "items": {
         "$ref": "#/definitions/descriptor"

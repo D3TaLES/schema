@@ -10,5 +10,6 @@
       "type": "string",
       "default": "ml"
     }
-  }
+  },
+  "additionalProperties": false
 }

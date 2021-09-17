@@ -30,5 +30,6 @@
       "description": "Compounds added to solvent used in experiment",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/solvent_additive.schema.json"
     }
-  }
+  },
+  "additionalProperties": false
 }

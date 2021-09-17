@@ -95,7 +95,7 @@
         "$ref": "#/definitions/descriptor"
       }
     },
-    "scf_dipole_moment": {
+    "dipole_moment": {
       "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
       "type": "array",
       "items": {

@@ -4,6 +4,10 @@
   "description": "Information about an electrode",
   "type": "object",
   "properties": {
+    "name": {
+      "description": "Common electrode name",
+      "type": "string"
+    },
     "smiles": {
     "description": "SMILES representation of a molecule",
     "type": "string"

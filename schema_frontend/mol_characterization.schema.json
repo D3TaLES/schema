@@ -59,6 +59,13 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json"
       }
+    },
+    "omega": {
+      "description": "Tuned omega parameter for long ranged corrected functional",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
     }
   },
   "additionalProperties": false

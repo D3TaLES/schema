@@ -9,8 +9,8 @@
       "type": "string"
     },
     "smiles": {
-    "description": "SMILES representation of a molecule",
-    "type": "string"
+      "description": "SMILES representation of a molecule",
+      "type": "string"
     },
     "selfies": {
       "description": "SELFIES representation of a molecule",

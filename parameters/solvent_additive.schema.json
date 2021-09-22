@@ -5,6 +5,6 @@
   "type": "array",
   "items": {
     "description": "Compounds added to solvent",
-    "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/solvent.schema.json",
+    "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/solvent.schema.json"
   }
 }

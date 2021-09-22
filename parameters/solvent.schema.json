@@ -1,0 +1,118 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/solvent.schema.json",
+  "title": "solvent",
+  "description": "Information about a solvent",
+  "type": "object",
+
+  "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/scalar"
+            },
+            {
+              "$ref": "#/definitions/vector"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+        }
+      }
+    }
+  },
+
+  "properties": {
+    "cas_number": {
+      "description": "Chemical Abstracts Service (CAS) registry number for molecule",
+      "type": "string"
+    },
+    "smiles": {
+      "description": "SMILES representation of a molecule",
+      "type": "string"
+    },
+    "selfies": {
+      "description": "SELFIES representation of a molecule",
+      "type": "string"
+    },
+    "inchi": {
+      "type": "string",
+      "description": "InChi string representation of the molecule"
+    },
+    "inchi_key": {
+      "type": "string",
+      "description": "Hashed InChi string of the molecule"
+    },
+    "iupac_name": {
+      "type": "string",
+      "description": "IUPAC name of the molecule"
+    },
+    "synonyms": {
+      "type": "array",
+      "description": "Synonymous names of the molecule",
+      "items": {
+        "type": "string",
+        "description": "One synonym for the molecule."
+      }
+    },
+    "supplier": {
+      "description": "Company that supplied the molecule",
+      "type": "string"
+    },
+    "catalog_num": {
+      "description": "Molecule catalog number",
+      "type": "string"
+    },
+    "number_of_atoms": {
+      "type": "integer",
+      "description": "Number of atoms in the molecule."
+    },
+    "molecular_weight": {
+      "type": "number",
+      "description": "Molecular weight of the molecule in g/mol."
+    },
+    "concentration": {
+      "description": "Concentration in millimolar (mm)",
+      "$ref": "#/definitions/data"
+    },
+    "purity": {
+      "description": "Purity of compound (%)",
+      "$ref": "#/definitions/data"
+    },
+    "viscosity": {
+      "description": "Viscosity (cP @25C)",
+      "$ref": "#/definitions/data"
+    },
+    "density": {
+      "description": "Density (g/cm3)",
+      "$ref": "#/definitions/data"
+    },
+    "melting_point": {
+      "description": "Melting Point (deg C)",
+      "$ref": "#/definitions/data"
+    },
+    "conductivity": {
+      "description": "Conductivity (mScm-1 @30C)",
+      "$ref": "#/definitions/data"
+    },
+    "electrochemical_window": {
+      "description": "Width of electrochemical window (V)",
+      "$ref": "#/definitions/data"
+    }
+  }
+}

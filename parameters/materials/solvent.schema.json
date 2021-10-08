@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/solvent.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/solvent.schema.json",
   "title": "solvent",
   "description": "Information about a solvent",
   "type": "object",

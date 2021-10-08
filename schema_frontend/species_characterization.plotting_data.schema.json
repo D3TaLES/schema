@@ -13,7 +13,7 @@
     },
     "conditions": {
       "description": "Parameters used for calculations",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/conditions/schema.json"
     },
     "plotting_data": {
       "description": "An array where the first item is an array of x values and the ",

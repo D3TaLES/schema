@@ -1,0 +1,55 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/instruments/ftir.schema.json",
+  "title": "ftir",
+  "description": "Information about an FTIR instrument",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Instrument name",
+      "type": "string"
+    },
+    "source": {
+      "description": "",
+      "type": "string"
+    },
+    "detectors": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "frequency_range": {
+      "description": "frequency range in cm-1",
+      "type": "string"
+    },
+    "resolution": {
+      "description": "Resolution in cm-1",
+      "type": "number"
+    },
+    "optical_velocity": {
+      "description": "",
+      "type": "string"
+    },
+    "aperture": {
+      "description": "",
+      "type": "string"
+    },
+    "gain": {
+      "description": "",
+      "type": "string"
+    },
+    "beamsplitter": {
+      "description": "",
+      "type": "string"
+    },
+    "windows": {
+      "description": "",
+      "type": "string"
+    },
+    "attachments": {
+      "description": "",
+      "type": "string"
+    }
+  }
+}

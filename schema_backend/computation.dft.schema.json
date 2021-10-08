@@ -38,7 +38,7 @@
   "properties": {
     "conditions": {
       "description": "Parameters used for calculations",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/characterization.conditions.dft.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/conditions/dft.schema.json"
     },
     "charge": {
       "description": "Electronic charge on the molecule",

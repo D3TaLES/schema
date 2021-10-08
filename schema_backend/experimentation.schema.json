@@ -6,7 +6,7 @@
 
   "properties": {
     "_id": {
-      "description": "A unique identifier for the data hashed from identifying properties",
+      "description": "A unique identifier for the data",
       "type": "string"
     },
     "mol_id": {
@@ -14,14 +14,17 @@
         "type": "string"
     },
     "submission_info": {
-      "description": "A unique identifier for the molecule",
+      "description": "Information about who/when submitted the data",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
+    },
+    "experiment_type": {
+      "description": "Type of experiment run",
+      "type": "string"
     },
     "data": {
       "oneOf": [
-        {
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.cv.schema.json"
-        }
+        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.cv.schema.json"},
+        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.ir.schema.json"}
       ]
     }
   },

@@ -1,0 +1,61 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/instruments/electrochemistry.schema.json",
+  "title": "electrochemistry",
+  "description": "Information about an electrochemistry instrument",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Instrument name",
+      "type": "string"
+    },
+    "working_electrode": {
+      "description": "Working electrode used",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/electrode.schema.json"
+    },
+    "counter_electrode": {
+      "description": "Counter electrode used",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/electrode.schema.json"
+    },
+    "reference_electrode": {
+      "description": "Reference electrode used",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/electrode.schema.json"
+    },
+    "spec-echem_capabilities": {
+      "description": "Spectroscopic capabilities of instrument",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "current_range": {
+      "description": "current range in amps",
+      "type": "string"
+    },
+    "air_sensitive": {
+      "description": "Whether or not the instrument is air sensitive",
+      "type": "boolean"
+    },
+    "available_techniques": {
+      "description": "",
+      "type": "string"
+    },
+    "gain": {
+      "description": "",
+      "type": "string"
+    },
+    "beamsplitter": {
+      "description": "",
+      "type": "string"
+    },
+    "windows": {
+      "description": "",
+      "type": "string"
+    },"attachments": {
+      "description": "Spectroscopic capabilities of instrument",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

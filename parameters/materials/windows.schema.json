@@ -1,11 +1,11 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/electrode.schema.json",
-  "title": "electrode",
-  "description": "Information about an electrode",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/window.schema.json",
+  "title": "window",
+  "description": "Information about an window",
   "type": "object",
   "properties": {
     "name": {
-      "description": "Common electrode name",
+      "description": "Common window name",
       "type": "string"
     },
     "smiles": {

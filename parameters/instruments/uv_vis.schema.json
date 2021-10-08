@@ -1,0 +1,90 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/instruments/ftir.schema.json",
+  "title": "ftir",
+  "description": "Information about an FTIR instrument",
+  "type": "object",
+  "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/scalar"
+            },
+            {
+              "$ref": "#/definitions/vector"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "properties": {
+    "name": {
+      "description": "Instrument name",
+      "type": "string"
+    },
+    "source": {
+      "description": "",
+      "type": "string"
+    },
+    "detectors": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "wavelength_range": {
+      "description": "wavelength range in cm-1",
+      "$ref": "#/definitions/data"
+    },
+    "resolution": {
+      "description": "Resolution in cm-1",
+      "type": "number"
+    },
+    "integration_time": {
+      "description": "",
+      "type": "string"
+    },
+    "num_scans": {
+      "description": "Number of uv/vis scans",
+      "type": "number"
+    },
+    "cell_material": {
+      "description": "",
+      "type": "string"
+    },
+    "path_length": {
+      "description": "",
+      "type": "string"
+    },
+    "air_sensitive": {
+      "description": "Whether or not the instrument is air sensitive",
+      "type": "boolean"
+    },
+    "attachments": {
+      "description": "Spectroscopic capabilities of instrument",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

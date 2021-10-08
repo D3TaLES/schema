@@ -61,13 +61,17 @@
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/conditions/ir.schema.json"
     },
 
-    "wavelength_range": {
-      "description": "range of wavelength in nm",
+    "cuvette": {
+      "description": "Cuvette used in IR",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/cuvette.schema.json"
+    },
+    "path_length": {
+      "description": "path length of cuvette used in IR",
       "$ref": "#/definitions/data"
     },
-    "window": {
-      "description": "Window used in IR",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/window.schema.json"
+    "integration_time": {
+      "description": "",
+      "type": "number"
     },
     "scan_data": {
       "description": "",

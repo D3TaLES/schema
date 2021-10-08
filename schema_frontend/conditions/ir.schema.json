@@ -52,7 +52,7 @@
     },
     "instrument": {
       "description": "instrument",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/instruments/electrochemistry.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/instruments/ftir.schema.json"
     },
     "wavelength_range": {
       "description": "range of wavelength in nm",
@@ -82,7 +82,7 @@
           "type": "object",
           "properties": {
             "name": {
-              "const": "ATR"
+              "const": "atr"
             },
             "electrode": {
               "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/electrode.schema.json"
@@ -100,7 +100,7 @@
           "type": "object",
           "properties": {
             "name": {
-              "const": "IRRAS"
+              "const": "irras"
             },
             "angle": {
               "type": "string"
@@ -121,7 +121,7 @@
           "type": "object",
           "properties": {
             "name": {
-              "const": "PM"
+              "const": "pm"
             },
             "bessel_center_frequency": {
               "type": "string"

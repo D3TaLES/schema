@@ -1,0 +1,37 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/data_definitions.json",
+  "title": "data_definitions",
+  "type": "object",
+  "properties": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "$ref": "#/scalar"
+            },
+            {
+              "$ref": "#/vector"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

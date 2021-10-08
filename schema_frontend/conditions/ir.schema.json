@@ -58,7 +58,7 @@
       "description": "range of wavelength in nm",
       "$ref": "#/definitions/data"
     },
-    "windows": {
+    "window": {
       "description": "Window used in IR",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/window.schema.json"
     },

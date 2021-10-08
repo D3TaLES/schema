@@ -43,7 +43,7 @@
       "description": "",
       "type": "string"
     },
-    "windows": {
+    "window": {
       "description": "",
       "type": "string"
     },

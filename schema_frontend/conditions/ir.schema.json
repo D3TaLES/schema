@@ -58,10 +58,6 @@
       "description": "range of wavelength in nm",
       "$ref": "#/definitions/data"
     },
-    "window": {
-      "description": "Window used in IR",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/window.schema.json"
-    },
     "phase": {
       "description": "Phase of matter",
       "type": "string"

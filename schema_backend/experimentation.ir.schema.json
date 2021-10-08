@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.cv.schema.json",
-  "title": "experimentation_cv",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.ir.schema.json",
+  "title": "experimentation_ir",
   "description": "characterization of organic materials",
   "type": "object",
   "definitions": {
@@ -43,21 +43,21 @@
       "type": "string"
     },
     "header": {
-      "description": "CV file header",
+      "description": "IR file header",
       "type": "string"
     },
     "note": {
-      "description": "CV file description",
+      "description": "IR file description",
       "type": "string"
     },
     "data_recorded": {
-      "description": "Date and time CV data was collected",
+      "description": "Date and time IR data was collected",
       "type": "string",
       "format": "date-time"
     },
 
     "conditions": {
-      "description": "CV conditions",
+      "description": "IR conditions",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/conditions/ir.schema.json"
     },
 

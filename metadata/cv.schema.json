@@ -10,23 +10,23 @@
     },
     "working_electrode": {
       "description": "Working electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/electrode.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"
     },
     "counter_electrode": {
       "description": "Counter electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/electrode.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"
     },
     "reference_electrode": {
       "description": "Reference electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/electrode.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"
     },
     "solvent": {
       "description": "Solvent used in experiment",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/solvent.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json"
     },
     "solvent_additive": {
       "description": "Compounds added to solvent used in experiment",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/solvent.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json"
     }
   },
   "additionalProperties": false

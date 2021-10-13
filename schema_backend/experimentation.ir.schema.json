@@ -67,7 +67,7 @@
     },
     "window": {
       "description": "Window used in IR",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/window.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/window.schema.json"
     },
     "scan_data": {
       "description": "",

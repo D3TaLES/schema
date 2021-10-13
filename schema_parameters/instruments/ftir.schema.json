@@ -55,5 +55,7 @@
       "description": "",
       "type": "string"
     }
-  }
+  },
+  "required": ["_id"],
+  "additionalProperties": false
 }

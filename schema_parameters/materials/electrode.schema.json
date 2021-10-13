@@ -64,5 +64,7 @@
       "type": "string",
       "description": "Roughness of electrode"
     }
-  }
+  },
+  "required": ["_id"],
+  "additionalProperties": false
 }

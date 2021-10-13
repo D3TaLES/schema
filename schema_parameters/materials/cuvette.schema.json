@@ -56,5 +56,7 @@
       "type": "number",
       "description": "Molecular weight of the molecule in g/mol."
     }
-  }
+  },
+  "required": ["_id"],
+  "additionalProperties": false
 }

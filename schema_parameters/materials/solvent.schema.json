@@ -130,5 +130,7 @@
       "description": "Width of electrochemical window (V)",
       "$ref": "#/definitions/data"
     }
-  }
+  },
+  "required": ["_id"],
+  "additionalProperties": false
 }

@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/parameters/materials/solvent.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json",
   "title": "solvent",
   "description": "Information about a solvent",
   "type": "object",
@@ -38,6 +38,10 @@
   },
 
   "properties": {
+    "name": {
+      "description": "Common solvent name",
+      "type": "string"
+    },
     "cas_number": {
       "description": "Chemical Abstracts Service (CAS) registry number for molecule",
       "type": "string"

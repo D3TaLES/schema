@@ -8,6 +8,10 @@
       "description": "Common electrode name",
       "type": "string"
     },
+    "source": {
+      "description": "The source of the original parameter",
+      "type": "string"
+    },
     "smiles": {
       "description": "SMILES representation of a molecule",
       "type": "string"

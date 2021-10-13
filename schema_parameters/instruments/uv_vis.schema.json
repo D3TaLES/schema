@@ -41,7 +41,7 @@
       "type": "string"
     },
     "source": {
-      "description": "",
+      "description": "The source of the original parameter",
       "type": "string"
     },
     "detectors": {

@@ -42,6 +42,10 @@
       "description": "Common solvent name",
       "type": "string"
     },
+    "source": {
+      "description": "The source of the original parameter",
+      "type": "string"
+    },
     "cas_number": {
       "description": "Chemical Abstracts Service (CAS) registry number for molecule",
       "type": "string"

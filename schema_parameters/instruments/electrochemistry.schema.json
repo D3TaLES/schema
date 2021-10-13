@@ -8,6 +8,10 @@
       "description": "Instrument name",
       "type": "string"
     },
+    "source": {
+      "description": "The source of the original parameter",
+      "type": "string"
+    },
     "working_electrode": {
       "description": "Working electrode used",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"

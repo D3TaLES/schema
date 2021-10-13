@@ -36,7 +36,7 @@
     }
   },
   "properties": {
-    "name": {
+    "_id": {
       "description": "Instrument name",
       "type": "string"
     },

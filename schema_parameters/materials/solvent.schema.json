@@ -38,7 +38,7 @@
   },
 
   "properties": {
-    "name": {
+    "_id": {
       "description": "Common solvent name",
       "type": "string"
     },

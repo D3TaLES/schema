@@ -4,7 +4,7 @@
   "description": "Information about an electrochemistry instrument",
   "type": "object",
   "properties": {
-    "name": {
+    "_id": {
       "description": "Instrument name",
       "type": "string"
     },

@@ -4,7 +4,7 @@
   "description": "Information about an window",
   "type": "object",
   "properties": {
-    "name": {
+    "_id": {
       "description": "Common window name",
       "type": "string"
     },

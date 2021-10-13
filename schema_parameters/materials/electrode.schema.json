@@ -57,11 +57,11 @@
       "description": "Molecular weight of the molecule in g/mol."
     },
     "size": {
-      "type": "number",
+      "type": "string",
       "description": "Size of electrode"
     },
     "roughness": {
-      "type": "number",
+      "type": "string",
       "description": "Roughness of electrode"
     }
   }

@@ -8,9 +8,9 @@
       "description": "Common window name",
       "type": "string"
     },
-    "source": {
-      "description": "The source of the original parameter",
-      "type": "string"
+    "submission_info": {
+      "description": "Info about who submitted the data and how",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
     },
     "smiles": {
       "description": "SMILES representation of a molecule",
@@ -39,6 +39,14 @@
         "type": "string",
         "description": "One synonym for the molecule."
       }
+    },
+    "molecular_formula": {
+      "type": "string",
+      "description": "Molecular formula for molecule."
+    },
+    "groundState_charge": {
+      "type": "number",
+      "description": "Charge of the ground state molecule."
     },
     "number_of_atoms": {
       "type": "integer",

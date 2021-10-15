@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json",
-  "title": "solvent",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/ionic_liquid.schema.json",
+  "title": "ionic_liquid",
   "description": "Information about a solvent",
   "type": "object",
 
@@ -116,6 +116,14 @@
     },
     "density": {
       "description": "Density (g/cm3)",
+      "$ref": "#/definitions/data"
+    },
+    "melting_point": {
+      "description": "Melting Point (deg C)",
+      "$ref": "#/definitions/data"
+    },
+    "conductivity": {
+      "description": "Conductivity (mScm-1 @30C)",
       "$ref": "#/definitions/data"
     },
     "electrochemical_window": {

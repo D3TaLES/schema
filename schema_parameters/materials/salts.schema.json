@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json",
-  "title": "solvent",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/salts.schema.json",
+  "title": "salts",
   "description": "Information about a solvent",
   "type": "object",
 
@@ -110,12 +110,16 @@
       "description": "Purity of compound (%)",
       "$ref": "#/definitions/data"
     },
-    "viscosity": {
-      "description": "Viscosity (cP @25C)",
-      "$ref": "#/definitions/data"
-    },
     "density": {
       "description": "Density (g/cm3)",
+      "$ref": "#/definitions/data"
+    },
+    "melting_point": {
+      "description": "Melting Point (deg C)",
+      "$ref": "#/definitions/data"
+    },
+    "conductivity": {
+      "description": "Conductivity (mScm-1 @30C)",
       "$ref": "#/definitions/data"
     },
     "electrochemical_window": {

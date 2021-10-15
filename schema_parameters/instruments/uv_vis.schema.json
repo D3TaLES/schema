@@ -1,6 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/instruments/uv_vis.schema.json",
-  "title": "ftir",
+  "title": "uv_vis",
   "description": "Information about an FTIR instrument",
   "type": "object",
   "definitions": {

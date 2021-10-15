@@ -63,6 +63,13 @@
       "description": "",
       "type": "string"
     },
+    "windows": {
+      "description": "Windows available in IR",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/window.schema.json"
+      }
+    },
     "attachments": {
       "description": "",
       "type": "string"

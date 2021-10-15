@@ -72,7 +72,10 @@
     },
     "attachments": {
       "description": "",
-      "type": "string"
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": ["_id"],

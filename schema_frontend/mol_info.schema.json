@@ -32,7 +32,7 @@
         "description": "One synonym for the molecule."
       }
     },
-    "mol_source": {
+    "source_group": {
       "description": "The source of the original molecular structure",
       "type": "string"
     },

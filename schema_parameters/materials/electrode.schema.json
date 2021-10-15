@@ -8,7 +8,7 @@
       "description": "Common electrode name",
       "type": "string"
     },
-    "mol_source": {
+    "source_group": {
       "description": "The source of the original parameter",
       "type": "string"
     },

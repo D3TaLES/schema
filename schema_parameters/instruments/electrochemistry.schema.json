@@ -12,7 +12,7 @@
       "description": "Info about who submitted the data and how",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
     },
-    "mol_source": {
+    "source_group": {
       "description": "The source of the original parameter",
       "type": "string"
     },

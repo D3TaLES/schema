@@ -44,10 +44,6 @@
       "description": "Info about who submitted the data and how",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
     },
-    "source_group": {
-      "description": "The source of the original parameter",
-      "type": "string"
-    },
     "detectors": {
       "description": "",
       "type": "array",
@@ -57,19 +53,15 @@
     },
     "wavelength_range": {
       "description": "wavelength range in cm-1",
-      "$ref": "#/definitions/data"
+      "type": "string"
     },
     "resolution": {
       "description": "Resolution in cm-1",
-      "type": "number"
+      "$ref": "#/definitions/data"
     },
     "integration_time": {
       "description": "",
-      "type": "string"
-    },
-    "num_scans": {
-      "description": "Number of uv/vis scans",
-      "type": "number"
+      "$ref": "#/definitions/data"
     },
     "cell_material": {
       "description": "",
@@ -77,7 +69,7 @@
     },
     "path_length": {
       "description": "",
-      "type": "string"
+      "$ref": "#/definitions/data"
     },
     "air_sensitive": {
       "description": "Whether or not the instrument is air sensitive",

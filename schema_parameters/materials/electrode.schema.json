@@ -3,13 +3,41 @@
   "title": "electrode",
   "description": "Information about an electrode",
   "type": "object",
+  "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/scalar"
+            },
+            {
+              "$ref": "#/definitions/vector"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+        }
+      }
+    }
+  },
   "properties": {
     "_id": {
       "description": "Common electrode name",
-      "type": "string"
-    },
-    "source_group": {
-      "description": "The source of the original parameter",
       "type": "string"
     },
     "submission_info": {
@@ -61,11 +89,11 @@
       "description": "Molecular weight of the molecule in g/mol."
     },
     "size": {
-      "type": "string",
+      "$ref": "#/definitions/data",
       "description": "Size of electrode"
     },
     "roughness": {
-      "type": "string",
+      "$ref": "#/definitions/data",
       "description": "Roughness of electrode"
     }
   },

@@ -12,10 +12,6 @@
       "description": "Info about who submitted the data and how",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
     },
-    "source_group": {
-      "description": "The source of the original parameter",
-      "type": "string"
-    },
     "detectors": {
       "description": "",
       "type": "array",
@@ -29,15 +25,15 @@
     },
     "resolution": {
       "description": "Resolution in cm-1",
-      "type": "number"
+      "$ref": "#/definitions/data"
     },
     "optical_velocity": {
       "description": "",
-      "type": "string"
+      "$ref": "#/definitions/data"
     },
     "aperture": {
       "description": "",
-      "type": "string"
+      "$ref": "#/definitions/data"
     },
     "gain": {
       "description": "",

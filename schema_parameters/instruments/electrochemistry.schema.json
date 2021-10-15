@@ -3,6 +3,38 @@
   "title": "electrochemistry",
   "description": "Information about an electrochemistry instrument",
   "type": "object",
+  "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/scalar"
+            },
+            {
+              "$ref": "#/definitions/vector"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+        }
+      }
+    }
+  },
   "properties": {
     "_id": {
       "description": "Instrument name",
@@ -11,10 +43,6 @@
     "submission_info": {
       "description": "Info about who submitted the data and how",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
-    },
-    "source_group": {
-      "description": "The source of the original parameter",
-      "type": "string"
     },
     "working_electrode": {
       "description": "Working electrode used",
@@ -37,7 +65,7 @@
     },
     "current_range": {
       "description": "current range in amps",
-      "type": "string"
+      "$ref": "#/definitions/data"
     },
     "air_sensitive": {
       "description": "Whether or not the instrument is air sensitive",

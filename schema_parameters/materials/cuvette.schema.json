@@ -3,6 +3,38 @@
   "title": "cuvette",
   "description": "Information about an window",
   "type": "object",
+    "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/scalar"
+            },
+            {
+              "$ref": "#/definitions/vector"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+        }
+      }
+    }
+  },
   "properties": {
     "_id": {
       "description": "Common window name",
@@ -55,6 +87,10 @@
     "molecular_weight": {
       "type": "number",
       "description": "Molecular weight of the molecule in g/mol."
+    },
+    "path_length": {
+      "$ref": "#/definitions/data",
+      "description": "path length of cuvette"
     }
   },
   "required": ["_id"],

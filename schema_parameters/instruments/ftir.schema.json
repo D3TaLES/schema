@@ -3,7 +3,7 @@
   "title": "ftir",
   "description": "Information about an FTIR instrument",
   "type": "object",
-    "definitions": {
+  "definitions": {
     "vector": {
       "type": "array",
       "items": {
@@ -59,23 +59,7 @@
       "description": "Resolution in cm-1",
       "$ref": "#/definitions/data"
     },
-    "optical_velocity": {
-      "description": "",
-      "$ref": "#/definitions/data"
-    },
-    "aperture": {
-      "description": "",
-      "$ref": "#/definitions/data"
-    },
-    "gain": {
-      "description": "",
-      "type": "string"
-    },
     "beamsplitter": {
-      "description": "",
-      "type": "string"
-    },
-    "window": {
       "description": "",
       "type": "string"
     },

@@ -7,7 +7,7 @@
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/cuvette.schema.json"},
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"},
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/ionic_liquid.schema.json"},
-    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/salts.schema.json"},
+    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrolyte.schema.json"},
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json"},
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/window.schema.json"}
   ]

@@ -61,17 +61,13 @@
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/conditions/uv_vis.schema.json"
     },
 
-    "cuvette": {
-      "description": "Cuvette used in UV Vis",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/cuvette.schema.json"
-    },
-    "path_length": {
-      "description": "path length of cuvette used in UV Vis",
-      "$ref": "#/definitions/data"
-    },
     "integration_time": {
       "description": "",
       "type": "number"
+    },
+    "wavelength_range": {
+      "description": "range of wavelength in nm",
+      "$ref": "#/definitions/data"
     },
     "scan_data": {
       "description": "",

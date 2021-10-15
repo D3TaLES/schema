@@ -36,7 +36,6 @@
     }
   },
 
-
   "properties": {
     "file_name": {
       "description": "Name of file uploaded",
@@ -60,7 +59,6 @@
       "description": "IR conditions",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/conditions/ir.schema.json"
     },
-
     "wavelength_range": {
       "description": "range of wavelength in nm",
       "$ref": "#/definitions/data"
@@ -68,6 +66,18 @@
     "window": {
       "description": "Window used in IR",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/window.schema.json"
+    },
+    "optical_velocity": {
+      "description": "",
+      "$ref": "#/definitions/data"
+    },
+    "aperture": {
+      "description": "",
+      "$ref": "#/definitions/data"
+    },
+    "gain": {
+      "description": "",
+      "type": "string"
     },
     "scan_data": {
       "description": "",

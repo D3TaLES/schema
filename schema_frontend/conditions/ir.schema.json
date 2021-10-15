@@ -44,19 +44,28 @@
     },
     "solvent": {
       "description": "Solvent used in experiment",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json"
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json"
+      }
     },
-    "solvent_additive": {
-      "description": "Compounds added to solvent used in experiment",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json"
+    "electrolyte": {
+      "description": "Solvent used in experiment",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrolyte.schema.json"
+      }
+    },
+    "ionic_liquid": {
+      "description": "Solvent used in experiment",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/ionic_liquid.schema.json"
+      }
     },
     "instrument": {
       "description": "instrument",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/instruments/ftir.schema.json"
-    },
-    "wavelength_range": {
-      "description": "range of wavelength in nm",
-      "$ref": "#/definitions/data"
     },
     "phase": {
       "description": "Phase of matter",

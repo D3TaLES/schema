@@ -76,7 +76,7 @@
       "type": "number"
     },
     "technique": {
-      "anyOf": [
+      "oneOf": [
         {
           "title": "transmission",
           "type": "object",

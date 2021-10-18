@@ -5,10 +5,10 @@
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/instruments/ftir.schema.json"},
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/instruments/uv_vis.schema.json"},
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/cuvette.schema.json"},
-    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"},
-    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/ionic_liquid.schema.json"},
-    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrolyte.schema.json"},
-    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json"},
+    {"type": "string"},
+    {"type": "string"},
+    {"type": "string"},
+    {"type": "string"},
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/window.schema.json"}
   ]
 }

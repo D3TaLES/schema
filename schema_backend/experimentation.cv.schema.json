@@ -3,6 +3,38 @@
   "title": "experimentation_cv",
   "description": "characterization of organic materials",
   "type": "object",
+    "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/scalar"
+            },
+            {
+              "$ref": "#/definitions/vector"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+        }
+      }
+    }
+  },
 
   "properties": {
     "file_name": {
@@ -34,27 +66,27 @@
     },
     "initial_p_n": {
       "description": "?????",
-      "type": "string"
+      "$ref": "#/definitions/data"
     },
     "segment": {
-      "description": "????",
+      "description": "number of forward or backward segments ",
       "type": "integer"
     },
     "sample_interval": {
       "description": "Sample potential interval (V)",
-      "type": "number"
+      "$ref": "#/definitions/data"
     },
     "quiet_time": {
       "description": "Quiet time in seconds",
-      "type": "number"
+      "$ref": "#/definitions/data"
     },
     "sensitivity": {
       "description": "Sensitivity in A/V",
-      "type": "number"
+      "$ref": "#/definitions/data"
     },
     "comp_r": {
       "description": "Comparative resistance (ohm)",
-      "type": "number"
+      "$ref": "#/definitions/data"
     },
     "scan_data": {
       "description": "",

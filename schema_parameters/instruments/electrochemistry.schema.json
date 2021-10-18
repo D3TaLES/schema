@@ -46,15 +46,15 @@
     },
     "working_electrode": {
       "description": "Working electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"
+      "type": "string"
     },
     "counter_electrode": {
       "description": "Counter electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"
+      "type": "string"
     },
     "reference_electrode": {
       "description": "Reference electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"
+      "type": "string"
     },
     "spec-echem_capabilities": {
       "description": "Spectroscopic capabilities of instrument",

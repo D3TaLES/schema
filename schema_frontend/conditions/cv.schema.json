@@ -12,35 +12,35 @@
     },
     "working_electrode": {
       "description": "Working electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"
+      "type": "string"
     },
     "counter_electrode": {
       "description": "Counter electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"
+      "type": "string"
     },
     "reference_electrode": {
       "description": "Reference electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"
+      "type": "string"
     },
     "solvent": {
       "description": "Solvent used in experiment",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json"
+        "type": "string"
       }
     },
     "electrolyte": {
       "description": "Solvent used in experiment",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrolyte.schema.json"
+        "type": "string"
       }
     },
     "ionic_liquid": {
       "description": "Solvent used in experiment",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/ionic_liquid.schema.json"
+        "type": "string"
       }
     },
     "instrument": {
@@ -49,7 +49,7 @@
     },
     "scan_rate": {
       "description": "Rate of change in potential (V) per second",
-      "type": "number"
+      "$ref": "#/definitions/data"
     },
     "num_scans": {
       "description": "Number of CV scans",
@@ -57,15 +57,15 @@
     },
     "initial_potential": {
       "description": "Initial potential in volts",
-      "type": "number"
+      "$ref": "#/definitions/data"
     },
     "high_e": {
       "description": "Highest potential in volts",
-      "type": "number"
+      "$ref": "#/definitions/data"
     },
     "low_e": {
       "description": "Lowest potential in volts",
-      "type": "number"
+      "$ref": "#/definitions/data"
     }
   },
   "additionalProperties": false

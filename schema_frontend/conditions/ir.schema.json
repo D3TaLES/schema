@@ -46,21 +46,21 @@
       "description": "Solvent used in experiment",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/solvent.schema.json"
+        "type": "string"
       }
     },
     "electrolyte": {
       "description": "Solvent used in experiment",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrolyte.schema.json"
+        "type": "string"
       }
     },
     "ionic_liquid": {
       "description": "Solvent used in experiment",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/ionic_liquid.schema.json"
+        "type": "string"
       }
     },
     "instrument": {
@@ -94,7 +94,7 @@
               "const": "atr"
             },
             "electrode": {
-              "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"
+              "type": "string"
             },
             "applied_potential": {
               "type": "string"

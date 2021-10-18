@@ -61,7 +61,7 @@
     },
     "reference_electrode": {
       "description": "Reference electrode used",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrode.schema.json"
+      "type": "string"
     }
   },
   "additionalProperties": false

@@ -3,7 +3,7 @@
   "title": "experimentation_cv",
   "description": "characterization of organic materials",
   "type": "object",
-    "definitions": {
+  "definitions": {
     "vector": {
       "type": "array",
       "items": {
@@ -49,7 +49,7 @@
       "description": "CV file description",
       "type": "string"
     },
-    "data_recorded": {
+    "date_recorded": {
       "description": "Date and time CV data was collected",
       "type": "string",
       "format": "date-time"

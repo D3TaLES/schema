@@ -89,18 +89,15 @@
       "$ref": "#/definitions/data"
     },
     "scan_data": {
-      "description": "",
+      "description": "List of scan data points",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "potential": {
-            "type": "number"
-          },
-          "current": {
-            "type": "number"
-          }
-        }
+        "description": "Individual data points: Potential/V, Current/A",
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 2
       }
     },
     "forward": {

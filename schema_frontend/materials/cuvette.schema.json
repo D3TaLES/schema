@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/cuvette.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/materials/cuvette.schema.json",
   "title": "cuvette",
   "description": "Information about an window",
   "type": "object",

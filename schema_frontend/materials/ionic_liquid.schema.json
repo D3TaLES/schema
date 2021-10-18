@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/ionic_liquid.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/materials/ionic_liquid.schema.json",
   "title": "ionic_liquid",
   "description": "Information about a solvent",
   "type": "object",

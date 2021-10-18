@@ -78,7 +78,7 @@
     },
     "instrument": {
       "description": "instrument",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/instruments/electrochemistry.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/instruments/electrochemistry.schema.json"
     },
     "scan_rate": {
       "description": "Rate of change in potential (V) per second",

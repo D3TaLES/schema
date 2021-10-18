@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_parameters/materials/electrolyte.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/materials/electrolyte.schema.json",
   "title": "electrolyte",
   "description": "Information about a solvent",
   "type": "object",

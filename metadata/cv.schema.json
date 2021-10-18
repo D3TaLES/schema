@@ -22,10 +22,27 @@
     },
     "solvent": {
       "description": "Solvent used in experiment",
-      "type": "string"
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
-    "solvent_additive": {
-      "description": "Compounds added to solvent used in experiment",
+    "electrolyte": {
+      "description": "Solvent used in experiment",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ionic_liquid": {
+      "description": "Solvent used in experiment",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "instrument": {
+      "description": "instrument",
       "type": "string"
     }
   },

@@ -95,6 +95,10 @@
     "roughness": {
       "$ref": "#/definitions/data",
       "description": "Roughness of electrode"
+    },
+    "absolute_potential": {
+      "$ref": "#/definitions/data",
+      "description": "Estimated absolute electrode potential"
     }
   },
   "required": ["_id"],

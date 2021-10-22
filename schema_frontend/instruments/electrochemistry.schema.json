@@ -56,7 +56,7 @@
       "description": "Reference electrode used",
       "type": "string"
     },
-    "spec-echem_capabilities": {
+    "spec_echem_capabilities": {
       "description": "Spectroscopic capabilities of instrument",
       "type": "array",
       "items": {

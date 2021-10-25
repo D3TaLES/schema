@@ -8,7 +8,7 @@
       "description": "Fireworks ID for the file processing",
       "type": "string"
     },
-    "source": {
+    "source_group": {
       "description": "Source of the data",
       "type": "string"
     },

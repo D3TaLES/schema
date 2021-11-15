@@ -37,6 +37,10 @@
   },
   "properties": {
     "_id": {
+      "description": "Instrument identifier",
+      "type": "string"
+    },
+    "name": {
       "description": "Instrument name",
       "type": "string"
     },

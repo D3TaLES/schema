@@ -71,7 +71,7 @@
       "description": "Windows available in IR",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/materials/window.schema.json"
+        "type": "string"
       }
     },
     "attachments": {

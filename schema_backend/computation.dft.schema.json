@@ -125,6 +125,15 @@
             }
           }
         },
+        "Doublet": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        },
         "Triplet": {
           "type": "array",
           "items": {

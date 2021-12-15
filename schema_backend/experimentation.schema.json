@@ -23,7 +23,7 @@
     },
     "data": {
       "oneOf": [
-        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.cv.schema.json"},
+        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.cv.schema.json"}
       ]
     }
   },

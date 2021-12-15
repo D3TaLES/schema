@@ -99,6 +99,10 @@
     "low_e": {
       "description": "Lowest potential in volts",
       "$ref": "#/definitions/data"
+    },
+    "experiment_run_id": {
+      "description": "ExpFlow experiment run uuid",
+      "$ref": "string"
     }
   },
   "additionalProperties": false

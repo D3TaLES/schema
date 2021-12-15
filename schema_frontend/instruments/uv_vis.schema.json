@@ -40,6 +40,10 @@
       "description": "Instrument identifier",
       "type": "string"
     },
+    "serial_number": {
+      "description": "Instrument manufacturing serial identifier",
+      "type": "string"
+    },
     "name": {
       "description": "Instrument name",
       "type": "string"

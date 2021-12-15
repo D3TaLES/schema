@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/synthesis.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/synthesis.schema.json",
   "title": "synthesis",
   "description": "Synthesis of organic materials",
   "type": "object",

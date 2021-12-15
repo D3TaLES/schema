@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.uv_vis.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/experimentation.uv_vis.schema.json",
   "title": "experimentation_uv_vis",
   "description": "characterization of organic materials",
   "type": "object",
@@ -58,7 +58,7 @@
 
     "conditions": {
       "description": "UV Vis conditions",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/conditions/uv_vis.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/uv_vis.schema.json"
     },
 
     "integration_time": {

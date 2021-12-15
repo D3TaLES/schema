@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.cv.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/experimentation.cv.schema.json",
   "title": "experimentation_cv",
   "description": "characterization of organic materials",
   "type": "object",
@@ -57,7 +57,7 @@
 
     "conditions": {
       "description": "CV conditions",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/conditions/cv.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/cv.schema.json"
     },
 
     "data_points_per_scan": {

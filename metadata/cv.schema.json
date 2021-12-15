@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/matadata/dft.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/matadata/dft.schema.json",
   "title": "dft_gaussian",
   "description": "Metadata needed for dft file uploads",
   "type": "object",

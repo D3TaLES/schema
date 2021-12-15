@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.descriptor.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json",
   "title": "mol_descriptors",
   "description": "Descriptors derived from computation for a molecule entry in database",
   "type": "object",
@@ -13,7 +13,7 @@
     },
     "conditions": {
       "description": "Parameters used for calculations",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/conditions/conditions.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/conditions.schema.json"
     },
     "order": {
       "description": "Electronic charge on the molecule",

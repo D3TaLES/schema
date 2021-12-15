@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/base.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/base.schema.json",
   "title": "base",
   "description": "A molecule entry in database",
 
@@ -24,22 +24,22 @@
 
     "mol_info": {
       "description": "The basic structural information derivable from the molecule's SMILES structure",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_info.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_info.schema.json"
     },
 
     "mol_characterization": {
       "description": "Details of quantum chemical calculations on the molecule including charge species",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/mol_characterization.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.schema.json"
     },
 
     "species_characterization": {
       "description": "Details of quantum chemical calculations on the molecule including charge species",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/species_characterization.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.schema.json"
     },
 
     "synthesis": {
       "description": "Details of 3D geometry of the molecule including charge species",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/synthesis.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/synthesis.schema.json"
     },
 
     "related_literature": {

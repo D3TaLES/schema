@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/experimentation.ir.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/experimentation.ir.schema.json",
   "title": "experimentation_ir",
   "description": "characterization of organic materials",
   "type": "object",
@@ -57,7 +57,7 @@
 
     "conditions": {
       "description": "IR conditions",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/conditions/ir.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/ir.schema.json"
     },
     "wavelength_range": {
       "description": "range of wavelength in nm",
@@ -65,7 +65,7 @@
     },
     "window": {
       "description": "Window used in IR",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/materials/window.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/materials/window.schema.json"
     },
     "optical_velocity": {
       "description": "",

@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_frontend/materials/window.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/materials/window.schema.json",
   "title": "window",
   "description": "Information about an window",
   "type": "object",
@@ -10,7 +10,7 @@
     },
     "submission_info": {
       "description": "Info about who submitted the data and how",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/reb_dev/schema_backend/submission.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/submission.schema.json"
     },
     "smiles": {
       "description": "SMILES representation of a molecule",

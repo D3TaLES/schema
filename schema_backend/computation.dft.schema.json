@@ -49,20 +49,20 @@
       "type": "integer"
     },
     "is_groundState": {
-      "description": "Whether this charge is the ground state charge",
+      "description": "Whether the calculation charge is the ground state charge",
       "type": "boolean"
     },
     "number_of_electrons": {
       "type": "integer",
-      "description": "number of electrons in the molecule"
+      "description": "Number of electrons in the molecule"
     },
 
     "omega": {
-      "description": "omega value derived from omega tuning process",
+      "description": "Omega value derived from omega tuning process",
       "type": "number"
     },
     "geometry": {
-      "description": "description of a molecule geometry",
+      "description": "Description of a molecule geometry",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
     },
     "scf_dipole_moment": {

@@ -77,7 +77,7 @@
       }
     },
     "instrument": {
-      "description": "instrument",
+      "description": "Instrument used",
       "type": "string"
     },
     "scan_rate": {

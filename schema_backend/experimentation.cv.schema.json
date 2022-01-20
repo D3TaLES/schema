@@ -65,11 +65,11 @@
       "type": "number"
     },
     "initial_p_n": {
-      "description": "?????",
+      "description": "",
       "type": "string"
     },
     "segment": {
-      "description": "number of forward or backward segments ",
+      "description": "Number of forward or backward segments",
       "type": "integer"
     },
     "sample_interval": {
@@ -105,14 +105,14 @@
       }
     },
     "forward": {
-      "description": "",
+      "description": "Data points from forward scan",
       "type": "array",
       "items": {
         "type": "number"
       }
     },
     "reverse": {
-      "description": "",
+      "description": "Data points from reverse scan",
       "type": "array",
       "items": {
         "type": "number"

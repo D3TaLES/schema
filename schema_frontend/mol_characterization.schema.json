@@ -61,21 +61,21 @@
       }
     },
     "solubility": {
-      "description": "Measure of how soluble the molecule is in a given solvent",
+      "description": "Measure of how soluble the molecule is in a given solvent.",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "conductivity": {
-      "description": "Measure of the molecule's conductance relative to its concentration",
+      "description": "Measure of the molecule's conductance relative to its concentration.",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "omega": {
-      "description": "Tuned omega parameter for long ranged corrected functional",
+      "description": "Tuned omega parameter for long ranged corrected functional.",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"

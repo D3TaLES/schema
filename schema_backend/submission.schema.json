@@ -22,7 +22,7 @@
       "format": "email"
     },
     "upload_time": {
-      "description": "time and date the data was received",
+      "description": "Time and date the data was received",
       "type": "string",
       "format": "date-time"
     },
@@ -46,7 +46,7 @@
       }
     },
     "stored_location": {
-      "description": "",
+      "description": "File path to the location the raw data is stored",
       "type": "string"
     },
     "approved": {

@@ -64,7 +64,7 @@
       }
     },
     "instrument": {
-      "description": "instrument",
+      "description": "Instrument used",
       "type": "string"
     },
     "cuvette": {
@@ -72,11 +72,11 @@
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/materials/cuvette.schema.json"
     },
     "phase": {
-      "description": "Phase of matter",
+      "description": "Phase of matter in which the experiment was performed",
       "type": "string"
     },
     "num_scans": {
-      "description": "Number of uv/vis scans",
+      "description": "Number of UV-Vis scans",
       "type": "number"
     }
   },

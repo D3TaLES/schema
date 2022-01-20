@@ -66,11 +66,11 @@
       "type": "number"
     },
     "wavelength_range": {
-      "description": "range of wavelength in nm",
+      "description": "Range of wavelength. Unit: nm",
       "$ref": "#/definitions/data"
     },
     "scan_data": {
-      "description": "",
+      "description": "Data points gather from UV-Vis scan",
       "type": "array",
       "items": {
         "type": "object",

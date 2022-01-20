@@ -10,11 +10,11 @@
       "default": "dft"
     },
     "code_name": {
-      "description": "",
+      "description": "Name of code used for DFT calculation",
       "type": "string"
     },
     "code_version": {
-      "description": "",
+      "description": "Version of code used",
       "type": "string"
     },
     "functional": {
@@ -22,7 +22,7 @@
       "type": "string"
     },
      "xc_functional_family": {
-      "description": "",
+      "description": "Exchange-correlation family to which the functional belongs",
       "type": "string"
     },
     "basis_set": {
@@ -30,7 +30,7 @@
       "type": "string"
     },
     "basis_set_type":{
-      "description": "",
+      "description": "Type of basis set used",
       "type": "string"
     },
     "num_basis_func":{

@@ -15,7 +15,7 @@
         "type": "string"
     },
     "submission_info": {
-      "description": "A unique identifier for the molecule",
+      "description": "Information about who/when submitted the data",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/submission.schema.json"
     }
 

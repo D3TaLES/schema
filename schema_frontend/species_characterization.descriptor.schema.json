@@ -1,7 +1,7 @@
 {
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.descriptor.schema.json",
   "title": "species_characterization",
-  "description": "Descriptors derived for a molecule entry in database",
+  "description": "Descriptors derived for a species entry in database",
   "definitions": {
     "descriptor": {
       "type": "object",
@@ -70,19 +70,19 @@
   "type": "object",
   "properties": {
     "charge": {
-      "description": "Electronic charge on the molecule",
+      "description": "Electronic charge on the species.",
       "type": "number"
     },
     "spin_multiplicity": {
-      "description": "spin multiplicity of the molecule",
+      "description": "Spin multiplicity of the species.",
       "type": "integer"
     },
     "is_groundState": {
-      "description": "whether this charge is the ground state charge",
+      "description": "Whether this charge is the ground state charge.",
       "type": "boolean"
     },
     "geometry": {
-      "description": "description of a molecule geometry",
+      "description": "Description of the species geometry.",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.schema.json"
@@ -96,56 +96,56 @@
       }
     },
     "dipole_moment": {
-      "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
+      "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/descriptor"
       }
     },
     "solvation_energy": {
-      "description": "Difference between gas phase energy and solvated energy",
+      "description": "Difference between gas phase energy and solvated energy.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/descriptor"
       }
     },
     "solubility": {
-      "description": "",
+      "description": "The maximum amount of a species that can be dissolved in a given solvent.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/descriptor"
       }
     },
     "singlet_states": {
-      "description": "Molecular singlet excited states",
+      "description": "Species singlet excited states.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/descriptor_excitations"
       }
     },
     "triplet_states": {
-      "description": "Molecular triplet excited states",
+      "description": "Species triplet excited states.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/descriptor_excitations"
       }
     },
     "spectra": {
-      "description": "",
+      "description": "UV Vis spectral data for the species.",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.plotting_data.schema.json"
       }
     },
     "melting_point": {
-      "description": "The temperature at which the molecule's state changes from solid to liquid",
+      "description": "The temperature at which the species's state changes from solid to liquid.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/descriptor"
       }
     },
     "viscosity": {
-      "description": "How viscous the molecule is in liquid form ",
+      "description": "How viscous the species is in liquid form.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/descriptor"

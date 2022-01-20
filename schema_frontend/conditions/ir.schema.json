@@ -50,32 +50,33 @@
       }
     },
     "electrolyte": {
-      "description": "Solvent used in experiment",
+      "description": "Electrolyte used in experiment",
       "type": "array",
       "items": {
         "type": "string"
       }
     },
     "ionic_liquid": {
-      "description": "Solvent used in experiment",
+      "description": "Ionic liquid used in experiment",
       "type": "array",
       "items": {
         "type": "string"
       }
     },
     "instrument": {
-      "description": "instrument",
+      "description": "Instrument used",
       "type": "string"
     },
     "phase": {
-      "description": "Phase of matter",
+      "description": "Phase of matter in which the experiment was performed",
       "type": "string"
     },
     "num_scans": {
-      "description": "Number of ir scans",
+      "description": "Number of IR scans",
       "type": "number"
     },
     "technique": {
+      "description": "Technique used (transmission, ATR, IRRAS, PM) and associated parameters",
       "oneOf": [
         {
           "title": "transmission",

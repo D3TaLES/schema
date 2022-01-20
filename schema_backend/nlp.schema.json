@@ -96,41 +96,64 @@
   "type": "object",
   "properties": {
     "_id": {
-      "description": "DOI",
+      "description": "A unique identifier for the article",
       "type": "string"
     },
     "doi": {
+      "description": "Article's digital object identifier (DOI)",
       "type": "string"
     },
     "date_accessed": {
+      "description": "DOI",
       "type": "string"
     },
     "abstract": {
+      "description": "Article abstract",
       "type": "string"
     },
     "authors": {
+      "description": "List of author names",
       "type": "array",
       "items": {
         "$ref": "#/definitions/author"
       }
     },
-    "publish_date": {"type":"string"},
-    "publisher":  {"type":"string"},
-    "downloaded_ip":  {"type":"string"},
-    "last_updated":  {
-      "type":"string",
-      "format": "date-time"
+    "publish_date": {
+      "description": "Date the article was published",
+      "type":"string"
     },
-    "journal":  {"type":"string"},
-    "title": {"type":"string"},
+    "publisher":  {
+      "description": "Name of the article's publisher",
+      "type":"string"
+    },
+    "downloaded_ip":  {
+      "description": "IP address that downloaded the article",
+      "type":"string"
+    },
+    "journal":  {
+      "description": "Name of the journal that published the article",
+      "type":"string"
+    },
+    "title": {
+      "description": "Article title",
+      "type":"string"
+    },
     "main_text": {
+      "description": "Main text for the article",
       "$ref": "#/definitions/data"
     },
     "SI": {
+      "description": "Supplementary information",
       "$ref": "#/definitions/data"
     },
     "relevant": {
+      "description": "Whether or not the article is relevant to D3TaLES",
       "type": "boolean"
+    },
+    "last_updated":  {
+      "description": "Date this NLP data was last updated",
+      "type":"string",
+      "format": "date-time"
     }
 
   },

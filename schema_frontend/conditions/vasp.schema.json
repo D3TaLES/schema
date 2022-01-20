@@ -10,15 +10,15 @@
       "default": "vasp_dft"
     },
     "electronic_structure_method": {
-      "description": "",
+      "description": "Electronic structure method used in calculation",
       "type": "string"
     },
     "code_name": {
-      "description": "",
+      "description": "Name of code used for DFT calculation",
       "type": "string"
     },
     "code_version": {
-      "description": "",
+      "description": "Version of code used",
       "type": "string"
     }
   },

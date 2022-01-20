@@ -11,7 +11,7 @@
       "default": "nlp"
     },
     "DOI": {
-      "description": "DOI",
+      "description": "Article's digital object identifier (DOI)",
       "type": "string",
       "pattern": "10\\..+/.+"
     },

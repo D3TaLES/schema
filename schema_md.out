@@ -1,0 +1,66 @@
+| Property | Description |  Data Type  |
+| :---------- | :------------- | :------------- |
+| Property | Description |  Data Type  |
+| :---------- | :------------- | :------------- |
+| `data_source` | The structure information derived from computation for a molecule entry in database | `object` |
+| `working_electrode` | The structure information derived from computation for a molecule entry in database | `object` |
+| `counter_electrode` | The structure information derived from computation for a molecule entry in database | `object` |
+| `reference_electrode` | The structure information derived from computation for a molecule entry in database | `object` |
+| `solvent` | The structure information derived from computation for a molecule entry in database | `object` |
+| `electrolyte` | The structure information derived from computation for a molecule entry in database | `object` |
+| `ionic_liquid` | The structure information derived from computation for a molecule entry in database | `object` |
+| `instrument` | The structure information derived from computation for a molecule entry in database | `object` |
+| `scan_rate` | The structure information derived from computation for a molecule entry in database | `object` |
+| `num_scans` | The structure information derived from computation for a molecule entry in database | `object` |
+| `initial_potential` | The structure information derived from computation for a molecule entry in database | `object` |
+| `high_e` | The structure information derived from computation for a molecule entry in database | `object` |
+| `low_e` | The structure information derived from computation for a molecule entry in database | `object` |
+| `experiment_run_id` | The structure information derived from computation for a molecule entry in database | `object` |
+| Property | Description |  Data Type  |
+| :---------- | :------------- | :------------- |
+| `data_source` | Details on the DFT computation used to obtain the data | `object` |
+| `code_name` | Details on the DFT computation used to obtain the data | `object` |
+| `code_version` | Details on the DFT computation used to obtain the data | `object` |
+| `functional` | Details on the DFT computation used to obtain the data | `object` |
+| `xc_functional_family` | Details on the DFT computation used to obtain the data | `object` |
+| `basis_set` | Details on the DFT computation used to obtain the data | `object` |
+| `basis_set_type` | Details on the DFT computation used to obtain the data | `object` |
+| `num_basis_func` | Details on the DFT computation used to obtain the data | `object` |
+| `tuning_parameter` | Details on the DFT computation used to obtain the data | `object` |
+| `solvent` | Details on the DFT computation used to obtain the data | `object` |
+| `reference_electrode` | Details on the DFT computation used to obtain the data | `object` |
+| Property | Description |  Data Type  |
+| :---------- | :------------- | :------------- |
+| `data_source` | The structure information derived from computation for a molecule entry in database | `object` |
+| `solvent` | The structure information derived from computation for a molecule entry in database | `object` |
+| `electrolyte` | The structure information derived from computation for a molecule entry in database | `object` |
+| `ionic_liquid` | The structure information derived from computation for a molecule entry in database | `object` |
+| `instrument` | The structure information derived from computation for a molecule entry in database | `object` |
+| `phase` | The structure information derived from computation for a molecule entry in database | `object` |
+| `num_scans` | The structure information derived from computation for a molecule entry in database | `object` |
+| `technique` | The structure information derived from computation for a molecule entry in database | `object` |
+| Property | Description |  Data Type  |
+| :---------- | :------------- | :------------- |
+| `data_source` | Machine learning on redox active molecules | `object` |
+| Property | Description |  Data Type  |
+| :---------- | :------------- | :------------- |
+| `data_source` | Machine learning on redox active molecules | `object` |
+| `DOI` | Machine learning on redox active molecules | `object` |
+| `model` | Machine learning on redox active molecules | `object` |
+| `date_generated` | Machine learning on redox active molecules | `object` |
+| Property | Description |  Data Type  |
+| :---------- | :------------- | :------------- |
+| `data_source` | The structure information derived from computation for a molecule entry in database | `object` |
+| `solvent` | The structure information derived from computation for a molecule entry in database | `object` |
+| `electrolyte` | The structure information derived from computation for a molecule entry in database | `object` |
+| `ionic_liquid` | The structure information derived from computation for a molecule entry in database | `object` |
+| `instrument` | The structure information derived from computation for a molecule entry in database | `object` |
+| `cuvette` | The structure information derived from computation for a molecule entry in database | `object` |
+| `phase` | The structure information derived from computation for a molecule entry in database | `object` |
+| `num_scans` | The structure information derived from computation for a molecule entry in database | `object` |
+| Property | Description |  Data Type  |
+| :---------- | :------------- | :------------- |
+| `data_source` | Details on the DFT computation used to obtain the data | `object` |
+| `electronic_structure_method` | Details on the DFT computation used to obtain the data | `object` |
+| `code_name` | Details on the DFT computation used to obtain the data | `object` |
+| `code_version` | Details on the DFT computation used to obtain the data | `object` |

@@ -33,6 +33,19 @@
           "type": "string"
         }
       }
+    },
+    "regent": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name of reagent",
+          "type": "string"
+        },
+        "purity": {
+          "description": "purity of reagent",
+          "type": "string"
+        }
+      }
     }
   },
 
@@ -43,24 +56,24 @@
       "default": "ir"
     },
     "solvent": {
-      "description": "Solvent used in experiment",
+      "description": "Solvent used in experiment. Contains a dictionary with properties `name` and `purity`",
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "#/definitions/regent"
       }
     },
     "electrolyte": {
-      "description": "Solvent used in experiment",
+      "description": "Electrolyte used in experiment. Contains a dictionary with properties `name` and `purity`",
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "#/definitions/regent"
       }
     },
     "ionic_liquid": {
-      "description": "Solvent used in experiment",
+      "description": "Ionic liquid used in experiment. Contains a dictionary with properties `name` and `purity`",
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "#/definitions/regent"
       }
     },
     "instrument": {

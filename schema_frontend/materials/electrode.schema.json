@@ -99,6 +99,10 @@
     "absolute_potential": {
       "$ref": "#/definitions/data",
       "description": "Estimated absolute electrode potential"
+    },
+    "purity": {
+      "$ref": "#/definitions/data",
+      "description": "Purity of the electrode material"
     }
   },
   "required": ["_id"],

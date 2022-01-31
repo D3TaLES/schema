@@ -33,6 +33,19 @@
           "type": "string"
         }
       }
+    },
+    "regent": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "name of reagent",
+          "type": "string"
+        },
+        "purity": {
+          "description": "purity of reagent",
+          "type": "string"
+        }
+      }
     }
   },
 
@@ -43,29 +56,33 @@
       "default": "ir"
     },
     "solvent": {
-      "description": "Solvent used in experiment",
+      "description": "Solvent used in experiment. Contains a dictionary with properties `name` and `purity`",
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "#/definitions/regent"
       }
     },
     "electrolyte": {
-      "description": "Electrolyte used in experiment",
+      "description": "Electrolyte used in experiment. Contains a dictionary with properties `name` and `purity`",
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "#/definitions/regent"
       }
     },
     "ionic_liquid": {
-      "description": "Ionic liquid used in experiment",
+      "description": "Ionic liquid used in experiment. Contains a dictionary with properties `name` and `purity`",
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "#/definitions/regent"
       }
     },
     "instrument": {
       "description": "Instrument used",
       "type": "string"
+    },
+    "cuvette": {
+      "description": "Cuvette used in UV Vis",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/materials/cuvette.schema.json"
     },
     "phase": {
       "description": "Phase of matter in which the experiment was performed",

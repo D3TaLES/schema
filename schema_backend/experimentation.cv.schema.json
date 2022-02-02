@@ -117,6 +117,13 @@
       "items": {
         "type": "number"
       }
+    },
+    "plot_data": {
+      "description": "Data points from reverse scan",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
     }
   },
   "additionalProperties": false

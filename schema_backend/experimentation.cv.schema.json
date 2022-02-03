@@ -120,10 +120,7 @@
     },
     "plot_data": {
       "description": "Data points from reverse scan",
-      "type": "array",
-      "items": {
-        "type": "object"
-      }
+      "type": "array"
     }
   },
   "additionalProperties": false

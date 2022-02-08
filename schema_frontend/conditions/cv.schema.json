@@ -113,6 +113,10 @@
       "description": "Lowest potential in volts",
       "$ref": "#/definitions/data"
     },
+    "working_electrode_surface_area": {
+      "description": "Surface area of the working electrode",
+      "$ref": "#/definitions/data"
+    },
     "experiment_run_id": {
       "description": "ExpFlow experiment run uuid",
       "type": "string"

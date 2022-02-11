@@ -118,6 +118,27 @@
         "type": "number"
       }
     },
+    "reversibility": {
+      "description": "List of reversibility categorizations for peaks",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "e_half": {
+      "description": "List of E 1/2 for peaks",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "peak_spittings": {
+      "description": "List of peak splittings for peaks",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
     "plot_data": {
       "description": "Data points from reverse scan",
       "type": "array"

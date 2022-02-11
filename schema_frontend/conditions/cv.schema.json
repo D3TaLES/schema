@@ -117,6 +117,10 @@
       "description": "Surface area of the working electrode",
       "$ref": "#/definitions/data"
     },
+    "redox_mol_concentration": {
+      "description": "Concentration of redox molecule being measured",
+      "$ref": "#/definitions/data"
+    },
     "experiment_run_id": {
       "description": "ExpFlow experiment run uuid",
       "type": "string"

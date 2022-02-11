@@ -148,7 +148,7 @@
         "type": "number"
       }
     },
-    "peak_spittings": {
+    "peak_splittings": {
       "description": "List of peak splittings for peaks",
       "type": "array",
       "items": {

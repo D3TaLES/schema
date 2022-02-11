@@ -104,6 +104,22 @@
         }
       }
     },
+    "middle_sweep": {
+      "description": "Middle sweep list",
+      "type": "array",
+      "items": {
+        "description": "List of data points in each scan",
+        "type": "array",
+        "items": {
+          "description": "Individual data points: Potential/V, Current/A",
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2
+        }
+      }
+    },
     "forward": {
       "description": "Data points from forward scan",
       "type": "array",

@@ -44,6 +44,10 @@
     "instrument": {
       "description": "instrument",
       "type": "string"
+    },
+    "redox_concentration": {
+      "description": "redox_concentration",
+      "type": "number"
     }
   },
   "additionalProperties": false

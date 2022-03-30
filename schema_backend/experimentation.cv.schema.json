@@ -124,14 +124,20 @@
       "description": "Data points from forward scan",
       "type": "array",
       "items": {
-        "type": "number"
+        "type": "array",
+        "items": {
+          "type": "number"
+        }
       }
     },
     "reverse": {
       "description": "Data points from reverse scan",
       "type": "array",
       "items": {
-        "type": "number"
+        "type": "array",
+        "items": {
+          "type": "number"
+        }
       }
     },
     "reversibility": {

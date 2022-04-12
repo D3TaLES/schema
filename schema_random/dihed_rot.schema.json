@@ -1,0 +1,38 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_random/dihed_rot.schema.json",
+  "title": "dihed_rot",
+  "description": "schema for dihedral rotations",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "description": "A unique name for the molecule",
+      "type": "string"
+    },
+    "tuned_omega": {
+      "description": "Tuned omega string ",
+      "type": "string"
+    },
+    "structures": {
+      "description": "optimized structure",
+      "type": "object"
+    },
+    "homos": {
+      "description": "optimized HOMO",
+      "type": "object"
+    },
+    "lumos": {
+      "description": "optimized LUMO",
+      "type": "object"
+    },
+    "runtimes": {
+      "description": "optimization runtime",
+      "type": "object"
+    },
+    "backbone_length": {
+      "description": "optimized backbone length",
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
+

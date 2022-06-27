@@ -57,26 +57,31 @@
 
     "conditions": {
       "description": "IR conditions",
+      "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/ir.schema.json"
     },
     "wavelength_range": {
       "description": "range of wavelength in nm",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "window": {
       "description": "Window used in IR",
+      "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/materials/window.schema.json"
     },
     "optical_velocity": {
       "description": "The speed of the moving mirror. Units: cm/s",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "aperture": {
       "description": "Type of apeture used in IR",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "gain": {
-      "description": "",
+      "description": "Description of the instrument's gain (sensitivity)",
       "type": "string"
     },
     "scan_data": {

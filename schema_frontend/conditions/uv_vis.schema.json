@@ -82,6 +82,7 @@
     },
     "cuvette": {
       "description": "Cuvette used in UV Vis",
+      "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/materials/cuvette.schema.json"
     },
     "phase": {

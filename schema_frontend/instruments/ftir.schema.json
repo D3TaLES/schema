@@ -50,10 +50,11 @@
     },
     "submission_info": {
       "description": "Info about who submitted the data and how",
+      "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/submission.schema.json"
     },
     "detectors": {
-      "description": "",
+      "description": "List of the detectors available on the instrument",
       "type": "array",
       "items": {
         "type": "string"
@@ -65,10 +66,11 @@
     },
     "resolution": {
       "description": "Resolution in cm-1",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "beamsplitter": {
-      "description": "",
+      "description": "Description of the type of beamsplitter used",
       "type": "string"
     },
     "windows": {
@@ -79,7 +81,7 @@
       }
     },
     "attachments": {
-      "description": "",
+      "description": "List of the attachments available on the instrument",
       "type": "array",
       "items": {
         "type": "string"

@@ -15,6 +15,7 @@
     },
     "submission_info": {
       "description": "Information about who/when submitted the data",
+      "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/submission.schema.json"
     },
     "experiment_type": {
@@ -23,6 +24,7 @@
     },
     "data": {
       "description": "Data extracted from raw file",
+      "type": "object",
       "oneOf": [
         {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/experimentation.cv.schema.json"}
       ]

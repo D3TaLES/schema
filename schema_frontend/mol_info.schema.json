@@ -29,7 +29,7 @@
       "description": "Synonymous names of the molecule",
       "items": {
         "type": "string",
-        "description": "One synonym for the molecule."
+        "description": "One synonym for the molecule"
       }
     },
     "source_group": {
@@ -42,22 +42,22 @@
     },
     "molecular_formula": {
       "type": "string",
-      "description": "Molecular formula for molecule."
+      "description": "Molecular formula for molecule"
     },
     "groundState_charge": {
       "type": "number",
-      "description": "Charge of the ground state molecule."
+      "description": "Charge of the ground state molecule"
     },
     "number_of_atoms": {
       "type": "integer",
-      "description": "Number of atoms in the molecule."
+      "description": "Number of atoms in the molecule"
     },
     "molecular_weight": {
       "type": "number",
-      "description": "Molecular weight of the molecule in g/mol."
+      "description": "Molecular weight of the molecule in g/mol"
     },
     "d2_image": {
-      "description": "2 dimensional image of the molecule.",
+      "description": "2 dimensional image of the molecule",
       "type": "string",
       "media": {
         "binaryEncoding": "base64",

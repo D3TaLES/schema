@@ -58,27 +58,29 @@
 
     "conditions": {
       "description": "UV Vis conditions",
+      "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/uv_vis.schema.json"
     },
 
     "integration_time": {
-      "description": "",
+      "description": "The time allowed for the detector to collect photons",
       "type": "number"
     },
     "wavelength_range": {
       "description": "Range of wavelength. Unit: nm",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
-    "scan_data": {
+    "absorbance_data": {
       "description": "Data points gather from UV-Vis scan",
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "potential": {
+          "wavelength": {
             "type": "number"
           },
-          "current": {
+          "absorbance": {
             "type": "number"
           }
         }

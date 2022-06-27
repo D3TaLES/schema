@@ -95,6 +95,7 @@
     },
     "scan_rate": {
       "description": "Rate of change in potential (V) per second",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "num_scans": {
@@ -103,22 +104,27 @@
     },
     "initial_potential": {
       "description": "Initial potential in volts",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "high_e": {
       "description": "Highest potential in volts",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "low_e": {
       "description": "Lowest potential in volts",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "working_electrode_surface_area": {
       "description": "Surface area of the working electrode",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "redox_mol_concentration": {
       "description": "Concentration of redox molecule being measured",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "experiment_run_id": {

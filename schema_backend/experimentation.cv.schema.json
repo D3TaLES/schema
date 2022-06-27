@@ -57,6 +57,7 @@
 
     "conditions": {
       "description": "CV conditions",
+      "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/cv.schema.json"
     },
 
@@ -74,18 +75,22 @@
     },
     "sample_interval": {
       "description": "Sample potential interval (V)",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "quiet_time": {
       "description": "Quiet time in seconds",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "sensitivity": {
       "description": "Sensitivity in A/V",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "comp_r": {
       "description": "Comparative resistance (ohm)",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "scan_data": {

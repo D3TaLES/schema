@@ -50,6 +50,7 @@
     },
     "submission_info": {
       "description": "Info about who submitted the data and how",
+      "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/submission.schema.json"
     },
     "working_electrode": {
@@ -73,6 +74,7 @@
     },
     "current_range": {
       "description": "current range in amps",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "air_sensitive": {
@@ -80,19 +82,19 @@
       "type": "boolean"
     },
     "available_techniques": {
-      "description": "",
+      "description": "Descriptions of the techniques available on this instrument",
       "type": "string"
     },
     "gain": {
-      "description": "",
+      "description": "Description of the instrument's gain (sensitivity)",
       "type": "string"
     },
     "beamsplitter": {
-      "description": "",
+      "description": "Description of the type of beamsplitter used",
       "type": "string"
     },
     "window": {
-      "description": "",
+      "description": "Description of the type of window used",
       "type": "string"
     },
     "attachments": {

@@ -5,7 +5,7 @@
 
   "definitions": {
     "doi": {
-      "description": "Digital object identifier.",
+      "description": "Digital object identifier",
       "type": "string",
       "pattern": "10\\..+/.+"
     }

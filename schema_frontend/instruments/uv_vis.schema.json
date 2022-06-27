@@ -50,10 +50,11 @@
     },
     "submission_info": {
       "description": "Info about who submitted the data and how",
+      "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/submission.schema.json"
     },
     "detectors": {
-      "description": "",
+      "description": "List of the detectors available on the instrument",
       "type": "array",
       "items": {
         "type": "string"
@@ -65,18 +66,21 @@
     },
     "resolution": {
       "description": "Resolution in cm-1",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "integration_time": {
-      "description": "",
+      "description": "The time allowed for the detector to collect photons",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "cell_material": {
-      "description": "",
+      "description": "Description of the material used in the cell",
       "type": "string"
     },
     "path_length": {
-      "description": "",
+      "description": "Width of cuvette used (cm)",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "air_sensitive": {

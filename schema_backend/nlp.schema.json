@@ -140,10 +140,12 @@
     },
     "main_text": {
       "description": "Main text for the article",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "SI": {
       "description": "Supplementary information",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "relevant": {

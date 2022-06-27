@@ -38,6 +38,7 @@
   "properties": {
     "conditions": {
       "description": "Parameters used for calculations",
+      "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/dft.schema.json"
     },
     "charge": {
@@ -63,26 +64,32 @@
     },
     "geometry": {
       "description": "Description of a molecule geometry",
+      "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
     },
     "scf_dipole_moment": {
       "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "scf_total_energy": {
       "$ref": "#/definitions/data",
-      "description": "Highest occupied molecular orbital. Units: eV"
+      "type": "object",
+      "description": "Total energy calculated using the self-consistent field method. Units: eV"
     },
     "homo": {
       "$ref": "#/definitions/data",
+      "type": "object",
       "description": "Highest occupied molecular orbital. Units: eV"
     },
     "lumo": {
       "$ref": "#/definitions/data",
+      "type": "object",
       "description": "Lowest unoccupied molecular orbital. Units: eV"
     },
     "gibbs_correction": {
       "$ref": "#/definitions/data",
+      "type": "object",
       "description": "Gibbs entropy correction. Units: eV"
     },
     "frequency_dict": {

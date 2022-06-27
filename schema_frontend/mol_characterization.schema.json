@@ -5,77 +5,77 @@
   "type": "object",
   "properties": {
     "reorganization_energy": {
-      "description": "Reorganization energy of the molecule.",
+      "description": "Reorganization energy of the molecule",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "vertical_ionization_energy": {
-      "description": "Vertical ionization energy of the molecule.",
+      "description": "Vertical ionization energy of the molecule",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "vertical_ionization_energy_2": {
-      "description": "Second vertical ionization energy of the molecule.",
+      "description": "Second vertical ionization energy of the molecule",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "vertical_electron_affinity": {
-      "description": "Vertical electron affinity energy of the molecule.",
+      "description": "Vertical electron affinity energy of the molecule",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "adiabatic_ionization_energy": {
-      "description": "Adiabatic ionization energy of the molecule.",
+      "description": "Adiabatic ionization energy of the molecule",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "adiabatic_ionization_energy_2": {
-      "description": "Second adiabatic ionization energy of the molecule.",
+      "description": "Second adiabatic ionization energy of the molecule",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "adiabatic_electron_affinity": {
-      "description": "Adiabatic electron affinity energy of the molecule.",
+      "description": "Adiabatic electron affinity energy of the molecule",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "redox_potential": {
-      "description": "Reduction potential of the molecule.",
+      "description": "Reduction potential of the molecule",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "solubility": {
-      "description": "Measure of how soluble the molecule is in a given solvent.",
+      "description": "Measure of how soluble the molecule is in a given solvent",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "conductivity": {
-      "description": "Measure of the molecule's conductance relative to its concentration.",
+      "description": "Measure of the molecule's conductance relative to its concentration",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "omega": {
-      "description": "Tuned omega parameter for long ranged corrected functional.",
+      "description": "Tuned omega parameter for long ranged corrected functional",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/synthesis.schema.json",
-  "title": "backend_synthesis",
+  "title": "synthesis",
   "description": "Synthesis of organic materials",
   "type": "object",
 

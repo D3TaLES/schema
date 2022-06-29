@@ -84,7 +84,7 @@
       "$ref": "#/definitions/data"
     },
     "sensitivity": {
-      "description": "Sensitivity in A/V",
+      "description": "Sensitivity in (A/V)",
       "type": "object",
       "$ref": "#/definitions/data"
     },

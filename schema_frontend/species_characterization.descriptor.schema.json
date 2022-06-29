@@ -92,7 +92,7 @@
       "description": "Globular volume, most likely in units of cubic Angstroms",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.schema.json"
+        "$ref": "#/definitions/descriptor"
       }
     },
     "homo_lumo_gap": {

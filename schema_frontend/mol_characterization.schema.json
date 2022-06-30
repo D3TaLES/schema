@@ -67,6 +67,13 @@
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
+    "rmsd_cation1_cation2": {
+      "description": "The root mean square difference (RMSD) between the cation 1 and cation 2 geometries, Kabsch algorithm",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
     "solubility": {
       "description": "Measure of how soluble the molecule is in a given solvent",
       "type": "array",

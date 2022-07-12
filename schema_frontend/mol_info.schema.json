@@ -48,6 +48,10 @@
       "type": "number",
       "description": "Charge of the ground state molecule"
     },
+    "groundState_spin": {
+      "type": "number",
+      "description": "Spin multiplicity of the ground state molecule"
+    },
     "number_of_atoms": {
       "type": "integer",
       "description": "Number of atoms in the molecule"

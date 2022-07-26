@@ -127,6 +127,11 @@
       "type": "object",
       "$ref": "#/definitions/data"
     },
+    "temperature": {
+      "description": "Temperature of redox solution being measured",
+      "type": "object",
+      "$ref": "#/definitions/data"
+    },
     "experiment_run_id": {
       "description": "ExpFlow experiment run uuid",
       "type": "string"

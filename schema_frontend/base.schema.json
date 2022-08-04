@@ -37,6 +37,15 @@
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.schema.json"
     },
 
+    "experiment_data": {
+      "description": "List of experiment data IDs",
+      "type": "array",
+      "items": {
+        "description": "ID for an experiemnt with this molecule",
+        "type": "string"
+      }
+    },
+
     "synthesis": {
       "description": "Details of 3D geometry of the molecule including charge species",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/synthesis.schema.json"

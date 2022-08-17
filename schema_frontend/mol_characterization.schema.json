@@ -53,7 +53,7 @@
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
-    "redox_potential": {
+    "oxidation_potential": {
       "description": "Reduction potential of the molecule",
       "type": "array",
       "items": {

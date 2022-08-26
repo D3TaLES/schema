@@ -54,6 +54,13 @@
       }
     },
     "oxidation_potential": {
+      "description": "Oxidation potential of the molecule",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "reduction_potential": {
       "description": "Reduction potential of the molecule",
       "type": "array",
       "items": {
@@ -69,6 +76,20 @@
     },
     "rmsd_cation1_cation2": {
       "description": "The root mean square difference (RMSD) between the cation 1 and cation 2 geometries, Kabsch algorithm",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "rmsd_groundState_anion1": {
+      "description": "The root mean square difference (RMSD) between the ground state and anion 1 geometries, Kabsch algorithm",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "rmsd_anion1_anion2": {
+      "description": "The root mean square difference (RMSD) between the anion 1 and anion 2 geometries, Kabsch algorithm",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"

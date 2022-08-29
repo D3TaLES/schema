@@ -4,8 +4,43 @@
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
   "properties": {
-    "reorganization_energy": {
-      "description": "Reorganization energy of the molecule",
+    "hole_reorganization_energy": {
+      "description": "Reorganization energy of cation hole for the molecule",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "electron_reorganization_energy": {
+      "description": "Reorganization energy of anion electron for the molecule",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "relaxation_groundState_cation1": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "relaxation_cation1_groundState": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "relaxation_groundState_anion1": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "relaxation_anion1_groundState": {
+      "description": "",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
@@ -48,6 +83,13 @@
     },
     "adiabatic_electron_affinity": {
       "description": "Adiabatic electron affinity energy of the molecule",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "adiabatic_electron_affinity_2": {
+      "description": "Second adiabatic electron affinity energy of the molecule",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"

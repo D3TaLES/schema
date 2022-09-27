@@ -92,6 +92,21 @@
       "type": "object",
       "description": "Gibbs entropy correction. Units: eV"
     },
+    "radical_buried_vol": {
+      "$ref": "#/definitions/data",
+      "type": "object",
+      "description": "Buried volume at the maximum fractional spin. Units: A^3"
+    },
+    "radical_spin": {
+      "$ref": "#/definitions/data",
+      "type": "object",
+      "description": "The fractional spin positioned on the radial. Units: % as decimal"
+    },
+    "radical_stability_score": {
+      "$ref": "#/definitions/data",
+      "type": "object",
+      "description": "Score for radical stability from Chem. Sci., 2021, 12, 13158–13166"
+    },
     "frequency_dict": {
       "description": "A list for each freq calculation and for each mode of a dict with {“frequency”: freq in cm-1, “symmetry”: symmetry tag “r_mass”: Reduce mass, “f_constant”: force constant, “IR_intensity”: IR Intensity, “mode”: normal mode}. The normal mode is a 1D vector of dx, dy dz of each atom.",
       "type": "array",

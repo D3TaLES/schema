@@ -96,19 +96,25 @@
       }
     },
     "radical_buried_vol": {
-      "$ref": "#/definitions/descriptor",
-      "type": "object",
-      "description": "Buried volume at the maximum fractional spin. Units: A^3"
+      "description": "Buried volume at the maximum fractional spin. Units: A^3",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
     },
     "radical_spin": {
-      "$ref": "#/definitions/descriptor",
-      "type": "object",
-      "description": "The fractional spin positioned on the radial. Units: % as decimal"
+      "description": "The fractional spin positioned on the radial. Units: % as decimal",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
     },
     "radical_stability_score": {
-      "$ref": "#/definitions/descriptor",
-      "type": "object",
-      "description": "Score for radical stability from Chem. Sci., 2021, 12, 13158–13166"
+      "description": "Score for radical stability from Chem. Sci., 2021, 12, 13158–13166",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
     },
     "homo_lumo_gap": {
       "description": "Difference between HOMO and LUMO",

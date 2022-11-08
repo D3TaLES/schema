@@ -1,0 +1,58 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/experiment_data.mol_characterization.schema.json",
+  "title": "experiment_data.mol_characterization",
+  "description": "The structure information derived from computation for a molecule entry in database",
+  "type": "object",
+  "properties": {
+    "oxidation_potential": {
+      "description": "Oxidation potential of the molecule",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "reduction_potential": {
+      "description": "Reduction potential of the molecule",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "rmsd_groundState_cation1": {
+      "description": "The root mean square difference (RMSD) between the ground state and cation 1 geometries, Kabsch algorithm",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "solubility": {
+      "description": "Measure of how soluble the molecule is in a given solvent",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "conductivity": {
+      "description": "Measure of the molecule's conductance relative to its concentration",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "diffusion_coefficient": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "charge_transfer_rate": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

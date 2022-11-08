@@ -1,28 +1,183 @@
 {
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.schema.json",
   "title": "species_characterization",
-  "description": "Descriptors derived for a molecule entry in database",
+  "description": "Descriptors derived for a species entry in database",
+  "definitions": {
+    "descriptor": {
+      "type": "object",
+      "properties": {
+        "source_hash_ids": {
+          "description": "The hash_id values for all data that were used to calculate this property",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "conditions": {
+          "description": "Parameters used for calculations",
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/conditions.schema.json"
+        },
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+        }
+      }
+    },
+    "descriptor_excitations": {
+      "type": "object",
+      "properties": {
+        "source_hash_ids": {
+          "description": "The hash_id values for all data that were used to calculate this property",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "conditions": {
+          "description": "Parameters used for calculations",
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/conditions.schema.json"
+        },
+        "excitations": {
+          "description": "The value of the descriptor",
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "minItems": 1
+        }
+      }
+    }
+  },
+
   "type": "object",
   "properties": {
-    "groundState": {
-      "description": "Molecule species with the ground state charge",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.descriptor.schema.json"
+    "charge": {
+      "description": "Electronic charge on the species",
+      "type": "number"
     },
-    "cation1": {
-      "description": "Molecule species with the ground state charge + 1",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.descriptor.schema.json"
+    "spin_multiplicity": {
+      "description": "Spin multiplicity of the species",
+      "type": "integer"
     },
-    "cation2": {
-      "description": "Molecule species with the ground state charge + 2",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.descriptor.schema.json"
+    "is_groundState": {
+      "description": "Whether this charge is the ground state charge",
+      "type": "boolean"
     },
-    "anion1": {
-      "description": "Molecule species with the ground state charge - 1",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.descriptor.schema.json"
+    "geometry": {
+      "description": "Description of the species geometry",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.schema.json"
+      }
     },
-    "anion2": {
-      "description": "Molecule species with the ground state charge - 2",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.descriptor.schema.json"
+    "globular_volume": {
+      "description": "Globular volume, most likely in units of cubic Angstroms",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
+    "radical_buried_vol": {
+      "description": "Buried volume at the maximum fractional spin. Units: A^3",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
+    "radical_spin": {
+      "description": "The fractional spin positioned on the radial. Units: % as decimal",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
+    "radical_stability_score": {
+      "description": "Score for radical stability from Chem. Sci., 2021, 12, 13158–13166",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
+    "homo_lumo_gap": {
+      "description": "Difference between HOMO and LUMO",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
+    "dipole_moment": {
+      "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
+    "solvation_energy": {
+      "description": "Difference between gas phase energy and solvated energy",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
+    "solubility": {
+      "description": "The maximum amount of a species that can be dissolved in a given solvent",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
+    "singlet_states": {
+      "description": "Species singlet excited states",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor_excitations"
+      }
+    },
+    "triplet_states": {
+      "description": "Species triplet excited states",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor_excitations"
+      }
+    },
+    "spectra": {
+      "description": "UV Vis spectral data for the species",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.plotting_data.schema.json"
+      }
+    },
+    "melting_point": {
+      "description": "The temperature at which the species's state changes from solid to liquid",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
+    "viscosity": {
+      "description": "How viscous the species is in liquid form",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
     }
   },
   "additionalProperties": false

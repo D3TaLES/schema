@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.descriptor.schema.json",
-  "title": "species_characterization",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/experiment.species_characterization.schema.json",
+  "title": "experiment.species_characterization",
   "description": "Descriptors derived for a species entry in database",
   "definitions": {
     "descriptor": {
@@ -37,33 +37,6 @@
           "type": "string"
         }
       }
-    },
-    "descriptor_excitations": {
-      "type": "object",
-      "properties": {
-        "source_hash_ids": {
-          "description": "The hash_id values for all data that were used to calculate this property",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "conditions": {
-          "description": "Parameters used for calculations",
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/conditions.schema.json"
-        },
-        "excitations": {
-          "description": "The value of the descriptor",
-          "type": "array",
-          "items": {
-            "type": "array",
-            "items": {
-              "type": "number"
-            }
-          },
-          "minItems": 1
-        }
-      }
     }
   },
 
@@ -81,41 +54,6 @@
       "description": "Whether this charge is the ground state charge",
       "type": "boolean"
     },
-    "geometry": {
-      "description": "Description of the species geometry",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.schema.json"
-      }
-    },
-    "globular_volume": {
-      "description": "Globular volume, most likely in units of cubic Angstroms",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
-    },
-    "radical_buried_vol": {
-      "description": "Buried volume at the maximum fractional spin. Units: A^3",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
-    },
-    "radical_spin": {
-      "description": "The fractional spin positioned on the radial. Units: % as decimal",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
-    },
-    "radical_stability_score": {
-      "description": "Score for radical stability from Chem. Sci., 2021, 12, 13158–13166",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
-    },
     "homo_lumo_gap": {
       "description": "Difference between HOMO and LUMO",
       "type": "array",
@@ -130,32 +68,11 @@
         "$ref": "#/definitions/descriptor"
       }
     },
-    "solvation_energy": {
-      "description": "Difference between gas phase energy and solvated energy",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
-    },
     "solubility": {
       "description": "The maximum amount of a species that can be dissolved in a given solvent",
       "type": "array",
       "items": {
         "$ref": "#/definitions/descriptor"
-      }
-    },
-    "singlet_states": {
-      "description": "Species singlet excited states",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor_excitations"
-      }
-    },
-    "triplet_states": {
-      "description": "Species triplet excited states",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor_excitations"
       }
     },
     "spectra": {

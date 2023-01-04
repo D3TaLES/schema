@@ -78,6 +78,10 @@
       "type": "object",
       "$ref": "#/definitions/data"
     },
+    "peak_potential": {
+      "description": "",
+      "$ref": "#/definitions/data"
+    },
     "quiet_time": {
       "description": "Quiet time in seconds",
       "type": "object",

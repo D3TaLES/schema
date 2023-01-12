@@ -79,7 +79,8 @@
       "$ref": "#/definitions/data"
     },
     "peak_potential": {
-      "description": "",
+      "description": "Highest potential reached",
+      "type": "object",
       "$ref": "#/definitions/data"
     },
     "quiet_time": {

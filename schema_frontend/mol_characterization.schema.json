@@ -19,28 +19,28 @@
       }
     },
     "relaxation_groundState_cation1": {
-      "description": "",
+      "description": "relaxation energy of the +1 cation from the ground state geometry to the +1 cation geometry",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "relaxation_cation1_groundState": {
-      "description": "",
+      "description": "relaxation energy of the ground state from the +1 cation geometry to the ground state geometry",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "relaxation_groundState_anion1": {
-      "description": "",
+      "description": "relaxation energy of the -1 anion from the ground state geometry to the -1 anion geometry",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "relaxation_anion1_groundState": {
-      "description": "",
+      "description": "relaxation energy of the ground state from the -1 anion geometry to the ground state geometry",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
@@ -153,20 +153,6 @@
     },
     "omega": {
       "description": "Tuned omega parameter for long ranged corrected functional",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
-      }
-    },
-    "diffusion_coefficient": {
-      "description": "",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
-      }
-    },
-    "charge_transfer_rate": {
-      "description": "",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"

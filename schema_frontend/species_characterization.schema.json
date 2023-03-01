@@ -144,13 +144,6 @@
         "$ref": "#/definitions/descriptor"
       }
     },
-    "singlet_states": {
-      "description": "Species singlet excited states",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor_excitations"
-      }
-    },
     "triplet_states": {
       "description": "Species triplet excited states",
       "type": "array",
@@ -163,20 +156,6 @@
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.plotting_data.schema.json"
-      }
-    },
-    "melting_point": {
-      "description": "The temperature at which the species's state changes from solid to liquid",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
-    },
-    "viscosity": {
-      "description": "How viscous the species is in liquid form",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
       }
     }
   },

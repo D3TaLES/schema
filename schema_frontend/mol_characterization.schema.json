@@ -67,6 +67,13 @@
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
+    "vertical_electron_affinity_2": {
+      "description": "Second vertical electron affinity energy of the molecule",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
     "adiabatic_ionization_energy": {
       "description": "Adiabatic ionization energy of the molecule",
       "type": "array",

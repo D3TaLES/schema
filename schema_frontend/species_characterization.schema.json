@@ -144,6 +144,13 @@
         "$ref": "#/definitions/descriptor"
       }
     },
+    "singlet_states": {
+      "description": "Species singlet excited states",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor_excitations"
+      }
+    },
     "triplet_states": {
       "description": "Species triplet excited states",
       "type": "array",

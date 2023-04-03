@@ -1,0 +1,42 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/periodic_dft.schema.json",
+  "title": "periodic_dft_conditions",
+  "description": "Details on the periodic DFT computation used to obtain the data",
+  "type": "object",
+  "properties": {
+    "data_source": {
+      "description": "Type of source from which this data came",
+      "type": "string",
+      "default": "dft"
+    },
+    "code_name": {
+      "description": "Name of code used for DFT calculation",
+      "type": "string"
+    },
+    "code_version": {
+      "description": "Version of code used",
+      "type": "string"
+    },
+    "functional": {
+      "description": "Functional used for the calculation",
+      "type": "string"
+    },
+    "xc_functional_family": {
+      "description": "Exchange-correlation family to which the functional belongs",
+      "type": "string"
+    },
+    "basis_set": {
+      "description": "Basis-set used for the calculation",
+      "type": "string"
+    },
+    "basis_set_type": {
+      "description": "Type of basis set used",
+      "type": "string"
+    },
+    "num_basis_func": {
+      "description": "Number of basis functions",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false
+}

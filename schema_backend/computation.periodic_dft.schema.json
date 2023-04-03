@@ -1,0 +1,46 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.periodic_dft.schema.json",
+  "title": "computation_periodic_dft",
+  "description": "The structure information derived from periodic DFT computation for a surface entry in database",
+  "type": "object",
+  "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/scalar"
+            },
+            {
+              "$ref": "#/definitions/vector"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "properties": {
+    "conditions": {
+      "description": "Parameters used for calculations",
+      "type": "object",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/periodic_dft.schema.json"
+    }
+  },
+  "additionalProperties": false
+}

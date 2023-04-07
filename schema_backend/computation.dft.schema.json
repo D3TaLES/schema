@@ -82,10 +82,20 @@
       "type": "object",
       "description": "Highest occupied molecular orbital. Units: eV"
     },
+    "homo_1": {
+      "$ref": "#/definitions/data",
+      "type": "object",
+      "description": "Second highest occupied molecular orbital (HOMO-1). Units: eV"
+    },
     "lumo": {
       "$ref": "#/definitions/data",
       "type": "object",
       "description": "Lowest unoccupied molecular orbital. Units: eV"
+    },
+    "lumo_1": {
+      "$ref": "#/definitions/data",
+      "type": "object",
+      "description": "Second lowest unoccupied molecular orbital (LUMO+1). Units: eV"
     },
     "gibbs_correction": {
       "$ref": "#/definitions/data",

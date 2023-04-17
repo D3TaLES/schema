@@ -116,6 +116,20 @@
         "$ref": "#/definitions/descriptor"
       }
     },
+    "homo": {
+      "description": "Highest occupied molecular orbital. Units: eV",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
+    "lumo": {
+      "description": "Lowest unoccupied molecular orbital. Units: eV",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
     "homo_lumo_gap": {
       "description": "Difference between HOMO and LUMO",
       "type": "array",

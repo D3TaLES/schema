@@ -4,42 +4,402 @@
   "description": "The structure information derived from periodic DFT computation for a surface entry in database",
   "type": "object",
   "definitions": {
-    "vector": {
-      "type": "array",
-      "items": {
-        "type": "number"
-      },
-      "minItems": 3
-    },
-    "scalar": {
-      "type": "number"
-    },
-    "data": {
+    "eigenvalue_band_properties": {
+          "description": "",
+          "type": "object",
+          "properties": {
+            "band_gap": {
+              "description": "",
+              "type": "number"
+            },
+            "cbm": {
+              "description": "",
+              "type": "number"
+            },
+            "vbm": {
+              "description": "",
+              "type": "number"
+            },
+            "is_band_gap_direct": {
+              "description": "",
+              "type": "boolean"
+            }
+          }
+        },
+    "orbital_band_centers": {
+          "description": "",
+          "type": "object",
+          "properties": {
+            "s": {
+              "type": "number"
+            },
+            "p": {
+              "type": "number"
+            },
+            "d": {
+              "type": "number"
+            },
+            "f": {
+              "type": "number"
+            }
+          }
+        },
+    "adsorbate_site": {
+      "description": "",
       "type": "object",
       "properties": {
-        "value": {
-          "description": "The value of the descriptor",
-          "oneOf": [
-            {
-              "$ref": "#/definitions/scalar"
-            },
-            {
-              "$ref": "#/definitions/vector"
-            }
-          ]
-        },
-        "unit": {
-          "description": "The units for the value",
-          "type": "string"
+        "index": {"type": "number"},
+        "site": {
+            "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
         }
       }
-    }
+    },
+    "surface_site": {
+          "description": "",
+          "type": "object",
+          "properties": {
+            "index": {"type": "number"},
+            "site": {
+                "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
+            }
+          }
+        }
   },
   "properties": {
     "conditions": {
       "description": "Parameters used for calculations",
       "type": "object",
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/periodic_dft.schema.json"
+    },
+    "task_name": {
+      "description": "",
+      "type": "string"
+
+    },
+    "adsorbate": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "@module": {"type":  "string"},
+        "@class": {"type":  "string"},
+        "charge": {
+          "description": "Adsorbate charge",
+          "type": "number"
+        },
+        "spin_multiplicity": {
+          "description": "Adsorbate spin multiplicity",
+          "type": "integer"
+        },
+        "sites": {
+          "description": "Description of a adsorbate geometry",
+          "type": "object",
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
+        }
+      }
+
+    },
+    "bulk": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "formula": {
+          "description": "",
+          "type": "string"
+        },
+        "directory": {
+          "description": "",
+          "type": "string"
+        },
+        "converged": {
+          "description": "",
+          "type": "boolean"
+        },
+        "input_structure": {
+          "description": "",
+          "type": "object" ,
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+        },
+        "output_structure": {
+          "description": "",
+          "type": "object" ,
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+        },
+        "output_energy": {
+          "description": "",
+          "type": "number"
+        },
+        "eigenvalue_band_properties": {
+          "description": "",
+          "$ref": "#/definitions/eigenvalue_band_properties"
+        }
+      }
+    },
+    "slab": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "directory": {
+          "description": "",
+          "type": "string"
+        },
+        "converged": {
+          "description": "",
+          "type": "boolean"
+        },
+        "miller_index": {
+          "description": "",
+          "type": "array",
+          "items": [
+            {"type": "number"},
+            {"type": "number"},
+            {"type": "number"}
+          ]
+        },
+        "shift": {
+          "description": "",
+          "type": "number"
+        },
+        "input_structure": {
+          "description": "",
+          "type": "object" ,
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+        },
+        "output_structure": {
+          "description": "",
+          "type": "object" ,
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+        },
+        "output_energy": {
+          "description": "",
+          "type": "number"
+        },
+        "eigenvalue_band_properties": {
+          "description": "",
+          "$ref": "#/definitions/eigenvalue_band_properties"
+        },
+        "orbital_band_centers": {
+          "description": "",
+          "type": "object",
+          "$ref": "#/definitions/orbital_band_centers"
+        },
+        "orbital_densities_by_type": {
+          "description": "",
+          "type": "object"
+        },
+        "work_function": {
+          "description": "",
+          "type": "number"
+        },
+        "cbm_elemental_makeup": {
+          "description": "",
+          "type": "object"
+        },
+        "vbm_elemental_makeup": {
+          "description": "",
+          "type": "object"
+        },
+        "ddec6": {
+          "description": "",
+          "type": "number"
+        },
+        "bader": {
+          "description": "",
+          "type": "number"
+        }
+      }
+    },
+    "slab_adsorbate": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "directory": {
+          "description": "",
+          "type": "string"
+        },
+        "converged": {
+          "description": "",
+          "type": "boolean"
+        },
+        "input_structure": {
+          "description": "",
+          "type": "object" ,
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+        },
+        "output_structure": {
+          "description": "",
+          "type": "object" ,
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+        },
+        "output_energy": {
+          "description": "",
+          "type": "number"
+        },
+        "eigenvalue_band_properties": {
+          "description": "",
+          "$ref": "#/definitions/eigenvalue_band_properties"
+        },
+        "orbital_band_centers": {
+          "description": "",
+          "type": "object",
+          "$ref": "#/definitions/orbital_band_centers"
+        },
+        "orbital_densities_by_type": {
+          "description": "",
+          "type": "object"
+        },
+        "total_surf_ads_pdos_overalp": {
+          "description": "???"
+        },
+        "work_function": {
+          "description": "",
+          "type": "number"
+        },
+        "cbm_elemental_makeup": {
+          "description": "",
+          "type": "object"
+        },
+        "vbm_elemental_makeup": {
+          "description": "",
+          "type": "object"
+        },
+        "ddec6": {
+          "description": "",
+          "type": "number"
+        },
+        "bader": {
+          "description": "",
+          "type": "number"
+        },
+        "cleavage_energy": {
+          "description": "",
+          "type": "number"
+        }
+      }
+
+    },
+    "nearest_surface_neighbors": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "adsorbate_site": {
+          "description": "",
+          "type": "object",
+          "$ref": "#/definitions/adsorbate_site"
+        },
+        "surface_site": {
+          "description": "",
+          "type": "object",
+          "$ref": "#/definitions/surface_site"
+        },
+        "distance": {
+          "description": "",
+          "type": "number"
+        },
+        "is_bonded": {
+          "description": "",
+          "type": "boolean"
+        }
+      }
+    },
+    "adsorption_site": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "asf_site_type": {
+          "description": "",
+          "type": "string"
+        },
+        "in_site_type": {
+          "description": "",
+          "type": "string"
+        },
+        "out_site_type": {
+          "description": "",
+          "type": "string"
+        },
+        "adsorbate_site": {
+          "description": "",
+          "type": "object",
+          "$ref": "#/definitions/adsorbate_site"
+        },
+        "surface_site": {
+          "description": "",
+          "type": "object",
+          "$ref": "#/definitions/surface_site"
+        },
+        "distances": {
+          "description": "",
+          "type": "object",
+          "properties": {
+            "to_site1": {"type": "number"},
+            "to_surface": {"type": "number"}
+          }
+        },
+        "is_bonded": {
+          "description": "",
+          "type": "boolean"
+        }
+      }
+    },
+    "adsorption_energy": {
+      "description": "",
+      "type": "number"
+    },
+    "electronic_descriptors": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "band_center_shift": {
+          "description": "???",
+          "type": "object"
+        },
+        "cbm_shift": {
+          "description": "",
+          "type": "number"
+        },
+        "vbm_shift": {
+          "description": "",
+          "type": "number"
+        },
+        "wf_shift": {
+          "description": "",
+          "type": "number"
+        },
+        "vbm_makeup_shift": {
+          "description": "",
+          "type": "object"
+        },
+        "cbm_makeup_shift": {
+          "description": "",
+          "type": "object"
+        }
+      }
+    },
+    "charge_analysis": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "bader_charge_transfer": {
+          "description": "",
+          "type": "number"
+        },
+        "ddec6_charge_transfer": {
+          "description": "",
+          "type": "number"
+        }
+      }
+    },
+    "software_versions": {
+      "description": "",
+      "type": "object"
     }
   },
   "additionalProperties": false

@@ -1,0 +1,78 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json",
+  "title": "crystal_structure",
+  "description": "Structure information of a crystal based on pymatgen.core.Structure",
+  "type": "object",
+  "properties": {
+    "@module": {"type":  "string"},
+    "@class": {"type":  "string"},
+        "charge": {
+          "description": "Crystal charge",
+          "type": "number"
+        },
+    "lattice": {
+      "description": "The hash_id values for all data that was used to calculate this property",
+      "type": "object",
+      "properties": {
+        "matrix": {
+          "type": "array",
+          "items": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        }
+      },
+      "pbc": {
+        "type": "array",
+        "items": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ]
+      },
+      "a": {
+        "type": "number"
+      },
+      "b": {
+        "type": "number"
+      },
+      "c": {
+        "type": "number"
+      },
+      "alpha": {
+        "type": "number"
+      },
+      "beta": {
+        "type": "number"
+      },
+      "gamma": {
+        "type": "number"
+      },
+      "volume": {
+        "type": "number"
+      }
+    },
+    "sites": {
+      "description": "Description of geometry",
+      "type": "object",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
+    }
+  },
+  "additionalProperties": false
+}
+
+
+

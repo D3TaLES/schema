@@ -10,6 +10,9 @@
         "name": {
           "type": "string"
         },
+        "label": {
+          "type": "string"
+        },
         "species": {
           "type": "array",
           "items": [
@@ -44,6 +47,20 @@
             }
           ]
         },
+        "abc": {
+          "type": "array",
+          "items": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
         "properties": {
           "type": "object"
         }
@@ -52,7 +69,8 @@
         "species",
         "xyz",
         "properties"
-      ]
+      ],
+      "additionalProperties": false
     }
   ]
 }

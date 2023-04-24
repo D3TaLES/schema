@@ -254,8 +254,9 @@
           "description": "",
           "type": "object"
         },
-        "total_surf_ads_pdos_overalp": {
-          "description": "???"
+        "total_surf_ads_pdos_overlap": {
+          "description": "???",
+          "type": "object"
         },
         "work_function": {
           "description": "",

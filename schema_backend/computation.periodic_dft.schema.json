@@ -409,10 +409,5 @@
         }
       }
     },
-    "software_versions": {
-      "description": "",
-      "type": "object"
-    }
-  },
-  "additionalProperties": false
+  }
 }

@@ -1,0 +1,134 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.surface.schema.json",
+  "title": "surface",
+  "description": "Structure information of a crystal based on pymatgen.core.surface",
+  "type": "object",
+  "definitions": {
+    "coordinate": {
+      "type": "array",
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    }
+  },
+  "properties": {
+    "@module": {
+      "type":  "string",
+      "default": "pymatgen.core.surface"
+    },
+    "@class": {
+      "type":  "string",
+      "default": "Slab"
+    },
+    "charge": {
+      "description": "Crystal charge",
+      "type": "number"
+    },
+    "lattice": {
+      "description": "The hash_id values for all data that was used to calculate this property",
+      "type": "object",
+      "properties": {
+        "matrix": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "#/definitions/coordinate"
+            },
+            {
+              "$ref": "#/definitions/coordinate"
+            },
+            {
+              "$ref": "#/definitions/coordinate"
+            }
+          ]
+        }
+      },
+      "pbc": {
+        "type": "array",
+        "items": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "boolean"
+          }
+        ]
+      },
+      "a": {
+        "type": "number"
+      },
+      "b": {
+        "type": "number"
+      },
+      "c": {
+        "type": "number"
+      },
+      "alpha": {
+        "type": "number"
+      },
+      "beta": {
+        "type": "number"
+      },
+      "gamma": {
+        "type": "number"
+      },
+      "volume": {
+        "type": "number"
+      }
+    },
+    "oriented_unit_cell": {
+      "description": "",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+    },
+    "miller_index": {
+      "description": "",
+      "type": "array",
+      "items": [
+        {"type": "number"},
+        {"type": "number"},
+        {"type": "number"}
+      ]
+    },
+    "shift": {
+          "description": "",
+          "type": "number"
+        },
+    "scale_factor" : {
+      "description": "",
+      "type": "array",
+      "items": [
+        {
+          "$ref": "#/definitions/coordinate"
+        },
+        {
+          "$ref": "#/definitions/coordinate"
+        },
+        {
+          "$ref": "#/definitions/coordinate"
+        }
+      ]
+
+    },
+    "reconstruction" : {
+    },
+    "energy" : {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
+}
+
+
+

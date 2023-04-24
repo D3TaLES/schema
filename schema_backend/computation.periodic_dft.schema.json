@@ -165,7 +165,7 @@
         "input_structure": {
           "description": "",
           "type": "object" ,
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.surface.schema.json"
         },
         "output_structure": {
           "description": "",
@@ -271,18 +271,30 @@
         },
         "ddec6": {
           "description": "",
-          "type": "number"
+          "type": "object",
+          "properties": {
+            "slab": {
+              "description": "",
+              "type": "number"
+            }
+          }
         },
         "bader": {
           "description": "",
-          "type": "number"
-        },
-        "cleavage_energy": {
-          "description": "",
-          "type": "number"
+          "type": "object",
+          "properties": {
+            "slab": {
+              "description": "",
+              "type": "number"
+            }
+          }
         }
       }
 
+    },
+    "cleavage_energy": {
+      "description": "",
+      "type": "number"
     },
     "nearest_surface_neighbors": {
       "description": "",

@@ -120,16 +120,11 @@
       ]
 
     },
-    "reconstruction" : {
-      "description": "",
-      "type": "number"
-    },
     "energy" : {
       "description": "",
       "type": "number"
     }
-  },
-  "additionalProperties": false
+  }
 }
 
 

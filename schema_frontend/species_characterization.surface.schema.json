@@ -121,7 +121,8 @@
 
     },
     "reconstruction" : {
-      "description": ""
+      "description": "",
+      "type": "number"
     },
     "energy" : {
       "description": "",

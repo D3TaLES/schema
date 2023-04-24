@@ -3,6 +3,22 @@
   "title": "crystal_structure",
   "description": "Structure information of a crystal based on pymatgen.core.Structure",
   "type": "object",
+  "definitions": {
+    "coordinate": {
+      "type": "array",
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    }
+  },
   "properties": {
     "@module": {"type":  "string"},
     "@class": {"type":  "string"},
@@ -18,13 +34,13 @@
           "type": "array",
           "items": [
             {
-              "type": "number"
+              "$ref": "#/definitions/coordinate"
             },
             {
-              "type": "number"
+              "$ref": "#/definitions/coordinate"
             },
             {
-              "type": "number"
+              "$ref": "#/definitions/coordinate"
             }
           ]
         }
@@ -33,13 +49,13 @@
         "type": "array",
         "items": [
           {
-            "type": "number"
+            "type": "boolean"
           },
           {
-            "type": "number"
+            "type": "boolean"
           },
           {
-            "type": "number"
+            "type": "boolean"
           }
         ]
       },

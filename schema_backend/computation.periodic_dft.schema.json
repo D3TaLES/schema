@@ -1,7 +1,7 @@
 {
   "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.periodic_dft.schema.json",
   "title": "computation_periodic_dft",
-  "description": "The structure information derived from periodic DFT computation for a surface entry in database",
+  "description": "The structure information derived from periodic DFT computation for a surface entry in database; adapted from https://pubs.acs.org/doi/10.1021/acs.jcim.1c00340",
   "type": "object",
   "definitions": {
     "eigenvalue_band_properties": {
@@ -408,6 +408,6 @@
           "type": "number"
         }
       }
-    },
+    }
   }
 }

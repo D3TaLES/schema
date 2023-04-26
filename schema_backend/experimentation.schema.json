@@ -25,7 +25,7 @@
     "data": {
       "description": "Data extracted from raw file",
       "type": "object",
-      "anyOf": [
+      "oneOf": [
         {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/experimentation.cv.schema.json"}
       ]
     }

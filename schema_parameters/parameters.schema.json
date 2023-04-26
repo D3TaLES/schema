@@ -15,7 +15,7 @@
     },
     "data": {
       "description": "data about the parameter",
-      "anyOf": [
+      "oneOf": [
         {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_parameters/instruments/electrochemistry.schema.json"},
         {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_parameters/instruments/ftir.schema.json"},
         {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_parameters/instruments/uv_vis.schema.json"},

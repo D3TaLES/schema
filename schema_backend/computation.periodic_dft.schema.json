@@ -409,5 +409,6 @@
         }
       }
     }
-  }
+  },
+  "additionalProperties": false
 }

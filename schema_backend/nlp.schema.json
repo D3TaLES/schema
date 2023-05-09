@@ -90,16 +90,52 @@
           }
         }
       }
+    },
+    "extracted_prop": {
+      "type": "array",
+      "items": {
+        "description": "Information about an extracted property",
+        "type": "object",
+        "properties": {
+          "molecule_name": {
+            "description": "molecule name for molecule associated with extracted property",
+            "type": "string"
+          },
+          "smiles": {
+            "description": "SMILES string for molecule associated with extracted property",
+            "type": "string"
+          },
+          "line_number": {
+            "description": "line number of extracted property",
+            "type": "string"
+          },
+          "parent_sentence": {
+            "description": "sentence from which property is extracted",
+            "type": "string"
+          },
+          "value": {
+            "description": "extracted property value",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          },
+          "unit": {
+            "description": "extracted property unit",
+            "type": "string"
+          }
+        }
+      }
     }
   },
 
   "type": "object",
   "properties": {
     "_id": {
-      "description": "A unique identifier for the article",
-      "type": "string"
-    },
-    "doi": {
       "description": "Article's digital object identifier (DOI)",
       "type": "string"
     },
@@ -143,6 +179,10 @@
       "type": "object",
       "$ref": "#/definitions/data"
     },
+    "pdf_location": {
+      "description": "Path to PDF storage location at Iowa State University",
+      "type": "string"
+    },
     "SI": {
       "description": "Supplementary information",
       "type": "object",
@@ -156,6 +196,28 @@
       "description": "Date this NLP data was last updated",
       "type":"string",
       "format": "date-time"
+    },
+    "extracted_properties":  {
+      "description": "",
+      "type":"object",
+      "properties": {
+        "oxidation_potential": {
+          "description": "",
+          "$ref": "#/definitions/extracted_prop"
+        },
+        "reduction_potential": {
+          "description": "",
+          "$ref": "#/definitions/extracted_prop"
+        },
+        "solubility": {
+          "description": "",
+          "$ref": "#/definitions/extracted_prop"
+        },
+        "stability": {
+          "description": "",
+          "$ref": "#/definitions/extracted_prop"
+        }
+      }
     }
 
   },

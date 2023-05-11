@@ -111,11 +111,20 @@
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/synthesis.schema.json"
     },
 
-    "related_literature": {
-      "description": "Collection of DOIs from NLP",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/doi"
+    "literature_data": {
+      "description": "Data from the literature",
+      "type": "object",
+      "properties": {
+        "related_literature": {
+          "description": "Collection of DOIs from NLP",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/doi"
+          }
+        },
+        "extracted_properties": {
+            "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/nlp_properties.schema.json"
+        }
       }
     }
   },

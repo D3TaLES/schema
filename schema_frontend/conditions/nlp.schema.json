@@ -10,12 +10,7 @@
       "type": "string",
       "default": "nlp"
     },
-    "DOI": {
-      "description": "Article's digital object identifier (DOI)",
-      "type": "string",
-      "pattern": "10\\..+/.+"
-    },
-    "model": {
+    "nlp_model": {
       "description": "Model used to generate this data",
       "type": "string"
     },
@@ -23,6 +18,19 @@
       "description": "Date and time data was generated",
       "type": "string",
       "format": "date-time"
+    },
+    "doi": {
+      "description": "Article's digital object identifier (DOI)",
+      "type": "string",
+      "pattern": "10\\..+/.+"
+    },
+    "line_number": {
+      "description": "line number of extracted property",
+      "type": "string"
+    },
+    "parent_sentence": {
+      "description": "sentence from which property is extracted",
+      "type": "string"
     }
   },
   "additionalProperties": false

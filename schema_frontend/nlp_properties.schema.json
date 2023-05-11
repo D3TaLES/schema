@@ -1,0 +1,60 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/nlp_properties.schema.json",
+  "title": "nlp_property",
+  "description": "Molecule property extracted with NLP",
+  "type": "object",
+  "definitions": {
+    "descriptor": {
+      "source_hash_ids": {
+        "description": "The hash_id values for all data that was used to calculate this property",
+        "type": "array",
+          "items": {
+            "type": "string"
+          }
+      },
+      "conditions": {
+        "description": "Parameters used for calculations",
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/conditions.schema.json"
+      },
+      "value": {
+        "description": "The value of the descriptor",
+        "oneOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3
+          },
+          {
+            "type": "number"
+          }
+      ]
+      },
+      "unit": {
+        "description": "The units for the value",
+        "type": "string"
+      }
+    }
+  },
+
+  "properties": {
+        "oxidation_potential": {
+          "description": "",
+          "$ref": "#/definitions/descriptor"
+        },
+        "reduction_potential": {
+          "description": "",
+          "$ref": "#/definitions/descriptor"
+        },
+        "solubility": {
+          "description": "",
+          "$ref": "#/definitions/descriptor"
+        },
+        "stability": {
+          "description": "",
+          "$ref": "#/definitions/descriptor"
+        }
+  },
+  "additionalProperties": false
+}

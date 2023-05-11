@@ -6,16 +6,9 @@
     "descriptor": {
       "type": "object",
       "properties": {
-        "source_hash_ids": {
-          "description": "The hash_id values (DOI) for all data that was used to calculate this property",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
         "conditions": {
           "description": "Parameters used for calculations",
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/conditions.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/nlp.schema.json"
         },
         "value": {
           "description": "The value of the descriptor",

@@ -90,38 +90,6 @@
           }
         }
       }
-    },
-    "extracted_prop": {
-      "type": "array",
-      "items": {
-        "description": "Information about an extracted property",
-        "type": "object",
-        "properties": {
-          "molecule_name": {
-            "description": "molecule name for molecule associated with extracted property",
-            "type": "string"
-          },
-          "value": {
-            "description": "extracted property value",
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "number"
-              }
-            ]
-          },
-          "unit": {
-            "description": "extracted property unit",
-            "type": "string"
-          },
-          "conditions": {
-            "description": "conditions associated with extracted property",
-            "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/nlp.schema.json"
-          }
-        }
-      }
     }
   },
 
@@ -189,25 +157,23 @@
       "type":"string",
       "format": "date-time"
     },
-    "extracted_properties":  {
-      "description": "",
-      "type":"object",
-      "properties": {
-        "oxidation_potential": {
-          "description": "",
-          "$ref": "#/definitions/extracted_prop"
-        },
-        "reduction_potential": {
-          "description": "",
-          "$ref": "#/definitions/extracted_prop"
-        },
-        "solubility": {
-          "description": "",
-          "$ref": "#/definitions/extracted_prop"
-        },
-        "stability": {
-          "description": "",
-          "$ref": "#/definitions/extracted_prop"
+    "extracted_molecules":  {
+      "description": "List of molecules with associated properties extracted from the paper",
+      "type":"array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "molecule_name": {
+            "description": "molecule name for molecule associated with extracted property",
+            "type": "string"
+          },
+          "notes": {
+            "description": "additional notes associated with extracted property",
+            "type": "string"
+          },
+          "extracted_properties": {
+            "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/nlp_properties.schema.json"
+          }
         }
       }
     }

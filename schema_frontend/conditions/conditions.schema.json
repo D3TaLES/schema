@@ -6,7 +6,6 @@
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/dft.schema.json"},
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/vasp.schema.json"},
     {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/cv.schema.json"},
-    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/ml.schema.json"},
-    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/nlp.schema.json"}
+    {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/ml.schema.json"}
   ]
 }

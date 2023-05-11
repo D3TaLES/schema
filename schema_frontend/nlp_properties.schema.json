@@ -57,6 +57,18 @@
         "stability": {
           "description": "",
           "$ref": "#/definitions/descriptor"
+        },
+        "conductivity": {
+          "description": "",
+          "$ref": "#/definitions/descriptor"
+        },
+        "diffusion_coefficient": {
+          "description": "",
+          "$ref": "#/definitions/descriptor"
+        },
+        "charge_transfer_rate": {
+          "description": "",
+          "$ref": "#/definitions/descriptor"
         }
   },
   "additionalProperties": false

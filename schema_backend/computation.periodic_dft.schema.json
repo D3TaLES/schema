@@ -91,7 +91,7 @@
           "type": "integer"
         },
         "sites": {
-          "description": "Description of a adsorbate geometry",
+          "description": "Description of adsorbate geometry",
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
         }
       }
@@ -233,7 +233,7 @@
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
         },
         "output_structure": {
-          "description": "oordinates of the slab + adsorbate output structure.",
+          "description": "Coordinates of the slab + adsorbate output structure.",
           "type": "object" ,
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
         },
@@ -386,11 +386,11 @@
           "type": "number"
         },
         "vbm_makeup_shift": {
-          "description": "Shifts in the vbm components as a result of adsorption. Units: eV",
+          "description": "Shifts in vbm components as a result of adsorption. Units: eV",
           "type": "object"
         },
         "cbm_makeup_shift": {
-          "description": "Shifts in the cbm components as a result of adsorption. Units: eV",
+          "description": "Shifts in cbm components as a result of adsorption. Units: eV",
           "type": "object"
         }
       }

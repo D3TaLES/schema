@@ -1,0 +1,56 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.md.schema.json",
+  "title": "computation_md",
+  "description": "The structure information derived from MD computation for a molecule entry in database",
+  "type": "object",
+  "definitions": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3
+    },
+    "scalar": {
+      "type": "number"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The value of the descriptor",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/scalar"
+            },
+            {
+              "$ref": "#/definitions/vector"
+            }
+          ]
+        },
+        "unit": {
+          "description": "The units for the value",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "properties": {
+    "conditions": {
+      "description": "Parameters used for calculations",
+      "type": "object",
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/md.schema.json"
+    },
+    "viscosity": {
+      "$ref": "#/definitions/data",
+      "type": "object",
+      "description": "Viscosity. Units: "
+    },
+    "diffusivity": {
+      "$ref": "#/definitions/data",
+      "type": "object",
+      "description": "Diffusivity. Units: "
+    }
+  },
+  "additionalProperties": false
+}

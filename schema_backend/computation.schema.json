@@ -31,7 +31,8 @@
       "type": "object",
       "oneOf": [
         {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.dft.schema.json"},
-        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.periodic_dft.schema.json"}
+        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.periodic_dft.schema.json"},
+        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.md.schema.json"}
       ]
     }
   },

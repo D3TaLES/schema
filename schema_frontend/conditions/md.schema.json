@@ -17,14 +17,6 @@
       "description": "Version of code used",
       "type": "string"
     },
-    "dft_functional": {
-      "description": "Functional used for the calculation",
-      "type": "string"
-    },
-    "dft_basis_set": {
-      "description": "Basis-set used for the calculation",
-      "type": "string"
-    },
     "solvents": {
       "description": "Solvent model used for the calculation",
       "type": "array",

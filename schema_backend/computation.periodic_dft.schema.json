@@ -5,29 +5,29 @@
   "type": "object",
   "definitions": {
     "eigenvalue_band_properties": {
-          "description": "",
+          "description": "A set of properties associated with the eigenvalues obtained from band structure calculations.",
           "type": "object",
           "properties": {
             "band_gap": {
-              "description": "",
+              "description": "The difference between the cbm and vbm. Units: eV",
               "type": "number"
             },
             "cbm": {
-              "description": "",
+              "description": "Conduction band minimum. Units: eV",
               "type": "number"
             },
             "vbm": {
-              "description": "",
+              "description": "Valence band maximum. Units: eV",
               "type": "number"
             },
             "is_band_gap_direct": {
-              "description": "",
+              "description": "Specifies whether the band gap is direct or indirect.",
               "type": "boolean"
             }
           }
         },
     "orbital_band_centers": {
-          "description": "",
+          "description": "The energy of the center of the s, p, d, and f orbital bands. Units: eV",
           "type": "object",
           "properties": {
             "s": {
@@ -45,7 +45,7 @@
           }
         },
     "adsorbate_site": {
-      "description": "",
+      "description": "Position of adsorbate on the surface of the slab.",
       "type": "object",
       "properties": {
         "index": {"type": "number"},
@@ -55,7 +55,7 @@
       }
     },
     "surface_site": {
-          "description": "",
+          "description": "Specific site on the surface of the slab.",
           "type": "object",
           "properties": {
             "index": {"type": "number"},
@@ -72,12 +72,12 @@
       "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/periodic_dft.schema.json"
     },
     "task_name": {
-      "description": "",
+      "description": "Description of the system studied and the type of calculation performed.",
       "type": "string"
 
     },
     "adsorbate": {
-      "description": "",
+      "description": "Atom or molecule adsorbing to the surface.",
       "type": "object",
       "properties": {
         "@module": {"type":  "string"},
@@ -91,66 +91,66 @@
           "type": "integer"
         },
         "sites": {
-          "description": "Description of a adsorbate geometry",
+          "description": "Description of adsorbate geometry",
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
         }
       }
 
     },
     "bulk": {
-      "description": "",
+      "description": "The bulk material used to generate the slab.",
       "type": "object",
       "properties": {
         "formula": {
-          "description": "",
+          "description": "Formula describing the composition of the bulk material.",
           "type": "string"
         },
         "directory": {
-          "description": "",
+          "description": "Directory in which the bulk calculation took place.",
           "type": "string"
         },
         "converged": {
-          "description": "",
+          "description": "Whether or not the bulk calculation converged successfully.",
           "type": "boolean"
         },
         "input_structure": {
-          "description": "",
+          "description": "Coordinates of the bulk input structure.",
           "type": "object" ,
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
         },
         "output_structure": {
-          "description": "",
+          "description": "Coordinates of the bulk output structure.",
           "type": "object" ,
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
         },
         "output_energy": {
-          "description": "",
+          "description": "Energy of the bulk output structure. Units: eV",
           "type": "number"
         },
         "eigenvalue_band_properties": {
-          "description": "",
+          "description": "A set of properties associated with the eigenvalues obtained from band structure calculations.",
           "$ref": "#/definitions/eigenvalue_band_properties"
         }
       }
     },
     "slab": {
-      "description": "",
+      "description": "The surface on which the molecule adsorbs.",
       "type": "object",
       "properties": {
         "name": {
-          "description": "",
+          "description": "Name of the slab.",
           "type": "string"
         },
         "directory": {
-          "description": "",
+          "description": "Directory in which the slab calculation took place.",
           "type": "string"
         },
         "converged": {
-          "description": "",
+          "description": "Whether or not the slab calculation converged successfully.",
           "type": "boolean"
         },
         "miller_index": {
-          "description": "",
+          "description": "Lattice plane used to generate the slab.",
           "type": "array",
           "items": [
             {"type": "number"},
@@ -159,133 +159,133 @@
           ]
         },
         "shift": {
-          "description": "",
+          "description": "Displacement relative to the lattice vectors.",
           "type": "number"
         },
         "input_structure": {
-          "description": "",
+          "description": "Coordinates of the slab input structure.",
           "type": "object" ,
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.surface.schema.json"
         },
         "output_structure": {
-          "description": "",
+          "description": "Coodinates of the slab output structure.",
           "type": "object" ,
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
         },
         "output_energy": {
-          "description": "",
+          "description": "Energy of the optimized slab. Units: eV",
           "type": "number"
         },
         "eigenvalue_band_properties": {
-          "description": "",
+          "description": "A set of properties associated with the eigenvalues obtained from band structure calculations.",
           "$ref": "#/definitions/eigenvalue_band_properties"
         },
         "orbital_band_centers": {
-          "description": "",
+          "description": "The energy of the center of the s, p, d, and f orbital bands. Units: eV",
           "type": "object",
           "$ref": "#/definitions/orbital_band_centers"
         },
         "orbital_densities_by_type": {
-          "description": "",
+          "description": "Densities of the s, p, d, and f orbitals.",
           "type": "object"
         },
         "work_function": {
-          "description": "",
+          "description": "Minimum energy needed to remove an electron from the slab. Units: eV",
           "type": "number"
         },
         "cbm_elemental_makeup": {
-          "description": "",
+          "description": "Elemental contributions to the cbm.",
           "type": "object"
         },
         "vbm_elemental_makeup": {
-          "description": "",
+          "description": "Elemental contributions to the vbm.",
           "type": "object"
         },
         "ddec6": {
-          "description": "",
+          "description": "Density derived electrostatic and chemical net atomic charges.",
           "type": "number"
         },
         "bader": {
-          "description": "",
+          "description": "Bader charges of each atom.",
           "type": "number"
         }
       }
     },
     "slab_adsorbate": {
-      "description": "",
+      "description": "The slab + adsorbate system.",
       "type": "object",
       "properties": {
         "name": {
-          "description": "",
+          "description": "Name of the slab + adsorbate system.",
           "type": "string"
         },
         "directory": {
-          "description": "",
+          "description": "Directory in which the slab + adsorbate calculation took place.",
           "type": "string"
         },
         "converged": {
-          "description": "",
+          "description": "Whether or not the slab + adsorbate calculation converged successfully.",
           "type": "boolean"
         },
         "input_structure": {
-          "description": "",
+          "description": "Coordinates of the slab + adsorbate input structure.",
           "type": "object" ,
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
         },
         "output_structure": {
-          "description": "",
+          "description": "Coordinates of the slab + adsorbate output structure.",
           "type": "object" ,
           "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
         },
         "output_energy": {
-          "description": "",
+          "description": "Energy of the optimized slab + adsorbate structure. Units: eV",
           "type": "number"
         },
         "eigenvalue_band_properties": {
-          "description": "",
+          "description": "A set of properties associated with the eigenvalues obtained from band structure calculations.",
           "$ref": "#/definitions/eigenvalue_band_properties"
         },
         "orbital_band_centers": {
-          "description": "",
+          "description": "The energy of the center of the s, p, d, and f orbital bands. Units: eV",
           "type": "object",
           "$ref": "#/definitions/orbital_band_centers"
         },
         "orbital_densities_by_type": {
-          "description": "",
+          "description": "Densities of the s, p, d, and f orbitals.",
           "type": "object"
         },
         "total_surf_ads_pdos_overlap": {
-          "description": "???",
+          "description": "The total overlap of the projected density of states of the surface and the adsorbate.",
           "type": "object"
         },
         "work_function": {
-          "description": "",
+          "description": "Minimum energy needed to remove an electron from the slab +  adsorbate system. Units: eV",
           "type": "number"
         },
         "cbm_elemental_makeup": {
-          "description": "",
+          "description": "Elemental contributions to the cbm.",
           "type": "object"
         },
         "vbm_elemental_makeup": {
-          "description": "",
+          "description": "Elemental contributions to the vbm.",
           "type": "object"
         },
         "ddec6": {
-          "description": "",
+          "description": "Density derived electrostatic and chemical net atomic charges.",
           "type": "object",
           "properties": {
             "slab": {
-              "description": "",
+              "description": "Density derived electrostatic and chemical net atomic charges of the slab.",
               "type": "number"
             }
           }
         },
         "bader": {
-          "description": "",
+          "description": "Bader charges of each atom.",
           "type": "object",
           "properties": {
             "slab": {
-              "description": "",
+              "description": "Bader charges of each atom in the slab.",
               "type": "number"
             }
           }
@@ -294,61 +294,61 @@
 
     },
     "cleavage_energy": {
-      "description": "",
+      "description": "The energy required to cleave the surface along a specific plane. Units: eV",
       "type": "number"
     },
     "nearest_surface_neighbors": {
-      "description": "",
+      "description": "The atoms closest to a specific atom in the slab.",
       "type": "object",
       "properties": {
         "adsorbate_site": {
-          "description": "",
+          "description": "The site over which the adsorbate is positioned.",
           "type": "object",
           "$ref": "#/definitions/adsorbate_site"
         },
         "surface_site": {
-          "description": "",
+          "description": "A specific site on the surface of the slab.",
           "type": "object",
           "$ref": "#/definitions/surface_site"
         },
         "distance": {
-          "description": "",
+          "description": "Distance between two atoms. Units: Angstrom",
           "type": "number"
         },
         "is_bonded": {
-          "description": "",
+          "description": "Indicates whether or not an atom is bonded to another atom.",
           "type": "boolean"
         }
       }
     },
     "adsorption_site": {
-      "description": "",
+      "description": "The site over which the adsorbate is positioned.",
       "type": "object",
       "properties": {
         "asf_site_type": {
-          "description": "",
+          "description": "Atomic Sphere Function site type. Refers to identification of specific atomic sites.",
           "type": "string"
         },
         "in_site_type": {
-          "description": "",
+          "description": "Type of site over which adsorbate is located in input structure.",
           "type": "string"
         },
         "out_site_type": {
-          "description": "",
+          "description": "Type of site over which adsorbate is located in output structure.",
           "type": "string"
         },
         "adsorbate_site": {
-          "description": "",
+          "description": "The site over which the adsorbate is positioned.",
           "type": "object",
           "$ref": "#/definitions/adsorbate_site"
         },
         "surface_site": {
-          "description": "",
+          "description": "A specific site on the surface of the slab.",
           "type": "object",
           "$ref": "#/definitions/surface_site"
         },
         "distances": {
-          "description": "",
+          "description": "Distance between two atoms. Units: Angstrom",
           "type": "object",
           "properties": {
             "to_site1": {"type": "number"},
@@ -356,55 +356,55 @@
           }
         },
         "is_bonded": {
-          "description": "",
+          "description": "Indicates whether or not an atom is bonded to another atom.",
           "type": "boolean"
         }
       }
     },
     "adsorption_energy": {
-      "description": "",
+      "description": "The change in energy associated with adsorption. Energy(slab + adsorbate) - energy (slab) - energy (adsorbate). Units: eV",
       "type": "number"
     },
     "electronic_descriptors": {
-      "description": "",
+      "description": "Properties related to electronic band structure calculations.",
       "type": "object",
       "properties": {
         "band_center_shift": {
-          "description": "???",
+          "description": "Shift in the band center as a result of adsorption. Units: eV",
           "type": "object"
         },
         "cbm_shift": {
-          "description": "",
+          "description": "Shift in the cbm as a result of adsorption. Units: eV",
           "type": "number"
         },
         "vbm_shift": {
-          "description": "",
+          "description": "Shift in the vbm as a result of adsorption. Units: eV",
           "type": "number"
         },
         "wf_shift": {
-          "description": "",
+          "description": "Shift in the work function as a result of adsorption. Units: eV",
           "type": "number"
         },
         "vbm_makeup_shift": {
-          "description": "",
+          "description": "Shifts in vbm components as a result of adsorption. Units: eV",
           "type": "object"
         },
         "cbm_makeup_shift": {
-          "description": "",
+          "description": "Shifts in cbm components as a result of adsorption. Units: eV",
           "type": "object"
         }
       }
     },
     "charge_analysis": {
-      "description": "",
+      "description": "Changes in bader and DDEC6 charges as a result of adsorption.",
       "type": "object",
       "properties": {
         "bader_charge_transfer": {
-          "description": "",
+          "description": "Change in bader charges as a result of adsorption.",
           "type": "number"
         },
         "ddec6_charge_transfer": {
-          "description": "",
+          "description": "Change in DDEC6 charges as a result of adsorption.",
           "type": "number"
         }
       }

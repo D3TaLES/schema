@@ -4,20 +4,6 @@
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
   "properties": {
-    "hole_reorganization_energy": {
-      "description": "Reorganization energy of cation hole for the molecule",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
-      }
-    },
-    "electron_reorganization_energy": {
-      "description": "Reorganization energy of anion electron for the molecule",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
-      }
-    },
     "relaxation_groundState_cation1": {
       "description": "Relaxation energy of the +1 cation from the ground state geometry to the +1 cation geometry",
       "type": "array",
@@ -139,6 +125,20 @@
     },
     "rmsd_anion1_anion2": {
       "description": "The root mean square difference (RMSD) between the anion 1 and anion 2 geometries, Kabsch algorithm",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "hole_reorganization_energy": {
+      "description": "Reorganization energy of cation hole for the molecule",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+      }
+    },
+    "electron_reorganization_energy": {
+      "description": "Reorganization energy of anion electron for the molecule",
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"

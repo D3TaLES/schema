@@ -44,6 +44,10 @@
     "unit": {
       "description": "The units for the value",
       "type": "string"
+    },
+    "notes": {
+      "description": "Notes for this property value",
+      "type": "string"
     }
   },
   "additionalProperties": false

@@ -31,6 +31,10 @@
     "parent_sentence": {
       "description": "sentence from which property is extracted",
       "type": "string"
+    },
+    "notes": {
+      "description": "notes about the extracted property",
+      "type": "string"
     }
   },
   "additionalProperties": false

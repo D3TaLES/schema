@@ -5,13 +5,13 @@
   "type": "object",
   "properties": {
     "_id": {
-      "description": "An identifier for the reagent associated with this vial",
-      "type": "string"
-    },
-    "home": {
       "description": "An identifier for the vial home location on vial stand, e.g., A_03",
       "type": "string",
       "pattern": "^[A-Z]_\\d\\d$"
+    },
+    "reagent_uuid": {
+      "description": "An identifier for the reagent associated with this vial",
+      "type": "string"
     },
     "experiment_uuid": {
       "description": "Experiment UUID associated with vial",

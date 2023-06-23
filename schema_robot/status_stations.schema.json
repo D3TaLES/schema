@@ -1,0 +1,29 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_robot/status_stations.schema.json",
+  "title": "status_stations",
+  "description": "schema for robotics station statuses",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "description": "Name of station",
+      "type": "string"
+    },
+    "available": {
+      "description": "Station is available if true",
+      "type": "boolean"
+    },
+    "current_vial": {
+      "description": "Vial _id currently in station",
+      "type": "string"
+    },
+    "vial_history": {
+      "description": "List of vial _ids associated with station's location history",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}
+

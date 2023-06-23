@@ -17,6 +17,13 @@
       "description": "Experiment name associated with vial",
       "type": "string"
     },
+    "vial_content": {
+      "description": "List of vial content ",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "capped": {
       "description": "Vial is capped if true",
       "type": "boolean"

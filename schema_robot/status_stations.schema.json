@@ -12,11 +12,11 @@
       "description": "Station is available if true",
       "type": "boolean"
     },
-    "current_vial": {
+    "current_content": {
       "description": "Vial _id currently in station",
       "type": "string"
     },
-    "vial_history": {
+    "content_history": {
       "description": "List of vial _ids associated with station's location history",
       "type": "array",
       "items": {

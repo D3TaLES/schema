@@ -8,6 +8,10 @@
       "description": "Name of station",
       "type": "string"
     },
+    "current_wflow_name": {
+      "description": "An name identifier for the workflow currently loaded",
+      "type": "string"
+    },
     "available": {
       "description": "Station is available if true",
       "type": "boolean"

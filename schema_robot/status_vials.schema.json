@@ -9,16 +9,8 @@
       "type": "string",
       "pattern": "^[A-Z]_\\d\\d$"
     },
-    "reagent_uuid": {
-      "description": "An identifier for the reagent associated with this vial",
-      "type": "string"
-    },
-    "experiment_uuid": {
-      "description": "Experiment UUID associated with vial",
-      "type": "string"
-    },
-    "experiment_name": {
-      "description": "Experiment name associated with vial",
+    "current_wflow_name": {
+      "description": "An name identifier for the workflow currently loaded",
       "type": "string"
     },
     "vial_content": {

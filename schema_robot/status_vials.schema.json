@@ -13,6 +13,10 @@
       "description": "An name identifier for the workflow currently loaded",
       "type": "string"
     },
+    "experiment_name": {
+      "description": "A name identifier for the experiment associated with this vial",
+      "type": "string"
+    },
     "reagent_uuid": {
       "description": "An identifier for the reagent associated with this vial",
       "type": "string"

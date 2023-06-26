@@ -12,6 +12,10 @@
       "description": "An name identifier for the workflow currently loaded",
       "type": "string"
     },
+    "state": {
+      "description": "Station state",
+      "type": "string"
+    },
     "available": {
       "description": "Station is available if true",
       "type": "boolean"

@@ -13,6 +13,10 @@
       "description": "An name identifier for the workflow currently loaded",
       "type": "string"
     },
+    "reagent_uuid": {
+      "description": "An identifier for the reagent associated with this vial",
+      "type": "string"
+    },
     "vial_content": {
       "description": "List of vial content ",
       "type": "array",

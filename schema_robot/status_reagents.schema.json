@@ -6,7 +6,7 @@
   "properties": {
     "_id": {
       "description": "An identifier for the vial home location on vial stand, e.g., A_03",
-      "type": "string",
+      "type": "string"
     },
     "current_wflow_name": {
       "description": "An name identifier for the workflow currently loaded",

@@ -1,0 +1,50 @@
+{
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_robot/status_reagents.schema.json",
+  "title": "status_reagents",
+  "description": "schema for robotics vial statuses",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "description": "An identifier for the vial home location on vial stand, e.g., A_03",
+      "type": "string",
+    },
+    "current_wflow_name": {
+      "description": "An name identifier for the workflow currently loaded",
+      "type": "string"
+    },
+    "description": {
+      "description": "description",
+      "type": "string"
+    },
+    "location": {
+      "description": "location",
+      "type": "string"
+    },
+    "name": {
+      "description": "name",
+      "type": "string"
+    },
+    "notes": {
+      "description": "notes",
+      "type": "string"
+    },
+    "purity": {
+      "description": "purity",
+      "type": "string"
+    },
+    "smiles": {
+      "description": "description",
+      "type": "string"
+    },
+    "source": {
+      "description": "description",
+      "type": "string"
+    },
+    "type": {
+      "description": "description",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
+

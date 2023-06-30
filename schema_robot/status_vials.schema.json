@@ -17,15 +17,25 @@
       "description": "A name identifier for the experiment associated with this vial",
       "type": "string"
     },
-    "reagent_uuid": {
-      "description": "An identifier for the reagent associated with this vial",
-      "type": "string"
-    },
     "vial_content": {
       "description": "List of vial content ",
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "reagent_uuid": {
+            "description": "UUID for listed reagent",
+            "type": "string"
+          },
+          "name": {
+            "description": "name for listed reagent",
+            "type": "string"
+          },
+          "amount": {
+            "description": "Amount of reagent present",
+            "type": "string"
+          }
+        }
       }
     },
     "capped": {

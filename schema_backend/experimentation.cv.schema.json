@@ -93,11 +93,6 @@
       "type": "object",
       "$ref": "#/definitions/data"
     },
-    "comp_r": {
-      "description": "Comparative resistance (ohm)",
-      "type": "object",
-      "$ref": "#/definitions/data"
-    },
     "scan_data": {
       "description": "List of scans",
       "type": "array",

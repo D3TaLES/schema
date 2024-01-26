@@ -123,8 +123,22 @@
         "$ref": "#/definitions/descriptor"
       }
     },
+    "homo_1": {
+      "description": "Second highest occupied molecular orbital. Units: eV",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
     "lumo": {
       "description": "Lowest unoccupied molecular orbital. Units: eV",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/descriptor"
+      }
+    },
+    "lumo_1": {
+      "description": "Second lowest unoccupied molecular orbital. Units: eV",
       "type": "array",
       "items": {
         "$ref": "#/definitions/descriptor"

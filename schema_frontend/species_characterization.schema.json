@@ -83,94 +83,55 @@
     },
     "geometry": {
       "description": "Description of the species geometry",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.geometry.schema.json"
-      }
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.geometry.schema.json"
     },
     "globular_volume": {
       "description": "Globular volume, most likely in units of cubic Angstroms",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "radical_buried_vol": {
       "description": "Buried volume at the maximum fractional spin. Units: A^3",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "radical_spin": {
       "description": "The fractional spin positioned on the radial. Units: % as decimal",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "radical_stability_score": {
       "description": "Score for radical stability from Chem. Sci., 2021, 12, 13158–13166",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "homo": {
       "description": "Highest occupied molecular orbital. Units: eV",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "homo_1": {
       "description": "Second highest occupied molecular orbital. Units: eV",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "lumo": {
       "description": "Lowest unoccupied molecular orbital. Units: eV",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "lumo_1": {
       "description": "Second lowest unoccupied molecular orbital. Units: eV",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "homo_lumo_gap": {
       "description": "Difference between HOMO and LUMO",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "dipole_moment": {
       "description": "The X, Y, and Z dipole components of electric dipole moment. Units: Debye",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "solvation_energy": {
       "description": "Difference between gas phase energy and solvated energy",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "solubility": {
       "description": "The maximum amount of a species that can be dissolved in a given solvent",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/descriptor"
-      }
+      "$ref": "#/definitions/descriptor"
     },
     "singlet_states": {
       "description": "Species singlet excited states",

@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/experiment_data.mol_characterization.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/experiment_data.mol_characterization.schema.json",
   "title": "experiment_data.mol_characterization",
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
@@ -8,49 +8,49 @@
       "description": "Oxidation potential of the molecule",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "reduction_potential": {
       "description": "Reduction potential of the molecule",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "solubility": {
       "description": "Measure of how soluble the molecule is in a given solvent",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "stability": {
       "description": "Measure of how stable the molecule is in a given solvent",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "conductivity": {
       "description": "Measure of the molecule's conductance relative to its concentration",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "diffusion_coefficient": {
       "description": "Diffusion coefficient using Randles-Scidwick equation, default cm^2/s",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     },
     "charge_transfer_rate": {
       "description": "Rate of charge transfer in solution, default cm/s",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.descriptor.schema.json"
+        "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/mol_characterization.descriptor.schema.json"
       }
     }
   },

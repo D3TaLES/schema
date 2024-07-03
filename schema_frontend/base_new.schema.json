@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/base_new.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/base_new.schema.json",
   "title": "base",
   "description": "A molecule entry in database",
 
@@ -24,12 +24,12 @@
 
     "mol_info": {
       "description": "The basic structural information derivable from the molecule's SMILES structure",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_info.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/mol_info.schema.json"
     },
 
     "mol_characterization": {
       "description": "Details of quantum chemical calculations on the molecule",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/mol_characterization.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/mol_characterization.schema.json"
     },
 
     "species_characterization": {
@@ -38,23 +38,23 @@
       "properties": {
         "groundState": {
           "description": "Molecule species with the ground state charge",
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.schema.json"
         },
         "cation1": {
           "description": "Molecule species with the ground state charge + 1",
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.schema.json"
         },
         "cation2": {
           "description": "Molecule species with the ground state charge + 2",
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.schema.json"
         },
         "anion1": {
           "description": "Molecule species with the ground state charge - 1",
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.schema.json"
         },
         "anion2": {
           "description": "Molecule species with the ground state charge - 2",
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.schema.json"
         }
       },
       "additionalProperties": false
@@ -74,7 +74,7 @@
         },
         "mol_characterization": {
           "description": "Details of quantum chemical calculations on the molecule",
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/experiment_data.mol_characterization.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/experiment_data.mol_characterization.schema.json"
         },
         "species_characterization": {
           "description": "Details of quantum chemical calculations on the molecule including charge species",
@@ -82,23 +82,23 @@
           "properties": {
             "groundState": {
               "description": "Molecule species with the ground state charge",
-              "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/experiment_data.species_characterization.schema.json"
+              "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/experiment_data.species_characterization.schema.json"
             },
             "cation1": {
               "description": "Molecule species with the ground state charge + 1",
-              "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/experiment_data.species_characterization.schema.json"
+              "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/experiment_data.species_characterization.schema.json"
             },
             "cation2": {
               "description": "Molecule species with the ground state charge + 2",
-              "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/experiment_data.species_characterization.schema.json"
+              "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/experiment_data.species_characterization.schema.json"
             },
             "anion1": {
               "description": "Molecule species with the ground state charge - 1",
-              "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/experiment_data.species_characterization.schema.json"
+              "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/experiment_data.species_characterization.schema.json"
             },
             "anion2": {
               "description": "Molecule species with the ground state charge - 2",
-              "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/experiment_data.species_characterization.schema.json"
+              "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/experiment_data.species_characterization.schema.json"
             }
           },
           "additionalProperties": false
@@ -108,7 +108,7 @@
 
     "synthesis": {
       "description": "Details of 3D geometry of the molecule including charge species",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/synthesis.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/synthesis.schema.json"
     },
 
     "literature_data": {
@@ -123,7 +123,7 @@
           }
         },
         "extracted_properties": {
-            "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/nlp_properties.schema.json"
+            "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/nlp_properties.schema.json"
         }
       }
     }

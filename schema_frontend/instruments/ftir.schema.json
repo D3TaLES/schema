@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/instruments/ftir.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/instruments/ftir.schema.json",
   "title": "ftir",
   "description": "Information about an FTIR instrument",
   "type": "object",
@@ -51,7 +51,7 @@
     "submission_info": {
       "description": "Info about who submitted the data and how",
       "type": "object",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/submission.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_backend/submission.schema.json"
     },
     "detectors": {
       "description": "List of the detectors available on the instrument",

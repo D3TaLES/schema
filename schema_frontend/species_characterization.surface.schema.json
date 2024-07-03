@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.surface.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.surface.schema.json",
   "title": "surface",
   "description": "Structure information of a crystal based on pymatgen.core.surface",
   "type": "object",
@@ -89,7 +89,7 @@
     },
     "oriented_unit_cell": {
       "description": "A unit cell of the parent structure with the miller index of the plane parallel to surface.",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.crystal.schema.json"
     },
     "miller_index": {
       "description": "Miller index of the plane parallel to the surface.",

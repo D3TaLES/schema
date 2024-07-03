@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_random/dihed_rot.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_random/dihed_rot.schema.json",
   "title": "dihed_rot",
   "description": "schema for dihedral rotations",
   "type": "object",

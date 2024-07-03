@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.periodic_dft.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_backend/computation.periodic_dft.schema.json",
   "title": "computation_periodic_dft",
   "description": "The structure information derived from periodic DFT computation for a surface entry in database; adapted from https://pubs.acs.org/doi/10.1021/acs.jcim.1c00340",
   "type": "object",
@@ -50,7 +50,7 @@
       "properties": {
         "index": {"type": "number"},
         "sites": {
-            "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
+            "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.geometry.sites.schema.json"
         }
       }
     },
@@ -60,7 +60,7 @@
           "properties": {
             "index": {"type": "number"},
             "sites": {
-                  "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
+                  "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.geometry.sites.schema.json"
                 }
           }
         }
@@ -69,7 +69,7 @@
     "conditions": {
       "description": "Parameters used for calculations",
       "type": "object",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/conditions/periodic_dft.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/conditions/periodic_dft.schema.json"
     },
     "task_name": {
       "description": "Description of the system studied and the type of calculation performed.",
@@ -92,7 +92,7 @@
         },
         "sites": {
           "description": "Description of adsorbate geometry",
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.geometry.sites.schema.json"
         }
       }
 
@@ -116,12 +116,12 @@
         "input_structure": {
           "description": "Coordinates of the bulk input structure.",
           "type": "object" ,
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.crystal.schema.json"
         },
         "output_structure": {
           "description": "Coordinates of the bulk output structure.",
           "type": "object" ,
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.crystal.schema.json"
         },
         "output_energy": {
           "description": "Energy of the bulk output structure. Units: eV",
@@ -165,12 +165,12 @@
         "input_structure": {
           "description": "Coordinates of the slab input structure.",
           "type": "object" ,
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.surface.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.surface.schema.json"
         },
         "output_structure": {
           "description": "Coodinates of the slab output structure.",
           "type": "object" ,
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.crystal.schema.json"
         },
         "output_energy": {
           "description": "Energy of the optimized slab. Units: eV",
@@ -230,12 +230,12 @@
         "input_structure": {
           "description": "Coordinates of the slab + adsorbate input structure.",
           "type": "object" ,
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.crystal.schema.json"
         },
         "output_structure": {
           "description": "Coordinates of the slab + adsorbate output structure.",
           "type": "object" ,
-          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json"
+          "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.crystal.schema.json"
         },
         "output_energy": {
           "description": "Energy of the optimized slab + adsorbate structure. Units: eV",

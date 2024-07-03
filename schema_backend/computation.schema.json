@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_backend/computation.schema.json",
   "title": "computation",
   "description": "The structure information derived from computation for a molecule entry in database",
   "type": "object",
@@ -16,7 +16,7 @@
     "submission_info": {
       "description": "Information about who submitted the data and how",
       "type": "object",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/submission.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_backend/submission.schema.json"
     },
     "calculation_type": {
       "type": "string",
@@ -30,9 +30,9 @@
       "description": "Data extracted from raw file",
       "type": "object",
       "oneOf": [
-        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.dft.schema.json"},
-        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.periodic_dft.schema.json"},
-        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/computation.md.schema.json"}
+        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_backend/computation.dft.schema.json"},
+        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_backend/computation.periodic_dft.schema.json"},
+        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_backend/computation.md.schema.json"}
       ]
     }
   },

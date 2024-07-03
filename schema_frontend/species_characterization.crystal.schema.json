@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.crystal.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.crystal.schema.json",
   "title": "crystal_structure",
   "description": "Structure information of a crystal based on pymatgen.core.Structure",
   "type": "object",
@@ -84,7 +84,7 @@
     "sites": {
       "description": "Description of geometry",
       "type": "object",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_frontend/species_characterization.geometry.sites.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_frontend/species_characterization.geometry.sites.schema.json"
     }
   },
   "additionalProperties": false

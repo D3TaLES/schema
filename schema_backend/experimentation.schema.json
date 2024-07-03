@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/experimentation.schema.json",
+  "$id": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_backend/experimentation.schema.json",
   "title": "experimentation",
   "description": "characterization of organic materials",
   "type": "object",
@@ -16,7 +16,7 @@
     "submission_info": {
       "description": "Information about who/when submitted the data",
       "type": "object",
-      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/submission.schema.json"
+      "$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_backend/submission.schema.json"
     },
     "experiment_type": {
       "description": "Type of experiment run",
@@ -26,7 +26,7 @@
       "description": "Data extracted from raw file",
       "type": "object",
       "oneOf": [
-        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/main/schema_backend/experimentation.cv.schema.json"}
+        {"$ref": "https://raw.githubusercontent.com/D3TaLES/schema/v2/schema_backend/experimentation.cv.schema.json"}
       ]
     }
   },
